@@ -24,5 +24,5 @@ author_profile: true
 
 * Alejandro Almodóvar Espeso
 * Luis Fernando Fernández Salvador
-* Ana Jiménez Bejarano
+* Ana Jiménez Bejarano [ana.jimenezb@upm.es](mailto:ana.jimenezb@upm.es)
 
