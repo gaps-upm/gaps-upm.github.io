@@ -9,7 +9,7 @@ Puedes editar los archivos directamente en GitHub y abrir una pull request sin n
 Para contribuir en algo sencillo, sigue estos pasos:
 
 1. **Identifica el archivo que quieres modificar**: Esto lo puedes hacer con las indicaciones que se dan a continuación, en función de lo que quieras cambiar.
-2. **Abrelo en github**: Si es un .md, github tiene un editor en línea. Solo tienes que darle al lapicero y podrás modificarlo.
+2. **Abrelo en github**: Si es un .md, github tiene un editor en línea. Solo tienes que darle al lapicero y podrás modificarlo. Es posible que te pida hacer un fork del repo. Hazlo sin problemas y trabaja ahí.
 3. **Commitea el cambio**: Cuando hayas terminado, dale a "commit changes...". Allí no hagas commit directamente al main, sino que abre una nueva rama que formará parte de una nueva pull request. El nombre de la pull request debe ser "updated XXX", donde XXX es el archivo que hayas modificado. En la descripción di lo que has cambiado. En el nombre de la rama, pon update-XXX.
 
 Para contribuir en algo más grande, sigue estos pasos:
