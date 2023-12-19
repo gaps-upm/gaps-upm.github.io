@@ -6,7 +6,13 @@
 
 Puedes editar los archivos directamente en GitHub y abrir una pull request sin necesidad de clonar el repositorio. Esto sería lo preferido si quieres hacer una contribución pequeña, como agregar una publicación o una persona. Si quieres hacer una contribución más tensa, como agregar una nueva página, te recomendamos que clones el repositorio y trabajes en tu máquina local.
 
-Para contribuir en algo más grande, sigue estos pasos básicos:
+Para contribuir en algo sencillo, sigue estos pasos:
+
+1. **Identifica el archivo que quieres modificar**: Esto lo puedes hacer con las indicaciones que se dan a continuación, en función de lo que quieras cambiar.
+2. **Abrelo en github**: Si es un .md, github tiene un editor en línea. Solo tienes que darle al lapicero y podrás modificarlo.
+3. **Commitea el cambio**: Cuando hayas terminado, dale a "commit changes...". Allí no hagas commit directamente al main, sino que abre una nueva rama que formará parte de una nueva pull request. El nombre de la pull request debe ser "updated XXX", donde XXX es el archivo que hayas modificado. En la descripción di lo que has cambiado. En el nombre de la rama, pon update-XXX.
+
+Para contribuir en algo más grande, sigue estos pasos:
 
 1. **Fork del Repositorio**: Primero, haz un 'fork' del repositorio a tu cuenta de GitHub.
 2. **Clona el Repositorio**: Luego, clona el repositorio forkeado a tu máquina local usando `git clone`.
