@@ -5,8 +5,17 @@ permalink: /publications/
 author_profile: true
 ---
 
+## 2023
+
+* Cámara, M., & Blanco, J. L. (2023). FOLEY-VAE: Generaci\'on de efectos de audio para cine con inteligencia artificial. Congreso Español de Acústica (TECNIACÚSTICA). [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=en&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:5nxA0vEk-isC)
+
+* Marcos, F., Tamaki, R., Cámara, M., Yagüe, V., & Blanco, J. L. (2023). IA Para el Mantenimiento Predictivo en Canteras: Modelado. Congreso Español de Acústica (TECNIACÚSTICA). [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=en&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:8k81kl-MbHgC)
+
 * Almodóvar, A., Parras, J., & Zazo, S. (2023, October). Federated learning for causal inference using deep generative disentangled models. In 1st Workshop on Deep Generative Models for Health, NeurIPS 2023. [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:Wp0gIr-vW9MC)  [Code](https://github.com/aalmodovares/federated_tedvae)
 
+* Cámara, M., Xu, Z., Zong, Y., Blanco, J. L., & Reiss, J. D. (2023). Optimization Techniques for a Physical Model of Human Vocalisation. Digital Audio Effects Conference (DAFx). [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=en&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:0EnyYjriUFMC)
+
+* Südholt, D., Cámara, M., Xu, Z., & Reiss, J. D. (2023). Vocal Tract Area Estimation by Gradient Descent. Digital Audio Effects Conference (DAFx). [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=en&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:hqOjcs7Dif8C)
 
 * Velasco, Pablo, et al (2023). The Relapsed Acute Lymphoblastic Leukemia Network (ReALLNet): A multidisciplinary project from the Spanish Society of Pediatric Hematology and Oncology (SEHOP). Frontiers in Pediatrics. [DOI](https://doi.org/10.3389/fped.2023.1269560)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:aqlVkmm33-oC) 
 
@@ -19,15 +28,21 @@ author_profile: true
 
 * Barreno, P., Parras, J., & Zazo, S. (2023). An efficient underwater navigation method using MPC with unknown kinematics and non-linear disturbances. Journal of Marine Science and Engineering. 2023, 11, 710. [DOI](https://doi.org/10.3390/jmse11040710)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:M3ejUd6NZC8C)  [Code](https://github.com/jparras/mpc_linear)
 
+## 2022
 
 * Parras, J., Almodóvar, A., Apellániz, P.A., & Zazo, S. (2022). Inverse Reinforcement Learning: a New Framework to Mitigate an Intelligent Backoff Attack. IEEE Internet of Things Journal, vol 9, no. 24, pp.24790-24799, December 2022. [DOI](https://doi.org/10.1109/JIOT.2022.3194694)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:4TOpqqG69KYC)  [Code](https://github.com/jparras/irl_attack)
 
+* Largo, M. J. C., & Murillo, J. L. B. (2022). Acercando los autocodificadores variacionales al gran público. Revista de acústica, 53, 3-11. [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=en&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:roLk4NBRz8UC)
 
 * Pérez, M., Parras, J., Zazo, S., Álvarez, I. A. P. & Lluch, M. d. M. S. (2022). Using a Deep Learning Algorithm to Improve the Results Obtained in the Recognition of Vessels Size and Trajectory Patterns in Shallow Areas Based on Magnetic Field Measurements Using Fluxgate Sensors. IEEE Transactions on Intelligent Transportation Systems, vol. 23, no. 4, pp. 3472-3481, April 2022. [DOI](https://doi.org/10.1109/TITS.2020.3036906)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:3fE2CSJIrl8C)
 
+* Cámara, M., & Blanco, J. L. (2022). Expanding the Frontiers of Web Audio With Autoencoders and JavaScript. Journal of the Audio Engineering Society, 70(11), 979-989. [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=en&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:_FxGoFyzp5QC)
+
+* Cámara, M., & Blanco, J. L. (2022). Phase-Aware Transformations in Variational Autoencoders for Audio Effects. Journal of the Audio Engineering Society, 70(9), 731-741. [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=en&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:ufrVoPGSRksC)
 
 * Parras, J., Apellániz, P.A., & Zazo, S. (2022). An online learning algorithm to play discounted repeated games in wireless networks. Engineering Applications of Artificial Intelligence, 107, 104520. [DOI](https://doi.org/10.1016/j.engappai.2021.104520)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:YOwf2qJgpHMC)  [Code](https://github.com/jparras/lewis)
 
+## 2021
 
 * Parras, J., Apellániz, P.A., & Zazo, S. (2021). Deep Learning for Efficient and Optimal Motion Planning for AUVs with Disturbances. Sensors 21(15), 5011. [DOI](https://doi.org/10.3390/s21155011)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:Zph67rFs4hoC)  [Code](https://github.com/jparras/dla_navigation)
 
@@ -37,6 +52,7 @@ author_profile: true
 
 * Parras, J., & Zazo, S. (2021, June). Robust Deep Reinforcement Learning for underwater navigation with unknown disturbances. In 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) (pp. 3440-3444). IEEE. [DOI](https://doi.org/10.1109/ICASSP39728.2021.9414937)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:kNdYIx-mwKoC)  [Code](https://github.com/jparras/robust_drl_navigation)
 
+## 2020
 
 * Parras, J., & Zazo, S. (2020). The Threat of Intelligent Attackers Using Deep Learning: The Backoff Attack Case. In Deep Learning Strategies for Security Enhancement in Wireless Sensor Networks (pp. 110-133). IGI Global. [DOI](https://doi.org/10.4018/978-1-7998-5068-7.ch006) [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:MXK_kJrjxJIC)
 
@@ -48,6 +64,7 @@ author_profile: true
 
 * Parras, J., and Zazo, S. (2020). A distributed algorithm to obtain repeated games equilibria with discounting.  Applied Mathematics and Computation, 367 (2020): 124785. [DOI](https://doi.org/10.1016/j.amc.2019.124785)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:UebtZRa9Y70C)  [Code](https://github.com/jparras/ca_algorithm)
 
+## 2019
 
 * Parras, J., & Zazo, S.  (2019). Repeated game analysis of a CSMA/CA network under a backoff attack. Sensors 19(24), 5393. [DOI](https://doi.org/10.3390/s19245393)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:5nxA0vEk-isC)  [Code](https://github.com/jparras/rga_csma)
 
@@ -69,12 +86,15 @@ author_profile: true
 
 * Parras, J., & Zazo, S. (2019). Learning attack mechanisms in Wireless Sensor Networks using Markov Decision Processes. Expert Systems with Applications, 122, 376-387. [DOI](https://doi.org/10.1016/j.eswa.2019.01.023)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:YsMSGLbcyi4C)  [Code](https://github.com/jparras/wsn_attack_mdp)
 
+## 2018
 
 * Parras, J., & Zazo, S. (2018). Wireless Networks under a Backoff Attack: A Game Theoretical Perspective. Sensors 2018, 18(2), 404. [DOI](https://doi.org/10.3390/s18020404)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:_FxGoFyzp5QC)  [Code](https://github.com/jparras/backoff_attack_csma)
 
+## 2017
 
 * Parras, J., Zazo, S., Del Val, J., Zazo, J., & Macua, S. V. (2017). Pursuit-evasion games: a tractable framework for antijamming games in aerial attacks. EURASIP Journal on Wireless Communications and Networking, 2017(1), 69. [DOI](https://doi.org/10.1186/s13638-017-0857-8)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:LkGwnXOMwfcC)  [Code](https://github.com/jparras/pursuit_evasion)
 
+## 2016
 
 * del Val, J., Zazo, S., Macua, S. V., Zazo, J., & Parras, J. (2016, August). Optimal attack and defence of large scale networks using mean field theory. In 24th European Signal Processing Conference (EUSIPCO), 2016 (pp. 973-977). IEEE. [DOI](https://doi.org/10.1109/EUSIPCO.2016.7760393)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:W7OEmFMy1HYC)
 
