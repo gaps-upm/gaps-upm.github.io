@@ -9,7 +9,7 @@ author_profile: true
 
 * Patricia Alonso de Apellániz  [UPM](https://portalcientifico.upm.es/es/ipublic/researcher/332427)  [patricia.alonsod@upm.es](mailto:patricia.alonsod@upm.es)
 * José Luis Blanco Murillo  [UPM](https://portalcientifico.upm.es/es/ipublic/researcher/309256)  [Scholar](https://scholar.google.es/citations?user=J-zt09cAAAAJ&hl=es&oi=ao)  [jl.blanco@upm.es](mailto:jl.blanco@upm.es)
-* Mateo José Cámara Largo  [UPM](https://portalcientifico.upm.es/es/ipublic/researcher/310341)  [mateo.camara@upm.es](mailto:mateo.camara@upm.es)
+* Mateo José Cámara Largo  [UPM](https://portalcientifico.upm.es/es/ipublic/researcher/310341) [Web](www.mateocamara.com) [Scholar](https://scholar.google.es/citations?hl=en&user=muINbiEAAAAJ&view_op=list_works&sortby=pubdate) [mateo.camara@upm.es](mailto:mateo.camara@upm.es)
 * Francisco Javier Casajús de Quirós  [UPM](https://portalcientifico.upm.es/es/ipublic/researcher/302866)  [javier.casajus@upm.es](mailto:javier.casajus@upm.es)
 * Miguel Ángel García Izquierdo  [UPM](https://portalcientifico.upm.es/es/ipublic/researcher/304656)  [miguelangel.garcia.izquierdo@upm.es](mailto:miguelangel.garcia.izquierdo@upm.es)
 * Mariano García Otero  [UPM](https://portalcientifico.upm.es/es/ipublic/researcher/302874)  [mariano.garciao@upm.es](mariano.garciao@upm.es)
@@ -25,4 +25,7 @@ author_profile: true
 * Alejandro Almodóvar Espeso
 * Luis Fernando Fernández Salvador
 * Ana Jiménez Bejarano [ana.jimenezb@upm.es](mailto:ana.jimenezb@upm.es)
+* Fernando Marcos Macías
+* Rodrigo Tamaki Moreno
+* Virginia Yagüe Jiménez
 
