@@ -25,6 +25,7 @@ author_profile: true
 * Alejandro Almodóvar Espeso
 * Luis Fernando Fernández Salvador
 * Ana Jiménez Bejarano [ana.jimenezb@upm.es](mailto:ana.jimenezb@upm.es)
+* Santiago Loza Morcillo
 * Fernando Marcos Macías
 * Rodrigo Tamaki Moreno
 * Virginia Yagüe Jiménez
