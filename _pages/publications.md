@@ -8,9 +8,9 @@ author_profile: true
 <style>
 .filter-section {
   margin: 30px 0;
-  padding: 20px;
+  padding: 5px;
   background: #f8f9fa;
-  border-radius: 8px;
+  border-radius: 2px;
 }
 .filter-buttons {
   display: flex;
@@ -58,28 +58,26 @@ author_profile: true
   <h3>Filter by Researcher:</h3>
   <div class="filter-buttons">
     <button class="filter-btn active" data-author="all">All Publications</button>
-    <button class="filter-btn" data-author="almodovar">Almodóvar, A.</button>
-    <button class="filter-btn" data-author="apellaniz">Apellániz, P. A.</button>
-    <button class="filter-btn" data-author="arroyo">Arroyo Galende, B.</button>
-    <button class="filter-btn" data-author="blanco">Blanco-Murillo, J. L.</button>
-    <button class="filter-btn" data-author="camara">Cámara, M.</button>
-    <button class="filter-btn" data-author="daza"> Daza, M. P.</button>
-    <button class="filter-btn" data-author="espinoza">Espinoza-Cuadros, F. M.</button>
+    <button class="filter-btn" data-author="almodovar">Almodóvar Espeso, A.</button>
+    <button class="filter-btn" data-author="apellaniz">Alonso Apellániz, P..</button>
+    <button class="filter-btn" data-author="blanco">Blanco Murillo, J. L.</button>
+    <button class="filter-btn" data-author="camara">Cámara Largo, M.</button>
+    <button class="filter-btn" data-author="daza"> Daza Llín, M. P.</button>
     <button class="filter-btn" data-author="fernandez">Fernández Salvador, L. F.</button>
     <button class="filter-btn" data-author="gutierrez-navarro">Gutiérrez Navarro, J.</button>
-    <button class="filter-btn" data-author="hernandez">Hernández-Gómez, L. A.</button>
-    <button class="filter-btn" data-author="loza-morcillo">Loza-Morcillo, S.</button>
-    <button class="filter-btn" data-author="marcos">Marcos, F.</button>
-    <button class="filter-btn" data-author="parras">Parras, J.</button>
-    <button class="filter-btn" data-author="yague">Yagüe-Jiménez, V.</button>
-    <button class="filter-btn" data-author="zazo">Zazo, S.</button>
+    <button class="filter-btn" data-author="hernandez">Hernández Gómez, L. A.</button>
+    <button class="filter-btn" data-author="loza-morcillo">Loza Morcillo, S.</button>
+    <button class="filter-btn" data-author="marcos">Marcos Macías, F.</button>
+    <button class="filter-btn" data-author="parras">Parras Moral, J.</button>
+    <button class="filter-btn" data-author="yague">Yagüe Jiménez, V.</button>
+    <button class="filter-btn" data-author="zazo">Zazo Bello, S.</button>
   </div>
 </div>
 
 ## 2025
 <div class="publication-item" data-authors="almodovar,parras,zazo" markdown="1">
 * Almodóvar, A., Javaloy, A., Parras, J., Zazo, S., & Valera, I. (2025). **DeCaFlow: A Deconfounding Causal Generative Model.** *Advances in Neural Information Processing Systems, 38, SPOTLIGHT.* <br>
-[PDF](https://arxiv.org/pdf/2503.15114)| [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=3rVo9hUAAAAJ&sortby=pubdate&citation_for_view=3rVo9hUAAAAJ:zYLM7Y9cAGgC) | [Code](https://github.com/aalmodovares/DeCaFlow)
+[PDF](https://arxiv.org/pdf/2503.15114) | [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=3rVo9hUAAAAJ&sortby=pubdate&citation_for_view=3rVo9hUAAAAJ:zYLM7Y9cAGgC) | [Code](https://github.com/aalmodovares/DeCaFlow)
 </div>
 
 <div class="publication-item" data-authors="fernandez,almodovar,parras,zazo" markdown="1">
