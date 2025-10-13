@@ -6,103 +6,140 @@ author_profile: true
 ---
 
 ## 2025
+* Almodóvar, A., Javaloy, A., Parras, J., Zazo, S., & Valera, I. (2025). **DeCaFlow: A Deconfounding Causal Generative Model.** *Advances in Neural Information Processing Systems, 38, SPOTLIGHT.* <br>
+[PDF](https://arxiv.org/pdf/2503.15114)| [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=3rVo9hUAAAAJ&sortby=pubdate&citation_for_view=3rVo9hUAAAAJ:zYLM7Y9cAGgC) | [Code](https://github.com/aalmodovares/DeCaFlow)
 
-* Loza-Morcillo, S., & Blanco-Murillo, J. L. (2025). Side Effects of Triangular-Grid Geometry and Orientation in Hierarchical Regular Subarray-Based Large-Scale Digital Antenna Arrays. Electronics, 14(17), 3505.
+*  Fernández Salvador, L. F., Vilallonga Tejela, B., Almodóvar, A., Parras, J. & Zazo, S. (2025). **Attentive Neural Processes for Few-Shot Learning Anomaly-Based Vessel Localization Using Magnetic Sensor Data.** *Journal of Marine Science and Engineering.* <br>
+[DOI](https://www.mdpi.com/2077-1312/13/9/1627) | [Scholar](https://scholar.google.com/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:k_IJM867U9cC) | [Code](https://github.com/FernandoFS96/tesis/tree/c42b6b10f03a7c8f9f352fe8f8c7cae55069ab5a/magnetic-localization)
 
-* Cámara, M., Gutiérrez, J., Daza, M. P., & Blanco, J. L. (2025). Open-Source System for Multilingual Translation and Cloned Speech Synthesis. EuroNoise Málaga 2025.
+* Apellániz, P. A., Arroyo Galende, B., Jiménez, A., Parras, J. & Zazo, S. (2025). **Advancing Cancer Research with Synthetic Data Generation in Low-Data Scenarios.** *IEEE Journal of Biomedical and Health Informatics.*<br>
+[DOI](https://ieeexplore.ieee.org/document/11112545) | [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:TFP_iSt0sucC) | [Code](https://github.com/Patricia-A-Apellaniz/low_sample_data_generator)
 
-* Cámara, M., Blanco, J. L., & Reiss, J. D. (2025). Parameter optimisation for a physical model of the vocal system. EURASIP Journal on Audio, Speech, and Music Processing, 2025(1), 27.
+* Apellániz, P. A., Jiménez, A., Arroyo Galende, B., Parras, J. & Zazo, S. (2025). **Artificial inductive bias for synthetic tabular data generation in data-scarce scenarios.** *Neurocomputing.*<br>
+[DOI](https://www.sciencedirect.com/science/article/pii/S0925231225017941?via%3Dihub) | [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:ZeXyd9-uunAC) | [Code](https://github.com/Patricia-A-Apellaniz/low_sample_data_generator)
+
+* Arroyo Galende, B., Apellániz, P. A., Parras, J., Zazo, S. & Uribe, S. (2025). **Membership Inference Attacks and Differential Privacy: A Study within the context of Generative Models.** *IEEE Open Journal of the Computer Society.*<br>
+[DOI](https://ieeexplore.ieee.org/document/11008817) | [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:j3f4tGmQtD8C) | [Code](https://github.com/BorjaArroyo/mia-theoretical-foundations)
+
+* Apellániz, P. A., Parras, J., & Zazo, S. (2025). **Improving Synthetic Data Generation Through Federated Learning in Scarce and Heterogeneous Data Scenarios.** *Big Data and Cognitive Computing.*<br>
+[DOI](https://www.mdpi.com/2504-2289/9/2/18) | [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:e5wmG9Sq2KIC) | [Code](https://github.com/Patricia-A-Apellaniz/fed_vae)
+
+* Loza-Morcillo, S., & Blanco-Murillo, J. L. (2025).**Side Effects of Triangular-Grid Geometry and Orientation in Hierarchical Regular Subarray-Based Large-Scale Digital Antenna Arrays.** *Electronics, 14(17), 3505.*<br>
+[DOI](https://www.mdpi.com/2079-9292/14/17/3505) | [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=J-zt09cAAAAJ&sortby=pubdate&citation_for_view=J-zt09cAAAAJ:HJSXoJQnj-YC)
+
+* Cámara, M., Gutiérrez, J., Daza, M. P., & Blanco, J. L. (2025). **Open-Source System for Multilingual Translation and Cloned Speech Synthesis.** *EuroNoise Málaga 2025.*<br>
+[PDF](https://arxiv.org/pdf/2507.02530) | [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:KlAtU1dfN6UC)
+
+* Cámara, M., Blanco, J. L., & Reiss, J. D. (2025). **Parameter optimisation for a physical model of the vocal system.** *EURASIP Journal on Audio, Speech, and Music Processing, 2025(1), 27.*<br>
+[DOI](https://asmp-eurasipjournals.springeropen.com/articles/10.1186/s13636-025-00414-5) | [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:Zph67rFs4hoC)
 
 ## 2024
 
-* Fernández-Castañón, R., Espinoza-Cuadros, F. M., Perero-Codosero, J. M., Sancho-Lozano, E., & Hernández-Gómez, L. A. (2024, June). Can Large Sound Event Detection Models Be Accurately Adapted to Specific Acoustic Scenarios?. In International Symposium on Distributed Computing and Artificial Intelligence (pp. 36-45). Cham: Springer Nature Switzerland.
+* Fernández-Castañón, R., Espinoza-Cuadros, F. M., Perero-Codosero, J. M., Sancho-Lozano, E., & Hernández-Gómez, L. A. (2024, June). **Can Large Sound Event Detection Models Be Accurately Adapted to Specific Acoustic Scenarios?.** *In International Symposium on Distributed Computing and Artificial Intelligence (pp. 36-45). Cham: Springer Nature Switzerland.*
 
-* Gutiérrez-Navarro, J., Mora-Sánchez, Á., Rodríguez-Jiménez, S., & Blanco-Murillo, J. L. (2024, June). AI-Boosted Video Annotation: Exploring Pre-Labeling with Cross-Modalities. In International Symposium on Distributed Computing and Artificial Intelligence (pp. 5-15). Cham: Springer Nature Switzerland.
+* Gutiérrez-Navarro, J., Mora-Sánchez, Á., Rodríguez-Jiménez, S., & Blanco-Murillo, J. L. (2024, June). **AI-Boosted Video Annotation: Exploring Pre-Labeling with Cross-Modalities.** *In International Symposium on Distributed Computing and Artificial Intelligence (pp. 5-15). Cham: Springer Nature Switzerland.*
 
-* Cámara, M., Marcos, F., & Blanco, J. L. (2024). Decoding vocal articulations from acoustic latent representations. AES Europe Madrid.
+* Cámara, M., Marcos, F., & Blanco, J. L. (2024). **Decoding vocal articulations from acoustic latent representations.** *AES Europe Madrid.*
 
-* Sánchez, M., Fernández, L., Arias, J., Cámara, M., Comini, G., Gabrys, A., ... & Hernández, L. A. (2024). Del Visual al Auditivo: Sonorización de Escenas Guiada por Imagen. arXiv preprint arXiv:2402.01385.
+* Sánchez, M., Fernández, L., Arias, J., Cámara, M., Comini, G., Gabrys, A., ... & Hernández, L. A. (2024). **Del Visual al Auditivo: Sonorización de Escenas Guiada por Imagen.** *arXiv preprint arXiv:2402.01385.*
 
-* Cámara, M., & Blanco, J. L. (2024). Biologically Informed Neural Speech Synthesis. In Proc. IberSPEECH 2024 (pp. 261-265).
+* Cámara, M., & Blanco, J. L. (2024). **Biologically Informed Neural Speech Synthesis.** *In Proc. IberSPEECH 2024 (pp. 261-265).*
 
 ## 2023
 
-* Coronel-Gaviro, J., Yagüe-Jiménez, V., & Blanco-Murillo, J. L. (2023). Radiofrequency Absorbance as a Novel Concentration Indicator in Sucrose Aqueous Solutions. Ingeniería e Investigación, 43(1), 1.
+* Coronel-Gaviro, J., Yagüe-Jiménez, V., & Blanco-Murillo, J. L. (2023). **Radiofrequency Absorbance as a Novel Concentration Indicator in Sucrose Aqueous Solutions.** *Ingeniería e Investigación, 43(1), 1.*
 
-* Cámara, M., & Blanco, J. L. (2023). FOLEY-VAE: Generaci\'on de efectos de audio para cine con inteligencia artificial. Congreso Español de Acústica (TECNIACÚSTICA). [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=en&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:5nxA0vEk-isC)
+* Cámara, M., & Blanco, J. L. (2023). **FOLEY-VAE: Generaci\'on de efectos de audio para cine con inteligencia artificial.** *Congreso Español de Acústica (TECNIACÚSTICA).* <br>
+[Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=en&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:5nxA0vEk-isC)
 
-* Marcos, F., Tamaki, R., Cámara, M., Yagüe, V., & Blanco, J. L. (2023). IA Para el Mantenimiento Predictivo en Canteras: Modelado. Congreso Español de Acústica (TECNIACÚSTICA). [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=en&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:8k81kl-MbHgC)
+* Marcos, F., Tamaki, R., Cámara, M., Yagüe, V., & Blanco, J. L. (2023). **IA Para el Mantenimiento Predictivo en Canteras: Modelado.** *Congreso Español de Acústica (TECNIACÚSTICA).* <br> 
+[Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=en&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:8k81kl-MbHgC)
 
-* Almodóvar, A., Parras, J., & Zazo, S. (2023, October). Federated learning for causal inference using deep generative disentangled models. In 1st Workshop on Deep Generative Models for Health, NeurIPS 2023. [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:Wp0gIr-vW9MC)  [Code](https://github.com/aalmodovares/federated_tedvae)
-
-* Cámara, M., Xu, Z., Zong, Y., Blanco, J. L., & Reiss, J. D. (2023). Optimization Techniques for a Physical Model of Human Vocalisation. Digital Audio Effects Conference (DAFx). [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=en&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:0EnyYjriUFMC)
-
-* Südholt, D., Cámara, M., Xu, Z., & Reiss, J. D. (2023). Vocal Tract Area Estimation by Gradient Descent. Digital Audio Effects Conference (DAFx). [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=en&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:hqOjcs7Dif8C)
-
-* Velasco, Pablo, et al (2023). The Relapsed Acute Lymphoblastic Leukemia Network (ReALLNet): A multidisciplinary project from the Spanish Society of Pediatric Hematology and Oncology (SEHOP). Frontiers in Pediatrics. [DOI](https://doi.org/10.3389/fped.2023.1269560)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:aqlVkmm33-oC) 
+* Almodóvar, A., Parras, J., & Zazo, S. (2023, October). **Federated learning for causal inference using deep generative disentangled models.** *In 1st Workshop on Deep Generative Models for Health, NeurIPS 2023.*<br> 
+[Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:Wp0gIr-vW9MC) | [Code](https://github.com/aalmodovares/federated_tedvae)
 
 
-* Parras, J., & Zazo, S. (2023, September). Negotiation strategies to improve distributed power allocation for self-organizing heterogeneous networks. In 2023 31st European Signal Processing Conference (EUSIPCO) (pp. 1743-1747). IEEE. [DOI](https://doi.org/10.23919/EUSIPCO58844.2023.10290042)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:4DMP91E08xMC)  [Code](https://github.com/jparras/ca_eusipco)
+* Cámara, M., Xu, Z., Zong, Y., Blanco, J. L., & Reiss, J. D. (2023). **Optimization Techniques for a Physical Model of Human Vocalisation.** *Digital Audio Effects Conference (DAFx).*<br>
+[Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=en&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:0EnyYjriUFMC)
+
+* Südholt, D., Cámara, M., Xu, Z., & Reiss, J. D. (2023). **Vocal Tract Area Estimation by Gradient Descent.** *Digital Audio Effects Conference (DAFx).* <br> 
+[Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=en&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:hqOjcs7Dif8C)
+
+* Velasco, Pablo, et al (2023). **The Relapsed Acute Lymphoblastic Leukemia Network (ReALLNet): A multidisciplinary project from the Spanish Society of Pediatric Hematology and Oncology (SEHOP).** *Frontiers in Pediatrics.* <br> 
+[DOI](https://doi.org/10.3389/fped.2023.1269560) | [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:aqlVkmm33-oC) 
 
 
-* Sanz-Nogales, J.M, Parras, J., & Zazo, S. (2023). DDQN-based optimal targeted therapy with reversible inhibitors to combat the Warburg effect. Mathematical biosciences, 363, 109044. [DOI](https://doi.org/10.1016/j.mbs.2023.109044)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:qxL8FJ1GzNcC)  [Code](https://github.com/jsanno/ddqn)
+* Parras, J., & Zazo, S. (2023, September). **Negotiation strategies to improve distributed power allocation for self-organizing heterogeneous networks.** *In 2023 31st European Signal Processing Conference (EUSIPCO) (pp. 1743-1747). IEEE.* <br> 
+[DOI](https://doi.org/10.23919/EUSIPCO58844.2023.10290042) | [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:4DMP91E08xMC) | [Code](https://github.com/jparras/ca_eusipco)
 
 
-* Barreno, P., Parras, J., & Zazo, S. (2023). An efficient underwater navigation method using MPC with unknown kinematics and non-linear disturbances. Journal of Marine Science and Engineering. 2023, 11, 710. [DOI](https://doi.org/10.3390/jmse11040710)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:M3ejUd6NZC8C)  [Code](https://github.com/jparras/mpc_linear)
+* Sanz-Nogales, J.M, Parras, J., & Zazo, S. (2023). **DDQN-based optimal targeted therapy with reversible inhibitors to combat the Warburg effect.** *Mathematical biosciences, 363, 109044.* <br> 
+[DOI](https://doi.org/10.1016/j.mbs.2023.109044) | [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:qxL8FJ1GzNcC) | [Code](https://github.com/jsanno/ddqn)
+
+
+* Barreno, P., Parras, J., & Zazo, S. (2023). **An efficient underwater navigation method using MPC with unknown kinematics and non-linear disturbances.** *Journal of Marine Science and Engineering. 2023, 11, 710.* <br> 
+[DOI](https://doi.org/10.3390/jmse11040710) | [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:M3ejUd6NZC8C) | [Code](https://github.com/jparras/mpc_linear)
 
 ## 2022
 
-* Perero-Codosero, J. M., Espinoza-Cuadros, F. M., & Hernández-Gómez, L. A. (2022). X-vector anonymization using autoencoders and adversarial training for preserving speech privacy. Computer Speech & Language, 74, 101351.
+* Perero-Codosero, J. M., Espinoza-Cuadros, F. M., & Hernández-Gómez, L. A. (2022). **X-vector anonymization using autoencoders and adversarial training for preserving speech privacy.** *Computer Speech & Language, 74, 101351.*
 
-* Perero-Codosero, J. M., Espinoza-Cuadros, F. M., & Hernández-Gómez, L. A. (2022). A comparison of hybrid and end-to-end ASR systems for the IberSpeech-RTVE 2020 speech-to-text transcription challenge. Applied Sciences, 12(2), 903.
+* Perero-Codosero, J. M., Espinoza-Cuadros, F. M., & Hernández-Gómez, L. A. (2022). **A comparison of hybrid and end-to-end ASR systems for the IberSpeech-RTVE 2020 speech-to-text transcription challenge.** *Applied Sciences, 12(2), 903.*
 
-* Blanco-Murillo, J. L., Yagüe-Jiménez, V., Coronel-Gaviro, J., & Quirós, F. C. (2022). A model-informed, single-input method for amplifiers assessment from pruned Volterra kernels collapsed projection. Measurement, 193, 110856.
+* Blanco-Murillo, J. L., Yagüe-Jiménez, V., Coronel-Gaviro, J., & Quirós, F. C. (2022). **A model-informed, single-input method for amplifiers assessment from pruned Volterra kernels collapsed projection.** *Measurement, 193, 110856.*
 
-* Parras, J., Almodóvar, A., Apellániz, P.A., & Zazo, S. (2022). Inverse Reinforcement Learning: a New Framework to Mitigate an Intelligent Backoff Attack. IEEE Internet of Things Journal, vol 9, no. 24, pp.24790-24799, December 2022. [DOI](https://doi.org/10.1109/JIOT.2022.3194694)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:4TOpqqG69KYC)  [Code](https://github.com/jparras/irl_attack)
+* Parras, J., Almodóvar, A., Apellániz, P.A., & Zazo, S. (2022). **Inverse Reinforcement Learning: a New Framework to Mitigate an Intelligent Backoff Attack.** *IEEE Internet of Things Journal, vol 9, no. 24, pp.24790-24799, December 2022.* <br> 
+[DOI](https://doi.org/10.1109/JIOT.2022.3194694) | [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:4TOpqqG69KYC) | [Code](https://github.com/jparras/irl_attack)
 
-* Cámara M., & Murillo, J. L. B. (2022). Acercando los autocodificadores variacionales al gran público. Revista de acústica, 53, 3-11. [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=en&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:roLk4NBRz8UC)
+* Cámara M., & Murillo, J. L. B. (2022). **Acercando los autocodificadores variacionales al gran público.** *Revista de acústica, 53, 3-11.* <br>
+[Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=en&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:roLk4NBRz8UC)
 
-* Pérez, M., Parras, J., Zazo, S., Álvarez, I. A. P. & Lluch, M. d. M. S. (2022). Using a Deep Learning Algorithm to Improve the Results Obtained in the Recognition of Vessels Size and Trajectory Patterns in Shallow Areas Based on Magnetic Field Measurements Using Fluxgate Sensors. IEEE Transactions on Intelligent Transportation Systems, vol. 23, no. 4, pp. 3472-3481, April 2022. [DOI](https://doi.org/10.1109/TITS.2020.3036906)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:3fE2CSJIrl8C)
+* Pérez, M., Parras, J., Zazo, S., Álvarez, I. A. P. & Lluch, M. d. M. S. (2022). **Using a Deep Learning Algorithm to Improve the Results Obtained in the Recognition of Vessels Size and Trajectory Patterns in Shallow Areas Based on Magnetic Field Measurements Using Fluxgate Sensors.** *IEEE Transactions on Intelligent Transportation Systems, vol. 23, no. 4, pp. 3472-3481, April 2022.* <br> 
+[DOI](https://doi.org/10.1109/TITS.2020.3036906) | [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:3fE2CSJIrl8C)
 
-* Cámara, M., & Blanco, J. L. (2022). Expanding the Frontiers of Web Audio With Autoencoders and JavaScript. Journal of the Audio Engineering Society, 70(11), 979-989. [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=en&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:_FxGoFyzp5QC)
+* Cámara, M., & Blanco, J. L. (2022). **Expanding the Frontiers of Web Audio With Autoencoders and JavaScript.** *Journal of the Audio Engineering Society, 70(11), 979-989.* <br> [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=en&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:_FxGoFyzp5QC)
 
-* Cámara, M., & Blanco, J. L. (2022). Phase-Aware Transformations in Variational Autoencoders for Audio Effects. Journal of the Audio Engineering Society, 70(9), 731-741. [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=en&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:ufrVoPGSRksC)
+* Cámara, M., & Blanco, J. L. (2022). **Phase-Aware Transformations in Variational Autoencoders for Audio Effects.** *Journal of the Audio Engineering Society, 70(9), 731-741.* <br> [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=en&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:ufrVoPGSRksC)
 
-* Parras, J., Apellániz, P.A., & Zazo, S. (2022). An online learning algorithm to play discounted repeated games in wireless networks. Engineering Applications of Artificial Intelligence, 107, 104520. [DOI](https://doi.org/10.1016/j.engappai.2021.104520)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:YOwf2qJgpHMC)  [Code](https://github.com/jparras/lewis)
+* Parras, J., Apellániz, P.A., & Zazo, S. (2022). **An online learning algorithm to play discounted repeated games in wireless networks.** *Engineering Applications of Artificial Intelligence, 107, 104520.* <br> 
+[DOI](https://doi.org/10.1016/j.engappai.2021.104520) | [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:YOwf2qJgpHMC) | [Code](https://github.com/jparras/lewis)
 
 ## 2021
 
-* González, I., Luzuriaga, J., Valdivieso, A., Frutos, J., López, J., Hernández, L., ... & Earl, J. (2021). Low-intensity ultrasound inhibits the long-term migration of cancer cells.
+* González, I., Luzuriaga, J., Valdivieso, A., Frutos, J., López, J., Hernández, L., ... & Earl, J. (2021). **Low-intensity ultrasound inhibits the long-term migration of cancer cells.**
 
-* Cardoso, L., Gómez, L., Alonso, P., Pena, S., Herrera, M., Valencia, P., ... & Diezhandino, P. (2021). PO-1285 Postoperative high dose rate brachytherapy in endometrial cancer: three versus six fractions. Radiotherapy and Oncology, 161, S1059.
+* Cardoso, L., Gómez, L., Alonso, P., Pena, S., Herrera, M., Valencia, P., ... & Diezhandino, P. (2021). **PO-1285 Postoperative high dose rate brachytherapy in endometrial cancer: three versus six fractions.** *Radiotherapy and Oncology, 161, S1059.*
 
-* Bafundo, K. W., Gomez, L., Lumpkins, B., Mathis, G. F., McNaughton, J. L., & Duerr, I. (2021). Concurrent use of saponins and live coccidiosis vaccines: the influence of a quillaja and yucca combination on anticoccidial effects and performance results of coccidia-vaccinated broilers. Poultry Science, 100(3), 100905.
+* Bafundo, K. W., Gomez, L., Lumpkins, B., Mathis, G. F., McNaughton, J. L., & Duerr, I. (2021). **Concurrent use of saponins and live coccidiosis vaccines: the influence of a quillaja and yucca combination on anticoccidial effects and performance results of coccidia-vaccinated broilers.** *Poultry Science, 100(3), 100905.*
 
-* Perero-Codosero, J. M., Espinoza-Cuadros, F. M., & Gómez, L. A. H. (2021, March). Sigma-UPM ASR Systems for the IberSpeech-RTVE 2020 Speech-to-Text Transcription Challenge. In IberSPEECH.
+* Perero-Codosero, J. M., Espinoza-Cuadros, F. M., & Gómez, L. A. H. (2021, March). **Sigma-UPM ASR Systems for the IberSpeech-RTVE 2020 Speech-to-Text Transcription Challenge.** *In IberSPEECH.*
 
-* Perry, C. A., Yates, C. J., Flury, M., & Hernandez, L. (2021). EFFECTS OF SHORT DURATION ACTIVE AND PASSIVE RECOVERY ON BLOOD LACTATE ACCUMULATION DURING HIGH INTENSITY WIND SPRINTS IN COLLEGE AGED STUDENTS. Sport & Health-International Journal of Sport & Health, 8.
+* Perry, C. A., Yates, C. J., Flury, M., & Hernandez, L. (2021). **EFFECTS OF SHORT DURATION ACTIVE AND PASSIVE RECOVERY ON BLOOD LACTATE ACCUMULATION DURING HIGH INTENSITY WIND SPRINTS IN COLLEGE AGED STUDENTS.** *Sport & Health-International Journal of Sport & Health, 8.*
 
-* Coronel-Gaviro, J., Yagüe-Jiménez, V., & Blanco-Murillo, J. L. (2021). Nonintrusive honey fraud detection and quantification based on differential radiofrequency absorbance analysis. Journal of Food Engineering, 295, 110448.
+* Coronel-Gaviro, J., Yagüe-Jiménez, V., & Blanco-Murillo, J. L. (2021). **Nonintrusive honey fraud detection and quantification based on differential radiofrequency absorbance analysis.** *Journal of Food Engineering, 295, 110448.*
 
-* Parras, J., Apellániz, P.A., & Zazo, S. (2021). Deep Learning for Efficient and Optimal Motion Planning for AUVs with Disturbances. Sensors 21(15), 5011. [DOI](https://doi.org/10.3390/s21155011)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:Zph67rFs4hoC)  [Code](https://github.com/jparras/dla_navigation)
+* Parras, J., Apellániz, P.A., & Zazo, S. (2021). **Deep Learning for Efficient and Optimal Motion Planning for AUVs with Disturbances.** *Sensors 21(15), 5011.* <br> 
+[DOI](https://doi.org/10.3390/s21155011) | [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:Zph67rFs4hoC) | [Code](https://github.com/jparras/dla_navigation)
 
-* Parras, J., Hüttenrauch, M., Zazo, S., & Neumann, G. (2021). Deep Reinforcement Learning for Attacking Wireless Sensor Networks. Sensors, 21(12), 4060. [DOI](https://doi.org/10.3390/s21124060)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:KlAtU1dfN6UC)  [Code](https://github.com/jparras/dla/tree/master)
+* Parras, J., Hüttenrauch, M., Zazo, S., & Neumann, G. (2021). **Deep Reinforcement Learning for Attacking Wireless Sensor Networks.** *Sensors, 21(12), 4060.* <br> 
+[DOI](https://doi.org/10.3390/s21124060) | [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:KlAtU1dfN6UC) | [Code](https://github.com/jparras/dla/tree/master)
 
-* Parras, J., & Zazo, S. (2021, June). Robust Deep Reinforcement Learning for underwater navigation with unknown disturbances. In 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) (pp. 3440-3444). IEEE. [DOI](https://doi.org/10.1109/ICASSP39728.2021.9414937)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:kNdYIx-mwKoC)  [Code](https://github.com/jparras/robust_drl_navigation)
-
+* Parras, J., & Zazo, S. (2021, June). **Robust Deep Reinforcement Learning for underwater navigation with unknown disturbances.** *In 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) (pp. 3440-3444). IEEE.* <br> [DOI](https://doi.org/10.1109/ICASSP39728.2021.9414937) | [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:kNdYIx-mwKoC) | [Code](https://github.com/jparras/robust_drl_navigation)
+*
 ## 2020
 
-* Espinoza-Cuadros, F. M., Perero-Codosero, J. M., Antón-Martín, J., & Hernández-Gómez, L. A. (2020). Speaker de-identification system using autoencoders and adversarial training. arXiv preprint arXiv:2011.04696.
+* Espinoza-Cuadros, F. M., Perero-Codosero, J. M., Antón-Martín, J., & Hernández-Gómez, L. A. (2020). **Speaker de-identification system using autoencoders and adversarial training.** *arXiv preprint arXiv:2011.04696.*
 
-* Deep, S. T. S. U. Audio-Visual Emotion Recognition System for Variable Length Spatio-Temporal Samples Using Deep Transfer-Learning. In Business Information Systems (p. 434).
+* Deep, S. T. S. U. **Audio-Visual Emotion Recognition System for Variable Length Spatio-Temporal Samples Using Deep Transfer-Learning.** *In Business Information Systems (p. 434).*
 
-* Parras, J., & Zazo, S. (2020). The Threat of Intelligent Attackers Using Deep Learning: The Backoff Attack Case. In Deep Learning Strategies for Security Enhancement in Wireless Sensor Networks (pp. 110-133). IGI Global. [DOI](https://doi.org/10.4018/978-1-7998-5068-7.ch006) [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:MXK_kJrjxJIC)
+* Parras, J., & Zazo, S. (2020). **The Threat of Intelligent Attackers Using Deep Learning: The Backoff Attack Case.** *In Deep Learning Strategies for Security Enhancement in Wireless Sensor Networks (pp. 110-133). IGI Global.* <br>
+[DOI](https://doi.org/10.4018/978-1-7998-5068-7.ch006) | [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:MXK_kJrjxJIC)
 
-* Parras, J., & Zazo, S. (2020, May). A Graph Network Model for Distributed Learning with Limited Bandwidth Links and Privacy Constraints. In 2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) (pp. 3907-3911). IEEE.
+* Parras, J., & Zazo, S. (2020, May). **A Graph Network Model for Distributed Learning with Limited Bandwidth Links and Privacy Constraints.** *In 2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) (pp. 3907-3911). IEEE.* <br>
+[DOI](https://doi.org/10.1109/ICASSP40776.2020.9053067) | [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:8k81kl-MbHgC) | [Code](https://github.com/jparras/gnn_limited_bandwidth)
 
-* [DOI](https://doi.org/10.1109/ICASSP40776.2020.9053067)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:8k81kl-MbHgC)  [Code](https://github.com/jparras/gnn_limited_bandwidth)
-
-* Parras, J., and Zazo, S. (2020). A distributed algorithm to obtain repeated games equilibria with discounting.  Applied Mathematics and Computation, 367 (2020): 124785. [DOI](https://doi.org/10.1016/j.amc.2019.124785)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:UebtZRa9Y70C)  [Code](https://github.com/jparras/ca_algorithm)
+* Parras, J., and Zazo, S. (2020). **A distributed algorithm to obtain repeated games equilibria with discounting.**  *Applied Mathematics and Computation, 367 (2020): 124785.*<br>
+[DOI](https://doi.org/10.1016/j.amc.2019.124785) | [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:UebtZRa9Y70C) | [Code](https://github.com/jparras/ca_algorithm)
 
 ## 2019
 
