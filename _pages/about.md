@@ -30,10 +30,9 @@ You can also check the contact details of the faculty [here](../people), and wri
 .zoom-modal img.zoomed {
   max-width: none;
   max-height: none;
-  width: 150%;
+  width: auto;
   height: auto;
   cursor: move;
-  transform: scale(1.15);
 }
 .publications-slider {
   position: relative;
@@ -193,10 +192,9 @@ You can also check the contact details of the faculty [here](../people), and wri
 .zoom-modal img.zoomed {
   max-width: none;
   max-height: none;
-  width: 120%;
+  width: auto;
   height: auto;
   cursor: move;
-  transform: scale(1.2);
 }
 
 @keyframes zoomIn {
@@ -264,11 +262,16 @@ You can also check the contact details of the faculty [here](../people), and wri
       </div>
     </div>
     <!-- Slide 2 -->
-    <div class="slide" data-pub-link="../publications/#vessel-localization">
+    <div class="slide" data-pub-link="../publications/#biological-informed">
       <img src="../images/posters/mateo.png" alt="Publication Poster 2" onclick="event.stopPropagation(); openZoom(this.src)">
       <div class="slide-caption" onclick="event.stopPropagation(); goToPublication(this.parentElement.dataset.pubLink)">
-        <h3>Attentive Neural Processes for Vessel Localization</h3>
-        <p>Fernández Salvador, L. F., et al. - JMSE 2025 • Click to view publication →</p>
+        <h3>Biologically Informed Neural Speech Synthesis</h3>
+        <p>In Proc. IberSPEECH 2024 (pp. 261-265) • Click to view publication →</p>
+      </div>
+    </div>
+    <div class="slide" >
+      <img src="../images/posters/santi.jpg" alt="Publication Poster 3" onclick="event.stopPropagation(); openZoom(this.src)">
+      <div class="slide-caption" onclick="event.stopPropagation(); goToPublication(this.parentElement.dataset.pubLink)">
       </div>
     </div>
     <!-- Add more slides as needed -->
@@ -281,201 +284,4 @@ You can also check the contact details of the faculty [here](../people), and wri
   </div>
 </div>
 
-<script>
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
-const totalSlides = slides.length;
-const sliderContainer = document.getElementById('sliderContainer');
-const dotsContainer = document.getElementById('sliderDots');
-let sliderInterval = null;
-
-// Create dots
-for (let i = 0; i < totalSlides; i++) {
-  const dot = document.createElement('span');
-  dot.className = 'dot';
-  dot.onclick = () => goToSlide(i);
-  dotsContainer.appendChild(dot);
-}
-
-function updateSlider() {
-  sliderContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
-  
-  // Update dots
-  const dots = document.querySelectorAll('.dot');
-  dots.forEach((dot, index) => {
-    dot.classList.toggle('active', index === currentSlide);
-  });
-}
-
-function moveSlide(direction) {
-  currentSlide += direction;
-  
-  if (currentSlide < 0) {
-    currentSlide = totalSlides - 1;
-  } else if (currentSlide >= totalSlides) {
-    currentSlide = 0;
-  }
-  
-  updateSlider();
-}
-
-function goToSlide(index) {
-  currentSlide = index;
-  updateSlider();
-}
-
-// Start auto-advance slider
-function startSlider() {
-  // Clear any existing interval
-  if (sliderInterval) {
-    clearInterval(sliderInterval);
-  }
-  // Auto-advance slider every 5 seconds
-  sliderInterval = setInterval(() => {
-    moveSlide(1);
-  }, 10000);
-}
-
-// Stop slider
-function stopSlider() {
-  if (sliderInterval) {
-    clearInterval(sliderInterval);
-    sliderInterval = null;
-  }
-}
-
-// Zoom functions
-let isZoomed = false;
-let zoomCenterX = 0.5;
-let zoomCenterY = 0.5;
-
-function openZoom(imageSrc) {
-  const modal = document.getElementById('zoomModal');
-  const zoomedImage = document.getElementById('zoomedImage');
-  const zoomHint = document.getElementById('zoomHint');
-  
-  // Stop the slider when opening zoom
-  stopSlider();
-  
-  zoomedImage.src = imageSrc;
-  zoomedImage.classList.remove('zoomed');
-  isZoomed = false;
-  zoomCenterX = 0.5;
-  zoomCenterY = 0.5;
-  modal.classList.add('active');
-  document.body.style.overflow = 'hidden'; // Prevent scrolling
-  
-  // Show hint for 3 seconds
-  zoomHint.style.opacity = '1';
-  setTimeout(() => {
-    zoomHint.style.opacity = '0';
-  }, 3000);
-}
-
-function closeZoom() {
-  const modal = document.getElementById('zoomModal');
-  const zoomedImage = document.getElementById('zoomedImage');
-  
-  modal.classList.remove('active');
-  zoomedImage.classList.remove('zoomed');
-  zoomedImage.style.transform = '';
-  isZoomed = false;
-  document.body.style.overflow = ''; // Restore scrolling
-  
-  // Remove mouse move listener
-  zoomedImage.removeEventListener('mousemove', handleMouseMove);
-  
-  // Resume the slider when closing zoom
-  startSlider();
-}
-
-function toggleZoomLevel(event) {
-  event.stopPropagation();
-  const zoomedImage = document.getElementById('zoomedImage');
-  const zoomHint = document.getElementById('zoomHint');
-  
-  if (isZoomed) {
-    // Already zoomed in, close the modal
-    closeZoom();
-  } else {
-    // Calculate where the user clicked on the image (0-1 range)
-    const rect = zoomedImage.getBoundingClientRect();
-    zoomCenterX = (event.clientX - rect.left) / rect.width;
-    zoomCenterY = (event.clientY - rect.top) / rect.height;
-    
-    // Clamp values between 0 and 1
-    zoomCenterX = Math.max(0, Math.min(1, zoomCenterX));
-    zoomCenterY = Math.max(0, Math.min(1, zoomCenterY));
-    
-    // Zoom in and enable panning
-    zoomedImage.classList.add('zoomed');
-    isZoomed = true;
-    
-    // Center on click position
-    updateImagePosition(zoomCenterX, zoomCenterY);
-    
-    // Add mouse move listener for panning
-    zoomedImage.addEventListener('mousemove', handleMouseMove);
-    
-    zoomHint.textContent = 'Move mouse to pan • Click to close • ESC to close';
-    zoomHint.style.opacity = '1';
-    setTimeout(() => {
-      zoomHint.style.opacity = '0';
-    }, 3000);
-  }
-}
-
-function handleMouseMove(event) {
-  const zoomedImage = document.getElementById('zoomedImage');
-  
-  if (!isZoomed) return;
-  
-  // Get mouse position relative to the viewport
-  const container = document.getElementById('zoomModal');
-  const containerRect = container.getBoundingClientRect();
-  
-  // Normalize mouse position (0 to 1)
-  const mouseX = (event.clientX - containerRect.left) / containerRect.width;
-  const mouseY = (event.clientY - containerRect.top) / containerRect.height;
-  
-  updateImagePosition(mouseX, mouseY);
-}
-
-function updateImagePosition(mouseX, mouseY) {
-  const zoomedImage = document.getElementById('zoomedImage');
-  
-  // Calculate translation based on mouse position
-  // When mouse is at 0, translate positive (show top/left)
-  // When mouse is at 1, translate negative (show bottom/right)
-  const translateX = (0.5 - mouseX) * 60; // Increased range for maximum freedom
-  const translateY = (0.5 - mouseY) * 60;
-  
-  // Apply transform with moderate zoom (1.15)
-  zoomedImage.style.transform = `scale(1.15) translate(${translateX}%, ${translateY}%)`;
-}
-
-// Click on modal background to close
-document.getElementById('zoomModal').addEventListener('click', function(event) {
-  if (event.target === this || event.target.classList.contains('zoom-container')) {
-    closeZoom();
-  }
-});
-
-// Navigate to publication
-function goToPublication(link) {
-  if (link) {
-    window.location.href = link;
-  }
-}
-
-// Close zoom on Escape key
-document.addEventListener('keydown', function(event) {
-  if (event.key === 'Escape') {
-    closeZoom();
-  }
-});
-
-// Initialize slider
-updateSlider();
-startSlider();
-</script>
+<script src="../assets/js/publications-slider.js"></script>

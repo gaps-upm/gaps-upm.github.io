@@ -52,6 +52,30 @@ author_profile: true
 .publication-item li {
   list-style-type: disc;
 }
+
+/* Highlight animation for publications */
+.publication-item.highlight {
+  animation: highlightPulse 4s ease-in-out;
+  background-color: #fff3cd;
+  padding: 10px;
+  border-radius: 5px;
+  border-left: 4px solid #ffc107;
+}
+
+@keyframes highlightPulse {
+  0% {
+    background-color: #fff3cd;
+    border-left-color: #ffc107;
+  }
+  50% {
+    background-color: #fff3cd;
+    border-left-color: #ffc107;
+  }
+  100% {
+    background-color: transparent;
+    border-left-color: transparent;
+  }
+}
 </style>
 
 <div class="filter-section">
@@ -75,7 +99,7 @@ author_profile: true
 </div>
 
 ## 2025
-<div class="publication-item" data-authors="almodovar,parras,zazo" markdown="1">
+<div class="publication-item" id="decaflow" data-authors="almodovar,parras,zazo" markdown="1">
 * Almodóvar, A., Javaloy, A., Parras, J., Zazo, S., & Valera, I. (2025). **DeCaFlow: A Deconfounding Causal Generative Model.** *Advances in Neural Information Processing Systems, 38, SPOTLIGHT.* <br>
 [PDF](https://arxiv.org/pdf/2503.15114) | [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=3rVo9hUAAAAJ&sortby=pubdate&citation_for_view=3rVo9hUAAAAJ:zYLM7Y9cAGgC) | [Code](https://github.com/aalmodovares/DeCaFlow)
 </div>
@@ -138,7 +162,7 @@ author_profile: true
 * Sánchez, M., Fernández, L., Arias, J., Cámara, M., Comini, G., Gabrys, A., ... & Hernández, L. A. (2024). **Del Visual al Auditivo: Sonorización de Escenas Guiada por Imagen.** *arXiv preprint arXiv:2402.01385.*
 </div>
 
-<div class="publication-item" data-authors="camara,blanco" markdown="1">
+<div class="publication-item" id="biological-informed" data-authors="camara,blanco" markdown="1">
 * Cámara, M., & Blanco, J. L. (2024). **Biologically Informed Neural Speech Synthesis.** *In Proc. IberSPEECH 2024 (pp. 261-265).*
 </div>
 
@@ -421,69 +445,4 @@ author_profile: true
 * Parras, J., del Val, J., Zazo, S., Zazo, J., & Macua, S. V. (2016, June). A new approach for solving anti-jamming games in stochastic scenarios as pursuit-evasion games. In Statistical Signal Processing Workshop (SSP), 2016 IEEE (pp. 1-5). IEEE. [DOI](https://doi.org/10.1109/SSP.2016.7551804)  [Scholar](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:ufrVoPGSRksC)  [Code](https://github.com/jparras/pursuit_evasion)
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const publications = document.querySelectorAll('.publication-item');
-  
-  function updateYearHeaders() {
-    // Get all h2 year headers
-    const yearHeaders = document.querySelectorAll('h2');
-    
-    yearHeaders.forEach(header => {
-      // Check if this is a year header (contains only numbers)
-      if (/^\d{4}$/.test(header.textContent.trim())) {
-        // Find all publications until the next h2
-        let nextElement = header.nextElementSibling;
-        let hasVisiblePubs = false;
-        
-        while (nextElement && nextElement.tagName !== 'H2') {
-          if (nextElement.classList.contains('publication-item') && 
-              !nextElement.classList.contains('hidden')) {
-            hasVisiblePubs = true;
-            break;
-          }
-          nextElement = nextElement.nextElementSibling;
-        }
-        
-        // Hide or show the year header
-        if (hasVisiblePubs) {
-          header.style.display = 'block';
-        } else {
-          header.style.display = 'none';
-        }
-      }
-    });
-  }
-  
-  filterButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      // Update active button
-      filterButtons.forEach(btn => btn.classList.remove('active'));
-      this.classList.add('active');
-      
-      const selectedAuthor = this.dataset.author;
-      
-      // Filter publications
-      publications.forEach(pub => {
-        if (selectedAuthor === 'all') {
-          pub.classList.remove('hidden');
-        } else {
-          const authors = pub.dataset.authors || '';
-          if (authors.includes(selectedAuthor)) {
-            pub.classList.remove('hidden');
-          } else {
-            pub.classList.add('hidden');
-          }
-        }
-      });
-      
-      // Update year headers visibility
-      updateYearHeaders();
-    });
-  });
-  
-  // Initial update
-  updateYearHeaders();
-});
-</script>
+<script src="../assets/js/publications-filter.js"></script>
