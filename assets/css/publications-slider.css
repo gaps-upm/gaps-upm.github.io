@@ -1,3 +1,13 @@
+/* Add this to your existing CSS */
+
+body.modal-open {
+    overflow: hidden; /* Prevents the main page from scrolling in the background */
+}
+
+body.modal-open .masthead { /* <-- IMPORTANT: Replace '.masthead' with the actual class or ID of your header */
+    display: none;
+}
+
 .zoom-modal img.zoomed {
   max-width: none;
   max-height: none;
@@ -126,7 +136,7 @@
 .zoom-modal {
   display: none;
   position: fixed;
-  z-index: 1000;
+  z-index: 9999;
   left: 0;
   top: 0;
   width: 100%;
@@ -187,7 +197,7 @@
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
-  z-index: 1001;
+  z-index: 10001;
 }
 
 .zoom-close:hover {
@@ -204,7 +214,7 @@
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 14px;
-  z-index: 1001;
+  z-index: 10001;
   pointer-events: none;
   transition: opacity 0.3s;
 }
