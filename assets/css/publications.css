@@ -1,0 +1,76 @@
+/* Publications page filters and listings */
+.filter-section {
+  padding: 5px;
+  background: #ffffff;
+  border-radius: 2px;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border: 2px solid #000000;
+  background: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.filter-btn:hover {
+  background: #e7f1ff;
+}
+
+.filter-btn.active {
+  background: #353740;
+  color: #ffffff;
+}
+
+.publication-item {
+  margin: 10px 0;
+  transition: opacity 0.3s ease;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.publication-item.hidden {
+  display: none;
+}
+
+.publication-item ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.publication-item li {
+  list-style-type: disc;
+}
+
+.publication-item.highlight {
+  animation: highlightPulse 4s ease-in-out;
+  background-color: #fff3cd;
+  padding: 10px;
+  border-radius: 5px;
+  border-left: 4px solid #ffc107;
+}
+
+@keyframes highlightPulse {
+  0% {
+    background-color: #fff3cd;
+    border-left-color: #ffc107;
+  }
+  50% {
+    background-color: #fff3cd;
+    border-left-color: #ffc107;
+  }
+  100% {
+    background-color: transparent;
+    border-left-color: transparent;
+  }
+}
