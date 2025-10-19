@@ -88,20 +88,6 @@ function openZoom(imageSrc) {
   modal.classList.add('active');
   document.body.style.overflow = 'hidden'; // Prevent scrolling
   
-  // Hide the masthead/navigation - try all possible selectors
-  const masthead = document.querySelector('.masthead') || 
-                   document.querySelector('.masthead__inner-wrap') ||
-                   document.querySelector('header') ||
-                   document.querySelector('.site-header') ||
-                   document.querySelector('nav.greedy-nav');
-  
-  console.log('Masthead element found:', masthead); // Debug log
-  
-  if (masthead) {
-    masthead.style.display = 'none';
-    masthead.style.visibility = 'hidden';
-  }
-  
   // Show hint for 3 seconds
   zoomHint.style.opacity = '1';
   setTimeout(() => {
@@ -118,17 +104,6 @@ function closeZoom() {
   zoomedImage.style.transform = '';
   isZoomed = false;
   document.body.style.overflow = ''; // Restore scrolling
-  
-  // Show the masthead/navigation again - try all possible selectors
-  const masthead = document.querySelector('.masthead') || 
-                   document.querySelector('.masthead__inner-wrap') ||
-                   document.querySelector('header') ||
-                   document.querySelector('.site-header') ||
-                   document.querySelector('nav.greedy-nav');
-  
-  if (masthead) {
-    masthead.style.display = '';
-  }
   
   // Remove mouse move listener
   zoomedImage.removeEventListener('mousemove', handleMouseMove);

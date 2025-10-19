@@ -1,8 +1,8 @@
 /* Add this to your existing CSS */
 
 body.modal-open {
-    overflow: hidden; /* Prevents the main page from scrolling in the background */
-}
+    overflow: hidden;
+  }
 
 body.modal-open .masthead { /* <-- IMPORTANT: Replace '.masthead' with the actual class or ID of your header */
     display: none;
