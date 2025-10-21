@@ -23,6 +23,8 @@ author_profile: true
 ## Non-faculty
 
 * Patricia Alonso de Apellániz  [UPM](https://portalcientifico.upm.es/es/ipublic/researcher/332427)  [patricia.alonsod@upm.es](mailto:patricia.alonsod@upm.es)
+* Alba Garrido López [alba.garrido.lopez@upm.es](alba.garrido.lopez@upm.es)
+* Mar Elizo Alonzo [mar.ealonso@upm.es](mar.ealonso@upm.es)
 * María Pilar Daza Llin [m.dllin@alumnos.upm.es](mailto:m.dllin@alumnos.upm.es)
 * Luis Fernando Fernández Salvador
 * Víctor Gutiérrez García [v.ggarcia@upm.es](mailto:v.ggarcia@upm.es)
