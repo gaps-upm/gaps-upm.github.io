@@ -2,34 +2,15 @@
 document.addEventListener('DOMContentLoaded', function() {
   const filterButtons = document.querySelectorAll('.filter-btn');
   const publications = document.querySelectorAll('.publication-item');
+  const yearGroups = document.querySelectorAll('.publication-year-group');
   
-  function updateYearHeaders() {
-    // Get all h2 year headers
-    const yearHeaders = document.querySelectorAll('h2');
-    
-    yearHeaders.forEach(header => {
-      // Check if this is a year header (contains only numbers)
-      if (/^\d{4}$/.test(header.textContent.trim())) {
-        // Find all publications until the next h2
-        let nextElement = header.nextElementSibling;
-        let hasVisiblePubs = false;
-        
-        while (nextElement && nextElement.tagName !== 'H2') {
-          if (nextElement.classList.contains('publication-item') && 
-              !nextElement.classList.contains('hidden')) {
-            hasVisiblePubs = true;
-            break;
-          }
-          nextElement = nextElement.nextElementSibling;
-        }
-        
-        // Hide or show the year header
-        if (hasVisiblePubs) {
-          header.style.display = 'block';
-        } else {
-          header.style.display = 'none';
-        }
-      }
+  function updateYearGroups() {
+    yearGroups.forEach(group => {
+      const hasVisiblePubs = Array.from(group.querySelectorAll('.publication-item')).some(
+        (item) => !item.classList.contains('hidden')
+      );
+
+      group.style.display = hasVisiblePubs ? 'block' : 'none';
     });
   }
   
@@ -56,12 +37,12 @@ document.addEventListener('DOMContentLoaded', function() {
       });
       
       // Update year headers visibility
-      updateYearHeaders();
+      updateYearGroups();
     });
   });
   
   // Initial update
-  updateYearHeaders();
+  updateYearGroups();
   
   // Highlight publication if coming from slider with hash
   window.addEventListener('load', function() {
