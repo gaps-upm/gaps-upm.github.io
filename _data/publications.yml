@@ -1,6 +1,13 @@
 # Publications data organized by year
 - year: 2025
   items:
+    - id: santi-RADARCONF25
+      authors_tags: [blanco, loza-morcillo]
+      citation: "Loza-Morcillo, S., & Blanco-Murillo, J. L. (2025). **Advanced beam steering and topological optimization in large-scale antenna arrays through hexagonal subarray implementation over Goldberg polyhedral configurations.** *Accepted at RADARCONF25.*"
+    
+    - authors_tags: [blanco, loza-morcillo]
+      citation: "Loza-Morcillo, S., & Blanco-Murillo, J. L. (2025). **Enabling scale economies for large-scale antenna arrays with physically manufacturable hexagonal subarrays in Goldberg Polyhedra configurations.** *Accepted at RADARCONF25.*"
+    
     - id: decaflow
       authors_tags: [almodovar, parras, zazo]
       citation: "Almodóvar, A., Javaloy, A., Parras, J., Zazo, S., & Valera, I. (2025). **DeCaFlow: A Deconfounding Causal Generative Model.** *Advances in Neural Information Processing Systems, 38, SPOTLIGHT.*"

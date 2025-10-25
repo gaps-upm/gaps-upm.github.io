@@ -9,6 +9,8 @@
   const sections = [
     { key: "faculty", title: "Faculty" },
     { key: "non_faculty", title: "Non-faculty" },
+    { key: "phd_students", title: "PhD Students" },
+    { key: "distinguished_professors", title: "Distinguished former professors" },
     { key: "former", title: "Former Members" }
   ];
 
@@ -20,7 +22,12 @@
       return;
     }
 
-    fragment.appendChild(renderSection(section, entries));
+    // Render former members as a simple list, others as cards
+    if (section.key === "former") {
+      fragment.appendChild(renderFormerMembersSection(section, entries));
+    } else {
+      fragment.appendChild(renderSection(section, entries));
+    }
   });
 
   if (!fragment.childNodes.length) {
@@ -30,9 +37,52 @@
   container.classList.add("people-directory");
   container.appendChild(fragment);
 
+  function renderFormerMembersSection(sectionConfig, entries) {
+    const section = document.createElement("section");
+    section.className = "people-section former-members-section";
+    if (sectionConfig.key) {
+      section.classList.add(`people-section--${sectionConfig.key}`);
+    }
+    if (sectionConfig.key) {
+      section.id = sectionConfig.key;
+    }
+
+    const heading = document.createElement("h2");
+    heading.className = "people-section__title";
+    heading.textContent = sectionConfig.title;
+    section.appendChild(heading);
+
+    const list = document.createElement("ul");
+    list.className = "former-members-list";
+
+    entries
+      .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }))
+      .forEach((person) => {
+        const li = document.createElement("li");
+        li.className = "former-member-item";
+        
+        if (person.email) {
+          const link = document.createElement("a");
+          link.href = `mailto:${person.email}`;
+          link.textContent = person.name || "Unnamed";
+          li.appendChild(link);
+        } else {
+          li.textContent = person.name || "Unnamed";
+        }
+        
+        list.appendChild(li);
+      });
+
+    section.appendChild(list);
+    return section;
+  }
+
   function renderSection(sectionConfig, entries) {
     const section = document.createElement("section");
     section.className = "people-section";
+    if (sectionConfig.key) {
+      section.classList.add(`people-section--${sectionConfig.key}`);
+    }
     if (sectionConfig.key) {
       section.id = sectionConfig.key;
     }
@@ -62,7 +112,21 @@
     const header = document.createElement("div");
     header.className = "person-header";
 
-    header.appendChild(renderAvatar(person));
+    const media = document.createElement("div");
+    media.className = "person-media";
+
+    const avatar = renderAvatar(person);
+    media.appendChild(avatar);
+
+    const linkList = buildLinkList(person);
+    if (linkList) {
+      const overlay = document.createElement("div");
+      overlay.className = "person-links-overlay";
+      overlay.appendChild(linkList);
+      media.appendChild(overlay);
+    }
+
+    header.appendChild(media);
 
     const meta = document.createElement("div");
     meta.className = "person-meta";
@@ -94,11 +158,6 @@
       description.className = "person-description";
       description.textContent = person.description;
       card.appendChild(description);
-    }
-
-    const links = buildLinkList(person);
-    if (links) {
-      card.appendChild(links);
     }
 
     return card;

@@ -46,15 +46,6 @@ faculty:
     links:
       - label: "UPM"
         url: "https://portalcientifico.upm.es/es/ipublic/researcher/304656"
-  - name: "Juan Ignacio Godino Llorente"
-    title: ""
-    email: "ignacio.godino@upm.es"
-    photo: "/images/people/godino.jpg"
-    links:
-      - label: "UPM"
-        url: "https://portalcientifico.upm.es/es/ipublic/researcher/308868"
-      - label: "Scholar"
-        url: "https://scholar.google.es/citations?user=fdkx_u4AAAAJ&hl=es&oi=ao"
   - name: "Juan Gutiérrez Navarro"
     title: ""
     email: "juan.gutierrez@upm.es"
@@ -112,6 +103,7 @@ non_faculty:
     links:
       - label: "UPM"
         url: "https://portalcientifico.upm.es/es/ipublic/researcher/332427"
+phd_students:
   - name: "María Pilar Daza Llin"
     email: "m.dllin@alumnos.upm.es"
     photo: "/images/people/mpilar.jpeg"
@@ -133,32 +125,24 @@ non_faculty:
     photo: "/images/people/fer.jpeg"
     links: []
   - name: "Alba Garrido López"
-    email: "alba.garrido.lopez@alumnos.upm.es"
+    email: "alba.garrido.lopez@upm.es"
     photo: "/images/people/alba.jpeg"
     links: []
-former:
-  - name: "Ana Jiménez Bejarano"
-    email: "ana.jimenezb@upm.es"
-    photo: ""
+  - name: "Mar Elizo Alonso"
+    email: "mar.ealonso@upm.es"
     links: []
+
+distinguished_professors:
   - name: "Mariano García Otero"
     email: "mariano.garciao@upm.es"
     photo: "/images/people/mariano.jpg"
     links:
       - label: "UPM"
         url: "https://portalcientifico.upm.es/es/ipublic/researcher/302874"
+former:
+  - name: "Ana Jiménez Bejarano"
   - name: "Pablo Regodón Cerezo"
-    photo: ""
-    links: []
   - name: "Jesús Rincón Laguarta"
-    photo: ""
-    links: []
   - name: "Rodrigo Tamaki Moreno"
-    photo: ""
-    links: []
   - name: "Imanol Torres Inchaurza"
-    photo: ""
-    links: []
   - name: "Virginia Yagüe Jiménez"
-    photo: ""
-    links: []
