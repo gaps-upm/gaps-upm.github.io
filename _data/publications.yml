@@ -27,7 +27,7 @@
           url: https://scholar.google.com/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:k_IJM867U9cC
         - label: Code
           url: https://github.com/FernandoFS96/tesis/tree/c42b6b10f03a7c8f9f352fe8f8c7cae55069ab5a/magnetic-localization
-    - authors_tags: [apellaniz, arroyo, parras, zazo]
+    - authors_tags: [apellaniz, parras, zazo]
       citation: "Apellániz, P. A., Arroyo Galende, B., Jiménez, A., Parras, J. & Zazo, S. (2025). **Advancing Cancer Research with Synthetic Data Generation in Low-Data Scenarios.** *IEEE Journal of Biomedical and Health Informatics.*"
       links:
         - label: DOI
@@ -36,7 +36,7 @@
           url: https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:TFP_iSt0sucC
         - label: Code
           url: https://github.com/Patricia-A-Apellaniz/low_sample_data_generator
-    - authors_tags: [apellaniz, arroyo, parras, zazo]
+    - authors_tags: [apellaniz, parras, zazo]
       citation: "Apellániz, P. A., Jiménez, A., Arroyo Galende, B., Parras, J. & Zazo, S. (2025). **Artificial inductive bias for synthetic tabular data generation in data-scarce scenarios.** *Neurocomputing.*"
       links:
         - label: DOI
@@ -45,7 +45,7 @@
           url: https://scholar.google.es/citations?view_op=view_citation&hl=es&user=AQcxu7MAAAAJ&sortby=pubdate&citation_for_view=AQcxu7MAAAAJ:ZeXyd9-uunAC
         - label: Code
           url: https://github.com/Patricia-A-Apellaniz/low_sample_data_generator
-    - authors_tags: [arroyo, apellaniz, parras, zazo]
+    - authors_tags: [apellaniz, parras, zazo]
       citation: "Arroyo Galende, B., Apellániz, P. A., Parras, J., Zazo, S. & Uribe, S. (2025). **Membership Inference Attacks and Differential Privacy: A Study within the context of Generative Models.** *IEEE Open Journal of the Computer Society.*"
       links:
         - label: DOI
@@ -86,7 +86,7 @@
           url: https://scholar.google.es/citations?view_op=view_citation&hl=es&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:Zph67rFs4hoC
 - year: 2024
   items:
-    - authors_tags: [espinoza, hernandez]
+    - authors_tags: [hernandez]
       citation: "Fernández-Castañón, R., Espinoza-Cuadros, F. M., Perero-Codosero, J. M., Sancho-Lozano, E., & Hernández-Gómez, L. A. (2024, June). **Can Large Sound Event Detection Models Be Accurately Adapted to Specific Acoustic Scenarios?.** *In International Symposium on Distributed Computing and Artificial Intelligence (pp. 36-45). Cham: Springer Nature Switzerland.*"
     - authors_tags: [blanco, gutierrez-navarro]
       citation: "Gutiérrez-Navarro, J., Mora-Sánchez, Á., Rodríguez-Jiménez, S., & Blanco-Murillo, J. L. (2024, June). **AI-Boosted Video Annotation: Exploring Pre-Labeling with Cross-Modalities.** *In International Symposium on Distributed Computing and Artificial Intelligence (pp. 5-15). Cham: Springer Nature Switzerland.*"
@@ -163,9 +163,9 @@
           url: https://github.com/jparras/mpc_linear
 - year: 2022
   items:
-    - authors_tags: [espinoza, hernandez]
+    - authors_tags: [hernandez]
       citation: "Perero-Codosero, J. M., Espinoza-Cuadros, F. M., & Hernández-Gómez, L. A. (2022). **X-vector anonymization using autoencoders and adversarial training for preserving speech privacy.** *Computer Speech & Language, 74, 101351.*"
-    - authors_tags: [espinoza, hernandez]
+    - authors_tags: [hernandez]
       citation: "Perero-Codosero, J. M., Espinoza-Cuadros, F. M., & Hernández-Gómez, L. A. (2022). **A comparison of hybrid and end-to-end ASR systems for the IberSpeech-RTVE 2020 speech-to-text transcription challenge.** *Applied Sciences, 12(2), 903.*"
     - authors_tags: [blanco, yague]
       citation: "Blanco-Murillo, J. L., Yagüe-Jiménez, V., Coronel-Gaviro, J., & Quirós, F. C. (2022). **A model-informed, single-input method for amplifiers assessment from pruned Volterra kernels collapsed projection.** *Measurement, 193, 110856.*"
@@ -217,7 +217,7 @@
       citation: "Cardoso, L., Gómez, L., Alonso, P., Pena, S., Herrera, M., Valencia, P., ... & Diezhandino, P. (2021). **PO-1285 Postoperative high dose rate brachytherapy in endometrial cancer: three versus six fractions.** *Radiotherapy and Oncology, 161, S1059.*"
     - authors_tags: [hernandez]
       citation: "Bafundo, K. W., Gomez, L., Lumpkins, B., Mathis, G. F., McNaughton, J. L., & Duerr, I. (2021). **Concurrent use of saponins and live coccidiosis vaccines: the influence of a quillaja and yucca combination on anticoccidial effects and performance results of coccidia-vaccinated broilers.** *Poultry Science, 100(3), 100905.*"
-    - authors_tags: [espinoza, hernandez]
+    - authors_tags: [hernandez]
       citation: "Perero-Codosero, J. M., Espinoza-Cuadros, F. M., & Gómez, L. A. H. (2021, March). **Sigma-UPM ASR Systems for the IberSpeech-RTVE 2020 Speech-to-Text Transcription Challenge.** *In IberSPEECH.*"
     - authors_tags: [hernandez]
       citation: "Perry, C. A., Yates, C. J., Flury, M., & Hernandez, L. (2021). **Effects of short duration active and passive recovery on blood lactate accumulation during high intensity wind sprints in college aged students.** *Sport & Health-International Journal of Sport & Health, 8.*"
@@ -252,7 +252,7 @@
           url: https://github.com/jparras/robust_drl_navigation
 - year: 2020
   items:
-    - authors_tags: [espinoza, hernandez]
+    - authors_tags: [hernandez]
       citation: "Espinoza-Cuadros, F. M., Perero-Codosero, J. M., Antón-Martín, J., & Hernández-Gómez, L. A. (2020). **Speaker de-identification system using autoencoders and adversarial training.** *arXiv preprint arXiv:2011.04696.*"
     - citation: "Deep, S. T. S. U. **Audio-Visual Emotion Recognition System for Variable Length Spatio-Temporal Samples Using Deep Transfer-Learning.** *In Business Information Systems (p. 434).*"
     - authors_tags: [parras, zazo]
@@ -282,7 +282,7 @@
           url: https://github.com/jparras/ca_algorithm
 - year: 2019
   items:
-    - authors_tags: [espinoza, hernandez]
+    - authors_tags: [hernandez]
       citation: "Perero-Codosero, J. M., Espinoza-Cuadros, F., Antón-Martín, J., Barbero-Alvarez, M. A., & Hernández-Gómez, L. A. (2019). **Modeling obstructive sleep apnea voices using deep neural network embeddings and domain-adversarial training.** *IEEE Journal of Selected Topics in Signal Processing, 14(2), 240-250.*"
     - authors_tags: [hernandez]
       citation: "Gómez, L., & Gonzáles, L. (2019). **Blanqueo de capitales: técnicas de investigación en la contabilidad financiera panameña.** *Centros: Revista Científica Universitaria, 8(2), 65-73.*"
@@ -355,7 +355,7 @@
           url: https://github.com/jparras/wsn_attack_mdp
 - year: 2018
   items:
-    - authors_tags: [espinoza, hernandez]
+    - authors_tags: [hernandez]
       citation: "Perero-Codosero, J. M., Antón-Martín, J., Merino, D. T., Gonzalo, E. L., & Gómez, L. A. H. (2018, November). **Exploring Open-Source Deep Learning ASR for Speech-to-Text TV program transcription.** *In IberSPEECH (pp. 262-266).*"
     - authors_tags: [hernandez]
       citation: "Hernandez Sanchez, S., Fernandez Pozo, R., & Hernandez Gomez, L. A. (2018). **Estimating vehicle movement direction from smartphone accelerometers using deep neural networks.** *Sensors, 18(8), 2624.*"
@@ -395,7 +395,7 @@
           url: https://github.com/jparras/pursuit_evasion
 - year: 2016
   items:
-    - authors_tags: [espinoza, hernandez]
+    - authors_tags: [hernandez]
       citation: "Espinoza-Cuadros, F., Fernández-Pozo, R., Toledano, D. T., Alcázar-Ramírez, J. D., López-Gonzalo, E., & Hernández-Gómez, L. A. (2016). **Reviewing the connection between speech and obstructive sleep apnea.** *Biomedical Engineering Online, 15(1), 20.*"
     - authors_tags: [hernandez]
       citation: "Pozo, R. F., Gomez, L. A. H., Meco, D. L., Vercher, J. B., & Muñoz, V. M. G. (2016). **U.S. Patent Application No. 14/802,471.**"
