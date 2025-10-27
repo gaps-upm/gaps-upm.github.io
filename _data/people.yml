@@ -1,0 +1,148 @@
+# Structured roster data used by the People page
+# Photos can point to an asset path (e.g. /images/people/name.jpg). Leave blank for placeholder initials.
+faculty:
+  - name: "Alejandro Almodóvar Espeso"
+    title: ""
+    email: "alejandro.almodovar@upm.es"
+    photo: "/images/people/almo.png"
+    links:
+      - label: "UPM"
+        url: "https://portalcientifico.upm.es/en/ipublic/researcher/335796"
+      - label: "Web"
+        url: "https://aalmodovares.github.io/"
+      - label: "Scholar"
+        url: "https://scholar.google.com/citations?user=3rVo9hUAAAAJ&hl=en"
+  - name: "José Luis Blanco Murillo"
+    title: ""
+    email: "jl.blanco@upm.es"
+    photo: "/images/people/jl.jpg"
+    links:
+      - label: "UPM"
+        url: "https://portalcientifico.upm.es/es/ipublic/researcher/309256"
+      - label: "Scholar"
+        url: "https://scholar.google.es/citations?user=J-zt09cAAAAJ&hl=es&oi=ao"
+  - name: "Mateo José Cámara Largo"
+    title: ""
+    email: "mateo.camara@upm.es"
+    photo: "/images/people/mateo.jpeg"
+    links:
+      - label: "UPM"
+        url: "https://portalcientifico.upm.es/es/ipublic/researcher/310341"
+      - label: "Web"
+        url: "https://www.mateocamara.com"
+      - label: "Scholar"
+        url: "https://scholar.google.es/citations?hl=en&user=muINbiEAAAAJ&view_op=list_works&sortby=pubdate"
+  - name: "Francisco Javier Casajús de Quirós"
+    title: ""
+    email: "javier.casajus@upm.es"
+    photo: "/images/people/casajus.jpg"
+    links:
+      - label: "UPM"
+        url: "https://portalcientifico.upm.es/es/ipublic/researcher/302866"
+  - name: "Miguel Ángel García Izquierdo"
+    title: ""
+    email: "miguelangel.garcia.izquierdo@upm.es"
+    photo: "/images/people/miguel_angel.jpg"
+    links:
+      - label: "UPM"
+        url: "https://portalcientifico.upm.es/es/ipublic/researcher/304656"
+  - name: "Juan Gutiérrez Navarro"
+    title: ""
+    email: "juan.gutierrez@upm.es"
+    photo: "/images/people/juan.jpeg"
+    links: []
+  - name: "Luis Alfonso Hernández Gómez"
+    title: ""
+    email: "luisalfonso.hernandez@upm.es"
+    photo: "/images/people/luis.jpg"
+    links:
+      - label: "UPM"
+        url: "https://portalcientifico.upm.es/es/ipublic/researcher/309177"
+      - label: "Scholar"
+        url: "https://scholar.google.es/citations?user=EilwjX0AAAAJ&hl=es&oi=ao"
+  - name: "Eduardo López Gonzalo"
+    title: ""
+    email: "eduardo.lopez@upm.es"
+    photo: "/images/people/eduardo.jpg"
+    links:
+      - label: "UPM"
+        url: "https://portalcientifico.upm.es/es/ipublic/researcher/304067"
+  - name: "José Parera Bermúdez"
+    title: ""
+    email: "jose.parera@upm.es"
+    photo: "/images/people/parera.jpg"
+    links:
+      - label: "UPM"
+        url: "https://portalcientifico.upm.es/es/ipublic/researcher/303926"
+      - label: "Scholar"
+        url: "https://scholar.google.es/citations?user=3MXue_oAAAAJ&hl=es&oi=ao"
+  - name: "Juan Parras Moral"
+    title: ""
+    email: "j.parras@upm.es"
+    photo: "/images/people/parras.png"
+    links:
+      - label: "UPM"
+        url: "https://portalcientifico.upm.es/es/ipublic/researcher/312317"
+      - label: "Web"
+        url: "http://jparras.github.io"
+      - label: "Scholar"
+        url: "https://scholar.google.es/citations?user=AQcxu7MAAAAJ&hl=es"
+  - name: "Santiago Zazo Bello"
+    title: ""
+    email: "santiago.zazo@upm.es"
+    photo: "/images/people/zazo.jpg"
+    links:
+      - label: "UPM"
+        url: "https://portalcientifico.upm.es/es/ipublic/researcher/309899"
+      - label: "Scholar"
+        url: "https://scholar.google.es/citations?user=kNhqGMwAAAAJ&hl=es&oi=ao"
+non_faculty:
+  - name: "Patricia Alonso de Apellániz"
+    email: "patricia.alonsod@upm.es"
+    photo: "/images/people/pati.jpeg"
+    links:
+      - label: "UPM"
+        url: "https://portalcientifico.upm.es/es/ipublic/researcher/332427"
+phd_students:
+  - name: "María Pilar Daza Llin"
+    email: "m.dllin@alumnos.upm.es"
+    photo: "/images/people/mpilar.jpeg"
+    links: []
+  - name: "Luis Fernando Fernández Salvador"
+    email: ""
+    photo: ""
+    links: []
+  - name: "Víctor Gutiérrez García"
+    email: "v.ggarcia@upm.es"
+    photo: "/images/people/victor.jpeg"
+    links: []
+  - name: "Santiago Loza Morcillo"
+    email: "santiago.loza.morcillo@alumnos.upm.es"
+    photo: ""
+    links: []
+  - name: "Fernando Marcos Macías"
+    email: "fernando.marcos.macias@upm.es"
+    photo: "/images/people/fer.jpeg"
+    links: []
+  - name: "Alba Garrido López"
+    email: "alba.garrido.lopez@upm.es"
+    photo: "/images/people/alba.jpeg"
+    links: []
+  - name: "Mar Elizo Alonso"
+    email: "mar.ealonso@upm.es"
+    links: []
+
+distinguished_professors:
+  - name: "Mariano García Otero"
+    email: "mariano.garciao@upm.es"
+    photo: "/images/people/mariano.jpg"
+    links:
+      - label: "UPM"
+        url: "https://portalcientifico.upm.es/es/ipublic/researcher/302874"
+former:
+  - name: "Ana Jiménez Bejarano"
+  - name: "Pablo Regodón Cerezo"
+  - name: "Jesús Rincón Laguarta"
+  - name: "Rodrigo Tamaki Moreno"
+  - name: "Imanol Torres Inchaurza"
+  - name: "Virginia Yagüe Jiménez"

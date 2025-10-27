@@ -1,0 +1,125 @@
+/* Publications page filters and listings */
+.filter-section {
+  background: #ffffff;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border: 2px solid #000000;
+  background: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.filter-btn:hover {
+  background: #e7f1ff;
+}
+
+.filter-btn.active {
+  background: #353740;
+  color: #ffffff;
+}
+
+
+.publication-year-group {
+  margin-top: 2.5rem;
+}
+
+.publication-year-group:first-of-type {
+  margin-top: 2rem;
+}
+
+.publication-year {
+  margin: 0 0 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+
+
+.publication-list {
+  margin: 0 0 2rem 1.5rem;
+  padding: 0;
+  list-style: disc;
+}
+
+.publication-item {
+  position: relative;
+  margin: 0;
+  transition: opacity 0.3s ease;
+  list-style: disc;
+}
+
+.publication-item + .publication-item {
+  margin-top: 1.25rem;
+}
+
+.publication-item.hidden {
+  display: none;
+}
+
+.publication-item::marker {
+  color: #353740;
+}
+
+.publication-citation {
+  line-height: 1.5;
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+}
+
+.publication-links a {
+  color: #0b6edc;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
+}
+
+.publication-links a:hover,
+.publication-links a:focus {
+  color: #084d9a;
+  border-bottom-color: currentColor;
+}
+
+.publication-item.highlight {
+  animation: highlightPulse 4s ease-in-out;
+  background-color: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 0.75rem 0.75rem 0.75rem 1.5rem;
+  border-radius: 6px;
+}
+
+@keyframes highlightPulse {
+  0% {
+    background-color: #fff3cd;
+    border-left-color: #ffc107;
+  }
+  50% {
+    background-color: #fff3cd;
+    border-left-color: #ffc107;
+  }
+  100% {
+    background-color: transparent;
+    border-left-color: transparent;
+  }
+}

@@ -1,0 +1,27 @@
+# Publication filter labels
+- key: almodovar
+  label: "Almodóvar Espeso, A."
+- key: apellaniz
+  label: "Alonso Apellániz, P."
+- key: blanco
+  label: "Blanco Murillo, J. L."
+- key: camara
+  label: "Cámara Largo, M."
+- key: daza
+  label: "Daza Llín, M. P."
+- key: fernandez
+  label: "Fernández Salvador, L. F."
+- key: gutierrez-navarro
+  label: "Gutiérrez Navarro, J."
+- key: hernandez
+  label: "Hernández Gómez, L. A."
+- key: loza-morcillo
+  label: "Loza Morcillo, S."
+- key: marcos
+  label: "Marcos Macías, F."
+- key: parras
+  label: "Parras Moral, J."
+- key: yague
+  label: "Yagüe Jiménez, V."
+- key: zazo
+  label: "Zazo Bello, S."
