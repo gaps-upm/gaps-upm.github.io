@@ -10,9 +10,9 @@ redirect_from:
 
 The Signal Processing Applications Group (Grupo de Aplicaciones del Procesado de Señal, GAPS) was created in 1988. It belongs to the department of Signals, Systems and Radiocommunications ([SSR](https://ssr.upm.es/)) of the Universidad Politécnica de Madrid ([UPM](https://www.upm.es/)). Our research activity includes data science, theory and analysis of systems, speech and sound technology, and intelligent electromagnetic and ultrasonic sensor systems. 
 
-## News
+<!-- ## News
 
-* We are looking for a PhD candidate in the area of [Machine Learning applied to health](../lines_ml_health). If you are interested, send us an email with your CV, at the contact mails provided in the link.
+* We are looking for a PhD candidate in the area of [Machine Learning applied to health](../lines_ml_health). If you are interested, send us an email with your CV, at the contact mails provided in the link. -->
 
 ## Recent Publications
 

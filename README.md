@@ -1,4 +1,4 @@
-# Bienvenido al Repositorio del Grupo de Aplicaciones del Procesado de Señal (GAPS) 
+# Bienvenido al Repositorio del Grupo de Aplicaciones del Procesado de Señal (GAPS)
 
 ## Acerca de Nuestro Grupo
 
