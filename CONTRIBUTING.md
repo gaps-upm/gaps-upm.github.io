@@ -20,7 +20,6 @@ Para contribuir en algo más grande, sigue estos pasos:
 4. **Commit y Push**: Haz un 'commit' de tus cambios y haz un 'push' a tu repositorio forkeado.
 5. **Abre una Pull Request**: En la página de GitHub de nuestro repositorio, abre una 'pull request' para que revisemos tus cambios.
 
-
 ## Tipos de Contribuciones
 
 ### Modificar la Página Principal
@@ -50,8 +49,16 @@ Para contribuir en algo más grande, sigue estos pasos:
 
 ### Agregar lo que creas que falte
 
-Siguiendo la misma filosofía que las contribuciones anteriores, puedes agregar cualquier cosa que creas que falte en la página. Si no estás seguro de dónde agregarlo, puedes abrir una issue y discutirlo con nosotros. Nuestra web está desarrollada en jekyll (https://jekyllrb.com/), por lo que puedes consultar su documentación para ver cómo se estructura la página.
+Siguiendo la misma filosofía que las contribuciones anteriores, puedes agregar cualquier cosa que creas que falte en la página. Si no estás seguro de dónde agregarlo, puedes abrir una issue y discutirlo con nosotros. Nuestra web está desarrollada en jekyll (<https://jekyllrb.com/>), por lo que puedes consultar su documentación para ver cómo se estructura la página.
 
 ## Agradecimientos
 
 ¡Muchas gracias por contribuir a nuestra web! Tu ayuda es fundamental para mantener actualizada y enriquecer nuestra página de investigación. Cualquier duda: mateoDOTcamaraATupmDOTes
+
+## Run Locally
+
+<https://github.com/academicpages/academicpages.github.io>
+
+``` bash
+bundle exec jekyll serve -l -H localhost
+```

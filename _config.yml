@@ -83,8 +83,8 @@ author:
   name             : "GAPS"
   avatar           : "profile.png"
   bio              : "Signal Processing Aplications Group (Grupo de Aplicaciones del Procesado de Señal)"
-  location         : "Madrid"
-  employer         : "UPM"
+  location         : "Avenida Complutense, 30, Madrid, Community of Madrid 28040, ES"
+  employer         : 
   pubmed           : 
   googlescholar    : 
   email            : # TODO: poner un mail de contacto del gaps?
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      :
   lastfm           :
-  linkedin         : 
+  linkedin         : "grupo-de-procesado-de-aplicaciones-de-se%C3%B1al-gaps/"
   orcid            : 
   pinterest        :
   soundcloud       :
@@ -261,14 +261,12 @@ timezone: America/Los_Angeles # https://en.wikipedia.org/wiki/List_of_tz_databas
 # Plugins
 plugins:
   - jekyll-paginate
-  - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
-  - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji
