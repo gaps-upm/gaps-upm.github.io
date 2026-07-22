@@ -170,13 +170,6 @@
     header.appendChild(meta);
     card.appendChild(header);
 
-    if (person.description) {
-      const description = document.createElement("p");
-      description.className = "person-description";
-      description.textContent = person.description;
-      card.appendChild(description);
-    }
-
     return card;
   }
 

@@ -144,11 +144,13 @@ phd_students:
         url: "https://vgutierrez2404.github.io/"
       - label: "Scholar"
         url: "https://scholar.google.com/citations?user=c_Y49J8AAAAJ&hl=es"
+    description: tbd 
   - name: "Santiago Loza Morcillo"
     slug: "santiago-loza-morcillo"
     email: "santiago.loza.morcillo@alumnos.upm.es"
     photo: ""
     links: []
+    description: 
   - name: "Fernando Marcos Macías"
     slug: "fernando-marcos-macias"
     email: "fernando.marcos.macias@upm.es"
@@ -166,6 +168,13 @@ phd_students:
     email: "mar.ealonso@upm.es"
     photo: "/images/people/new_images/MEA.png"
     links: []
+    description: 
+  - name: "Alba Molero Pérez"
+    slug: "alba-molero"
+    email: "alba.molero@roche.com"
+    photo: "/images/people/new_images/AMP.jpg"
+    links: []
+    description: I am a PhD student at the Universidad Politécnica de Madrid (UPM) and a member of the GAPS research group, under the supervision of Dr. Juan Parras and Alejandro Almodóvar. My research explores the intersection of causal deep learning and generative AI, with a particular focus on integrating causal inference, deep generative models, and large language models. I have a background in Biomedical Engineering and a Master's degree with a specialization in Machine Learning. Alongside my academic research, I worked on generative AI at Roche, with a focus on natural language processing, AI evaluation, and agentic AI systems. I am currently an Agentic AI Engineer at Roche Switzerland, where I develop AI solutions for clinical trial systems. 
 
 distinguished_professors:
   - name: "Mariano García Otero"
@@ -175,10 +184,3 @@ distinguished_professors:
     links:
       - label: "UPM"
         url: "https://portalcientifico.upm.es/es/ipublic/researcher/302874"
-former:
-  - name: "Ana Jiménez Bejarano"
-  - name: "Pablo Regodón Cerezo"
-  - name: "Jesús Rincón Laguarta"
-  - name: "Rodrigo Tamaki Moreno"
-  - name: "Imanol Torres Inchaurza"
-  - name: "Virginia Yagüe Jiménez"

@@ -146,6 +146,7 @@ exclude:
   - package.json
   - tmp
   - vendor
+  - venv
 keep_files:
   - .git
   - .svn

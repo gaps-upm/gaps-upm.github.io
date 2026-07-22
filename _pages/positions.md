@@ -5,14 +5,18 @@ permalink: /positions/
 author_profile: true
 ---
 
-## Job offers
+## Ofertas de Trabajo de Fin de Grado/Máster
 
-Check the positions available in each of our research lines, specially if you are a student willing to join us for your bachelor's or master's thesis (TFG/TFM):
-* [Machine Learning applied to health](../lines_ml_health)
-* [Machine Learning applied to communications](../lines_ml_comm)
-* [Underwater Navigation](../lines_underwater_navigation)
+{% for position in site.data.positions %}
+### {{ position.title }}
 
-You can also check the contact details of the faculty [here](../people), and write us if you want to propose a topic related to what we do!
+{{ position.description | markdownify }}
+
+{% if position.contact_person %}
+**Persona de contacto:** {{ position.contact_person.name }} - [{{ position.contact_person.email }}](mailto:{{ position.contact_person.email }})
+{% endif %}
+
+{% endfor %}
 
 <!-- 
 * Position 1: name
@@ -31,5 +35,3 @@ You can also check the contact details of the faculty [here](../people), and wri
 * Line 1: Artificial Intelligence for medical applications
     - Description
     - Contact: [fulano@upm.es](mailto:fulano@upm.es) -->
-
-
