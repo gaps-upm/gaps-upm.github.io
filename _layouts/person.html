@@ -4,7 +4,6 @@ layout: default
 
 {% include base_path %}
 
-{% assign person_record = nil %}
 {% assign person_group = nil %}
 {% assign group_configs = "faculty::Faculty|non_faculty::Non-faculty|phd_students::PhD Student|distinguished_professors::Distinguished former professor" | split: "|" %}
 
@@ -12,29 +11,18 @@ layout: default
   {% assign group_parts = group_config | split: "::" %}
   {% assign group_key = group_parts[0] %}
   {% assign group_label = group_parts[1] %}
-  {% assign group_people = site.data.people[group_key] %}
 
-  {% for person in group_people %}
-    {% if person.slug == page.person_slug %}
-      {% assign person_record = person %}
-      {% assign person_group = group_label %}
-    {% endif %}
-  {% endfor %}
+  {% if page.group == group_key %}
+    {% assign person_group = group_label %}
+  {% endif %}
 {% endfor %}
 
 {% assign display_name = page.title %}
 {% assign display_role = person_group %}
-{% assign display_description = page.profile_description | default: "Short biography coming soon." %}
-
-{% if person_record %}
-  {% assign display_name = person_record.name | default: page.title %}
-  {% if person_record.title and person_record.title != "" %}
-    {% assign display_role = person_record.title %}
-  {% endif %}
-  {% if person_record.description and person_record.description != "" %}
-    {% assign display_description = person_record.description %}
-  {% endif %}
+{% if page.role and page.role != "" %}
+  {% assign display_role = page.role %}
 {% endif %}
+{% assign profile_content = content | strip %}
 
 <link rel="stylesheet" href="{{ '/assets/css/person-profile.css' | relative_url }}?v=3">
 
@@ -44,8 +32,8 @@ layout: default
       <section class="person-profile">
         <div class="person-profile__intro">
           <div class="person-profile__photo-wrap">
-            {% if person_record.photo %}
-              <img class="person-profile__photo" src="{{ person_record.photo | relative_url }}" alt="{{ display_name }} portrait" itemprop="image">
+            {% if page.photo %}
+              <img class="person-profile__photo" src="{{ page.photo | relative_url }}" alt="{{ display_name }} portrait" itemprop="image">
             {% else %}
               <div class="person-profile__photo person-profile__photo--placeholder" aria-hidden="true">
                 {{ display_name | slice: 0, 1 }}
@@ -68,17 +56,17 @@ layout: default
             </div>
 
             <ul class="person-profile__contacts">
-              {% if person_record.email %}
+              {% if page.email %}
                 <li>
-                  <a href="mailto:{{ person_record.email }}" itemprop="email">
+                  <a href="mailto:{{ page.email }}" itemprop="email">
                     <i class="fa fa-fw fa-envelope" aria-hidden="true"></i>
-                    {{ person_record.email }}
+                    {{ page.email }}
                   </a>
                 </li>
               {% endif %}
 
-              {% if person_record.links %}
-                {% for link in person_record.links %}
+              {% if page.links %}
+                {% for link in page.links %}
                   {% if link.url %}
                     <li>
                       <a href="{{ link.url }}" target="_blank" rel="noreferrer noopener">
@@ -101,7 +89,11 @@ layout: default
         </div>
 
         <div class="person-profile__bio" itemprop="description">
-          {{ display_description | markdownify }}
+          {% if profile_content != "" %}
+            {{ content }}
+          {% else %}
+            <p></p>
+          {% endif %}
         </div>
       </section>
     </div>

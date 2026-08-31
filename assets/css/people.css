@@ -17,17 +17,18 @@
 }
 
 .people-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 200px));
-  column-gap: 1.5rem;
-  row-gap: 0.75rem;   
-  justify-content: start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 1.5rem;
 }
 
 .person-card {
   position: relative;
   display: flex;
   flex-direction: column;
+  flex: 0 1 200px;
+  width: min(100%, 200px);
   gap: 0.75rem;
   height: 100%;
   padding: 1rem;

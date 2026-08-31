@@ -1,6 +1,7 @@
 (function () {
   const container = document.getElementById("people-directory");
   const data = window.peopleData || {};
+  const records = window.peopleRecords || {};
 
   if (!container || Object.keys(data).length === 0) {
     return;
@@ -17,7 +18,7 @@
   const fragment = document.createDocumentFragment();
 
   sections.forEach((section) => {
-    const entries = Array.isArray(data[section.key]) ? data[section.key] : [];
+    const entries = resolveEntries(data[section.key]);
     if (entries.length === 0) {
       return;
     }
@@ -37,6 +38,23 @@
   container.classList.add("people-directory");
   container.appendChild(fragment);
 
+  function resolveEntries(entries) {
+    if (!Array.isArray(entries)) {
+      return [];
+    }
+
+    return entries
+      .map((entry) => {
+        if (typeof entry === "string") {
+          const record = records[entry];
+          return record ? { ...record, slug: record.slug || entry } : null;
+        }
+
+        return entry;
+      })
+      .filter(Boolean);
+  }
+
   function renderFormerMembersSection(sectionConfig, entries) {
     const section = document.createElement("section");
     section.className = "people-section former-members-section";
@@ -55,23 +73,21 @@
     const list = document.createElement("ul");
     list.className = "former-members-list";
 
-    entries
-      .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }))
-      .forEach((person) => {
-        const li = document.createElement("li");
-        li.className = "former-member-item";
-        
-        if (person.email) {
-          const link = document.createElement("a");
-          link.href = `mailto:${person.email}`;
-          link.textContent = person.name || "Unnamed";
-          li.appendChild(link);
-        } else {
-          li.textContent = person.name || "Unnamed";
-        }
-        
-        list.appendChild(li);
-      });
+    entries.forEach((person) => {
+      const li = document.createElement("li");
+      li.className = "former-member-item";
+
+      if (person.email) {
+        const link = document.createElement("a");
+        link.href = `mailto:${person.email}`;
+        link.textContent = person.name || "Unnamed";
+        li.appendChild(link);
+      } else {
+        li.textContent = person.name || "Unnamed";
+      }
+
+      list.appendChild(li);
+    });
 
     section.appendChild(list);
     return section;
@@ -95,11 +111,9 @@
     const grid = document.createElement("div");
     grid.className = "people-grid";
 
-    entries
-      .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }))
-      .forEach((person) => {
-        grid.appendChild(renderCard(person));
-      });
+    entries.forEach((person) => {
+      grid.appendChild(renderCard(person));
+    });
 
     section.appendChild(grid);
     return section;

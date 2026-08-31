@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Import missing publications from Google Scholar profiles.
 
-This script reads Scholar profile links from _data/people.yml, compares the
-fetched works with _data/publications.yml by normalized title, and appends new
-entries grouped by year.
+This script reads Scholar profile links from the _people collection, compares
+the fetched works with _data/publications.yml by normalized title, and appends
+new entries grouped by year.
 
 Examples:
   python3 scripts/update_publications_from_scholar.py --dry-run --max-per-author 20
@@ -144,6 +144,10 @@ def yaml_double_quote(value: str) -> str:
 
 
 def extract_people_profiles(path: Path, author_tags: dict[str, str], known_tags: set[str]) -> list[ScholarProfile]:
+    collection_profiles = extract_people_profiles_from_collection(path.parent.parent / "_people", author_tags, known_tags)
+    if collection_profiles:
+        return collection_profiles
+
     profiles: list[ScholarProfile] = []
     current_name: str | None = None
 
@@ -165,6 +169,48 @@ def extract_people_profiles(path: Path, author_tags: dict[str, str], known_tags:
                         user_id=user_id,
                         scholar_url=scholar_url,
                         tag=match_person_to_tag(current_name, author_tags, known_tags),
+                    )
+                )
+
+    return profiles
+
+
+def extract_people_profiles_from_collection(
+    people_dir: Path,
+    author_tags: dict[str, str],
+    known_tags: set[str],
+) -> list[ScholarProfile]:
+    if not people_dir.is_dir():
+        return []
+
+    profiles: list[ScholarProfile] = []
+    for person_file in sorted(people_dir.glob("*.md")):
+        text = person_file.read_text(encoding="utf-8")
+        front_matter_match = re.match(r"\A---\s*\n(.*?)\n---\s*", text, flags=re.S)
+        if not front_matter_match:
+            continue
+
+        front_matter = front_matter_match.group(1)
+        title_match = re.search(r"^title:\s+[\"']?(.+?)[\"']?\s*$", front_matter, flags=re.M)
+        if not title_match:
+            continue
+
+        name = title_match.group(1)
+        for url_match in re.finditer(
+            r"^\s*url:\s+[\"']?(https?://scholar\.google\.[^\"']+)[\"']?\s*$",
+            front_matter,
+            flags=re.M,
+        ):
+            scholar_url = url_match.group(1)
+            parsed = urllib.parse.urlparse(scholar_url)
+            user_id = urllib.parse.parse_qs(parsed.query).get("user", [""])[0]
+            if user_id:
+                profiles.append(
+                    ScholarProfile(
+                        name=name,
+                        user_id=user_id,
+                        scholar_url=scholar_url,
+                        tag=match_person_to_tag(name, author_tags, known_tags),
                     )
                 )
 
