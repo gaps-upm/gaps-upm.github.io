@@ -95,6 +95,30 @@ layout: default
             <p></p>
           {% endif %}
         </div>
+
+        {% assign person_slug = page.person_slug | default: page.slug %}
+        {% assign active_projects = site.data.projects | where: "professor", person_slug | where: "active", true | sort: "year_start" | reverse %}
+        {% assign inactive_projects = site.data.projects | where: "professor", person_slug | where: "active", false | sort: "year_start" | reverse %}
+        {% assign person_projects = active_projects | concat: inactive_projects %}
+        {% if person_projects.size > 0 %}
+          <section class="person-profile__projects">
+            <h2>Projects</h2>
+            <div class="person-profile__projects-list">
+              {% for project in person_projects %}
+                <article class="person-project-card{% if project.active %} person-project-card--active{% endif %}">
+                  <div class="person-project-header">
+                    <h3>{{ project.name }}</h3>
+                    {% if project.active %}
+                      <span class="project-status">Active</span>
+                    {% else %}
+                      <span class="project-status project-status--inactive">Inactive</span>
+                    {% endif %}
+                  </div>
+                </article>
+              {% endfor %}
+            </div>
+          </section>
+        {% endif %}
       </section>
     </div>
   </article>

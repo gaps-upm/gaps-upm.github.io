@@ -1,0 +1,485 @@
+# =============================================================================
+# projects.yml — Single source of truth for research projects
+# =============================================================================
+# Fields:
+#   name          : Full project name (required)
+#   acronym       : Short identifier shown in badges (required)
+#   funding_type  : european | national | regional | private (required)
+#   role          : PI | researcher (required)
+#   professor     : Professor / PI associated with the project (optional; for future filtering)
+#   area          : List — any of: healthcare, navigation, communications,
+#                   security, data (used for filtering)
+#   url           : Project website
+#   doi           : DOI URL for EU projects registered in CORDIS
+#   year_start    : Integer (required)
+#   year_end      : Integer — omit or null if ongoing
+#   active        : true | false
+#   partners      : Short description of consortium / partners (optional)
+#   description   : One-sentence summary for industry-facing sections (optional)
+# =============================================================================
+
+# ── European projects ─────────────────────────────────────────────────────────
+
+- name: "SYNTHIA: Synthetic data generation framework for integrated validation of use cases and AI healthcare applications"
+  acronym: SYNTHIA
+  funding_type: european
+  role: PI
+  professor: juan-parras-moral
+  area: [healthcare]
+  url: "https://www.ihi.europa.eu/projects-results/project-factsheets/synthia"
+  year_start: 2024
+  year_end: 2029
+  active: true
+  description: "Development of synthetic data infrastructures to accelerate AI adoption in healthcare under the Innovative Health Initiative (IHI/EU)."
+
+- name: "REPO4EU: Precision drug REPurpOsing For EUrope and the world"
+  acronym: REPO4EU
+  funding_type: european
+  role: PI
+  professor: juan-parras-moral
+  area: [healthcare]
+  doi: "https://doi.org/10.3030/101057619"
+  year_start: 2022
+  year_end: 2029
+  active: true
+  description: "European platform for AI-driven drug repurposing combining knowledge graphs and machine learning across European health data."
+
+- name: "SYNTHEMA: Synthetic generation of hematological data over federated computing frameworks"
+  acronym: SYNTHEMA
+  funding_type: european
+  role: PI
+  professor: juan-parras-moral
+  area: [healthcare]
+  doi: "https://doi.org/10.3030/101095530"
+  year_start: 2022
+  year_end: 2026
+  active: true
+  description: "Federated learning and synthetic data generation to enable AI research on rare haematological diseases across European hospitals."
+
+- name: "SMAUG: Smart Maritime and Underwater Guardian"
+  acronym: SMAUG
+  funding_type: european
+  role: researcher
+  professor: juan-parras-moral
+  area: [navigation, communications]
+  doi: "https://doi.org/10.3030/101121129"
+  year_start: 2023
+  year_end: 2026
+  active: true
+
+- name: "GENOMED4ALL: Genomics and Personalized Medicine for all though Artificial Intelligence in Haematological Diseases"
+  acronym: GENOMED4ALL
+  funding_type: european
+  role: researcher
+  professor: juan-parras-moral
+  area: [healthcare]
+  doi: "https://doi.org/10.3030/101017549"
+  year_start: 2021
+  year_end: 2025
+  active: false
+  description: "Federated AI platform integrating genomic and clinical data across European centres for rare haematological disease research."
+
+- name: "Responsive Electronic Attack for Cooperation Tasks II (REACT II)"
+  acronym: REACT II
+  funding_type: european
+  role: PI
+  professor: jose-luis-blanco-murillo
+  area: [communications, security]
+  year_start: 2024
+  year_end: 2029
+  active: true
+  partners: "INDRA Sistemas, UPM and European defence-industry and university partners"
+  description: "Research on digital beamforming, control, pointing and calibration for cooperative electronic-attack and resilient RF systems; lead at GAPS-UPM."
+
+- name: "SCEPTER"
+  acronym: SCEPTER
+  funding_type: european
+  role: researcher
+  professor: jose-luis-blanco-murillo
+  area: [communications, security]
+  year_start: 2025
+  year_end: 2028
+  active: true
+  description: "Collaboration on the integration of radar, electronic-warfare and communications technologies with multi-domain cognitive capabilities."
+
+- name: "DigiEcoQuarry"
+  acronym: DigiEcoQuarry
+  funding_type: european
+  role: researcher
+  professor: jose-luis-blanco-murillo
+  area: [data]
+  year_start: 2021
+  year_end: 2025
+  active: false
+  partners: "European H2020 consortium including UPM, Chalmers, Montanuniversitaet Leoben and industrial quarry partners"
+  description: "AI and advanced sensing for sustainable quarry digitalisation, including vision models, 3D reconstruction and data-based monitoring."
+
+- name: "De-TECH"
+  acronym: De-TECH
+  funding_type: european
+  role: researcher
+  professor: jose-luis-blanco-murillo
+  area: [data]
+  year_start: 2025
+  year_end: 2027
+  active: true
+  description: "European EIT research and innovation project in which GAPS-UPM participates."
+
+# ── National projects ─────────────────────────────────────────────────────────
+
+- name: "NEMO4EX-AI: Heterogeneous underwater networks for collaborative, dynamic, and cost-effective exploration"
+  acronym: NEMO4EX-AI
+  funding_type: national
+  role: PI
+  professor: juan-parras-moral
+  area: [navigation, communications]
+  url: "https://www.robolabo.etsit.upm.es/projects/nemo/"
+  year_start: 2024
+  year_end: 2027
+  active: true
+  description: "AI-based techniques for oceanic cooperative robotics."
+
+- name: "NAUTILUS: Comportamientos colectivos y autónomos de AUVs"
+  acronym: NAUTILUS
+  funding_type: national
+  role: researcher
+  professor: juan-parras-moral
+  area: [navigation, communications]
+  year_start: 2021
+  year_end: 2025
+  active: false
+
+- name: "HERAKLES: Controlando las redes de comunicaciones electromagnéticas submarinas mediante despliegues autocontrolables"
+  acronym: HERAKLES
+  funding_type: national
+  role: researcher
+  professor: juan-parras-moral
+  area: [navigation, communications]
+  year_start: 2016
+  year_end: 2020
+  active: false
+
+- name: "UNDERWORLD: Radiocomunicaciones Optimizadas Submarinas usando Dispositivos Repetidores para Aplicaciones de Monitorización"
+  acronym: UNDERWORLD
+  funding_type: national
+  role: researcher
+  professor: juan-parras-moral
+  area: [navigation, communications]
+  year_start: 2014
+  year_end: 2016
+  active: false
+
+- name: "Comonsens Excellence Network"
+  acronym: COMONSENS
+  funding_type: national
+  role: researcher
+  professor: juan-parras-moral
+  area: [communications, security]
+  year_start: 2015
+  year_end: 2026
+  active: true
+  description: "Spanish national excellence network on signal processing and communications (2015-2017, 2020-2021, 2025-2026)."
+
+- name: "Tecnologías avanzadas para líneas de producción en serie de cargas de pago y plataformas espaciales"
+  acronym: LINCE
+  funding_type: national
+  role: researcher
+  professor: jose-luis-blanco-murillo
+  area: [communications, data]
+  year_start: 2024
+  year_end: 2026
+  active: true
+  partners: "INDRA Sistemas, UPM"
+  description: "CDTI Programa de Tecnologías Espaciales project on advanced technologies for serial production of space payloads and platforms."
+
+- name: "Diagnóstico y evaluación del párkinson usando biometrías motoras y no motoras"
+  acronym: DEPIA
+  funding_type: national
+  role: PI
+  professor: jose-luis-blanco-murillo
+  area: [healthcare, data]
+  year_start: 2022
+  year_end: 2026
+  active: true
+  partners: "UPM"
+  description: "Co-PI project on Parkinson's evaluation, with responsibility for voice and speech processing, statistical modeling and acquisition protocols."
+
+- name: "Radar MIMO de banda ultrancha"
+  acronym: HORFI
+  funding_type: national
+  role: researcher
+  professor: jose-luis-blanco-murillo
+  area: [communications]
+  year_start: 2014
+  year_end: 2016
+  active: false
+  partners: "UPM, CSIC, Universidad de Cantabria"
+  description: "Advanced signal processing and experimental validation for ultra-wideband MIMO radar prototypes."
+
+- name: "Caracterización, modelado y compensación en la señal de voz"
+  acronym: CMC-V2
+  funding_type: national
+  role: researcher
+  professor: jose-luis-blanco-murillo
+  area: [data]
+  year_start: 2013
+  year_end: 2013
+  active: false
+  partners: "UPM, UAM"
+  description: "Research on characterization, modeling and compensation of voice signals, including algorithms for mitigating spurious effects."
+
+- name: "PriorSpeech: Un enfoque bayesiano para sistemas de reconocimiento basados en voz e interactivos aprovechando el conocimiento a priori y contextual"
+  acronym: PriorSpeech
+  funding_type: national
+  role: researcher
+  professor: jose-luis-blanco-murillo
+  area: [data]
+  year_start: 2009
+  year_end: 2012
+  active: false
+  partners: "UPM, UAM"
+  description: "Bayesian methods for voice-based and interactive recognition systems exploiting prior and contextual knowledge."
+
+- name: "Movilidad y Automoción en Redes de Transporte Avanzadas"
+  acronym: MARTA
+  funding_type: national
+  role: researcher
+  professor: jose-luis-blanco-murillo
+  area: [navigation, communications, data]
+  year_start: 2007
+  year_end: 2011
+  active: false
+  partners: "UPM, UPC, UPV, UM, Telefónica I+D, Tecnalia, GMV, Ficosa, SEAT"
+  description: "R&D on advanced transport networks, mobility and automotive systems within the Spanish AVANZA programme."
+
+- name: "Incorporación de información de alto nivel para reconocimiento de locutor y del idioma"
+  acronym: TEC2006-13170-C02-01
+  funding_type: national
+  role: researcher
+  professor: jose-luis-blanco-murillo
+  area: [data, security]
+  year_start: 2007
+  year_end: 2009
+  active: false
+  partners: "UPM, UAM, Guardia Civil"
+  description: "Speaker and language recognition research incorporating high-level information."
+
+- name: "Desarrollo, implementación y prototipado de una forma de onda española en HF para la transmisión de voz digital y datos en el ámbito de defensa"
+  acronym: MDEF-HFDVL
+  funding_type: national
+  role: researcher
+  professor: jose-luis-blanco-murillo
+  area: [communications, security]
+  year_start: 2013
+  year_end: 2013
+  active: false
+  partners: "UPM"
+  description: "Development and prototyping of an HF waveform for digital voice and data transmission in defence applications."
+
+- name: "Desarrollo de un sistema automático para el repostaje de aeronaves en vuelo"
+  acronym: REPOSTAJE-AEREO
+  funding_type: national
+  role: researcher
+  professor: jose-luis-blanco-murillo
+  area: [navigation, data]
+  year_start: 2014
+  year_end: 2014
+  active: false
+  partners: "UPM"
+  description: "CDTI technology-transfer project on an automatic system for in-flight aircraft refuelling."
+
+- name: "HADA: Investigación sobre herramientas avanzadas de anotación de datos basadas en IA"
+  acronym: HADA
+  funding_type: national
+  role: PI
+  professor: jose-luis-blanco-murillo
+  area: [data]
+  year_start: 2021
+  year_end: 2024
+  active: false
+  partners: "UPM, SigmaCognition"
+  description: "Red.es-supported research on AI-based tools for advanced data and multimedia annotation."
+
+# ── Regional projects ──────────────────────────────────────────────────────────
+
+- name: "REACT: Espacio de datos y sistemas inteligentes de ayuda a la decisión para pandemias, con apoyo a personal
+sanitario, epidemiológico, investigador, autoridades sanitarias y pacientes - MadridDataSpace4Pandemics-CM"
+  acronym: REACT
+  funding_type: regional
+  role: PI
+  professor: juan-parras-moral
+  area: [healthcare]
+  year_start: 2020
+  year_end: 2022
+  active: false
+  description: "Regional Madrid project applying machine learning to pandemics decision support."
+
+# ── Other / Private ────────────────────────────────────────────────────────────
+
+- name: "NEVORA: Newtork-based Evaluation for On-Line Reliability Assessment of batteries"
+  acronym: NEVORA
+  funding_type: private
+  role: researcher
+  professor: juan-parras-moral
+  area: [energy]
+  url: "https://www.nevoraproject.com/"
+  year_start: 2025
+  year_end: null
+  active: true
+  description: "AI-based solid-state batteries diagnosis."
+
+- name: "Formación avanzada en procesado de señal. Algoritmia DBF y RFSoC"
+  acronym: INDRA-DBF
+  funding_type: private
+  role: PI
+  professor: jose-luis-blanco-murillo
+  area: [communications, security]
+  year_start: 2025
+  year_end: 2026
+  active: false
+  partners: "INDRA SISTEMAS, UPM"
+  description: "Advanced signal-processing, digital-beamforming and RFSoC training and knowledge-transfer programme."
+
+- name: "Caracterización algorítmica y predistorsión de amplificadores de alta potencia"
+  acronym: SENER-RF
+  funding_type: private
+  role: PI
+  professor: jose-luis-blanco-murillo
+  area: [communications, data]
+  year_start: 2025
+  year_end: 2025
+  active: false
+  partners: "SENER, UPM"
+  description: "Algorithmic characterization and predistortion of nonlinear high-power RF amplifier systems."
+
+- name: "Uso de inteligencia artificial para optimización de redes GNNS"
+  acronym: TELEFONICA-GNNS
+  funding_type: private
+  role: researcher
+  professor: jose-luis-blanco-murillo
+  area: [communications, data]
+  year_start: 2025
+  year_end: 2025
+  active: false
+  partners: "Telefónica Sistemas, UPM"
+  description: "Application of AI methods to network optimization."
+
+- name: "Multimodal AI sonorization of multimedia content"
+  acronym: AMAZON-SONORIZATION
+  funding_type: private
+  role: researcher
+  professor: jose-luis-blanco-murillo
+  area: [data]
+  year_start: 2023
+  year_end: 2023
+  active: false
+  partners: "Amazon Science, UPM"
+  description: "Industry-supported research on multimodal AI methods for the sonorization of multimedia content."
+
+- name: "Proyecto 4i. Cátedra Shazura-ETSIT-UPM"
+  acronym: SHAZURA-4I
+  funding_type: private
+  role: PI
+  professor: jose-luis-blanco-murillo
+  area: [data]
+  year_start: 2019
+  year_end: 2023
+  active: false
+  partners: "Shazura Inc., UPM"
+  description: "Industry-chair activity on applied AI, multimedia analysis and technology transfer."
+
+- name: "Estudio regulatorio y técnico de viabilidad de un sistema de comunicaciones punto a multipunto mediante técnicas de radio cognitiva en banda licenciada"
+  acronym: INDRA-RADIO-COGNITIVA
+  funding_type: private
+  role: researcher
+  professor: jose-luis-blanco-murillo
+  area: [communications, security]
+  year_start: 2019
+  year_end: 2021
+  active: false
+  partners: "INDRA Sistemas, UPM"
+  description: "Technical and regulatory feasibility study for licensed-band point-to-multipoint cognitive-radio communications."
+
+- name: "Modelos avanzados de segmentación en carteras de recobro: Fase 1"
+  acronym: SANRAY-SEGMENTATION
+  funding_type: private
+  role: PI
+  professor: jose-luis-blanco-murillo
+  area: [data]
+  year_start: 2018
+  year_end: 2018
+  active: false
+  partners: "SanRay Consulting, UPM"
+  description: "Advanced data-segmentation models for collection portfolios."
+
+- name: "4i Fase 1: Vi"
+  acronym: SHOT-SHOP-4I
+  funding_type: private
+  role: PI
+  professor: jose-luis-blanco-murillo
+  area: [data]
+  year_start: 2018
+  year_end: 2019
+  active: false
+  partners: "Shot & Shop, UPM"
+  description: "Applied AI and data-analysis work supporting content-based search and e-commerce technology."
+
+- name: "Caracterización funcional de un nuevo modelo preclínico de síndrome de intestino irritable con constipación"
+  acronym: SII-C
+  funding_type: private
+  role: researcher
+  professor: jose-luis-blanco-murillo
+  area: [healthcare, data]
+  year_start: 2017
+  year_end: 2018
+  active: false
+  partners: "Grupo Español de Motilidad Digestiva, Allergan S.A., URJC, UPM"
+  description: "Signal and data analysis supporting functional characterization of a preclinical model of irritable bowel syndrome with constipation."
+
+- name: "PhoneDrive, producto Análisis de Riesgos para Insurance Telematics"
+  acronym: PhoneDrive
+  funding_type: private
+  role: PI
+  professor: jose-luis-blanco-murillo
+  area: [navigation, data]
+  year_start: 2016
+  year_end: 2017
+  active: false
+  partners: "Telefónica I+D, UPM"
+  description: "Data science and risk analysis for insurance telematics, developed through five contracted subprojects and later transferred to Drivies."
+
+- name: "Plataforma Avanzada de Inteligencia de Datos"
+  acronym: PAID
+  funding_type: private
+  role: researcher
+  professor: jose-luis-blanco-murillo
+  area: [data]
+  year_start: 2011
+  year_end: 2011
+  active: false
+  partners: "Telefónica I+D, UPM"
+  description: "Technology-transfer project on an advanced data-intelligence platform."
+
+- name: "Servicio M2M para la plataforma IDAS (Intelligent Data Advanced Solution)"
+  acronym: IDAS-M2M
+  funding_type: private
+  role: researcher
+  professor: jose-luis-blanco-murillo
+  area: [communications, data]
+  year_start: 2011
+  year_end: 2011
+  active: false
+  partners: "Telefónica I+D, UPM"
+  description: "M2M service development for the Intelligent Data Advanced Solution platform."
+
+- name: "Technical Due Diligence for speech recognition services"
+  acronym: TDD-SPEECH
+  funding_type: private
+  role: researcher
+  professor: jose-luis-blanco-murillo
+  area: [data]
+  year_start: 2011
+  year_end: 2012
+  active: false
+  partners: "Telefónica I+D, UPM"
+  description: "Technical due diligence and technology assessment for speech-recognition services."
