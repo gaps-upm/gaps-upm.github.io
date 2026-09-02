@@ -1,16 +1,18 @@
 .ftg-page {
-  --ftg-ink: #233241;
-  --ftg-muted: #5f6f7d;
-  --ftg-rule: #d8e1e8;
-  --ftg-panel: #f7fafc;
-  --ftg-accent: #2878a8;
-  --ftg-accent-dark: #1d5e83;
+  --ftg-ink: #17212b;
+  --ftg-muted: #6f7a86;
+  --ftg-rule: #e7edf3;
+  --ftg-panel: rgba(7, 131, 197, 0.05);
+  --ftg-accent: #0783c5;
+  --ftg-accent-dark: #0783c5;
+  --ftg-orange: #f28c28;
   color: var(--ftg-ink);
 }
 
 .ftg-page h2,
 .ftg-page h3,
 .ftg-page h4 {
+  font-family: "Manrope", "Inter", sans-serif;
   letter-spacing: 0;
 }
 
@@ -27,7 +29,7 @@
   gap: 1.25rem;
   margin: 1.5rem 0 2.25rem;
   padding: 1.25rem;
-  border-left: 5px solid var(--ftg-accent);
+  border-left: 5px solid var(--ftg-orange);
   background: var(--ftg-panel);
 }
 
@@ -47,8 +49,18 @@
 
 .ftg-next__title {
   margin: 0 0 0.45rem;
+  padding-bottom: 0;
+  border-bottom: 0;
+  color: var(--ftg-ink);
+  font-family: "Manrope", "Inter", sans-serif;
   font-size: 1.2rem;
   line-height: 1.35;
+}
+
+.page__content .ftg-next__title::after,
+.ftg-next__title::after {
+  content: none !important;
+  display: none !important;
 }
 
 .ftg-next__speaker,
@@ -85,14 +97,29 @@
 }
 
 .ftg-section-title {
-  margin-top: 2.4rem;
-  padding-top: 1.3rem;
-  border-top: 1px solid var(--ftg-rule);
+  margin: 3rem 0 1.45rem;
+  padding-top: 0;
+  border-top: 0;
+  color: var(--ftg-ink);
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: var(--gaps-section-title-size, 2rem);
+  line-height: 1.22;
+}
+
+.ftg-section-title::after {
+  content: "";
+  display: block;
+  width: 38px;
+  height: 3px;
+  margin-top: 0.8rem;
+  background: var(--ftg-accent);
+  border-radius: 2px;
 }
 
 .ftg-season {
   margin: 2rem 0 0.75rem;
-  color: var(--ftg-accent-dark);
+  color: var(--ftg-orange);
+  font-family: "Manrope", "Inter", sans-serif;
   font-size: 1.1rem;
   font-weight: 700;
 }
@@ -160,13 +187,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #f1d900;
+  color: var(--ftg-orange);
   text-decoration: none;
   line-height: 1;
 }
 
 .ftg-session__presentation-link:hover {
-  color: #d6bf00;
+  color: var(--ftg-accent);
 }
 
 .ftg-session__presentation-icon {
@@ -175,7 +202,7 @@
 
 .ftg-session__abstract {
   margin: 0 0 1rem;
-  color: #364957;
+  color: var(--ftg-ink);
   line-height: 1.65;
 }
 
@@ -194,7 +221,7 @@
 
 .ftg-session__about {
   margin: 0;
-  color: #364957;
+  color: var(--ftg-ink);
   line-height: 1.6;
 }
 
@@ -214,7 +241,7 @@
 }
 
 .ftg-agenda__duration {
-  color: var(--ftg-accent-dark);
+  color: var(--ftg-accent);
   font-weight: 700;
 }
 

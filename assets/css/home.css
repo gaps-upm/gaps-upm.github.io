@@ -1,0 +1,139 @@
+:root {
+  --gaps-blue: #0783c5;
+  --gaps-orange: #f28c28;
+  --gaps-ink: #17212b;
+  --gaps-text: #3f4650;
+  --gaps-muted: #6f7a86;
+  --gaps-border: #e7edf3;
+  --gaps-section-title-size: 2rem;
+}
+
+#main {
+  margin-top: 2.5rem;
+}
+
+.page__content .home-hero a,
+.page__content .home-section a {
+  text-decoration: none;
+}
+
+.home-hero {
+  width: 100%;
+  max-width: none;
+  padding: 3.25rem 0 4.25rem;
+  border-bottom: 1px solid var(--gaps-border);
+}
+
+.home-hero__eyebrow {
+  margin: 0 0 1.35rem;
+  color: var(--gaps-blue);
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.home-hero h1 {
+  max-width: none;
+  margin: 0;
+  color: var(--gaps-ink);
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: 3.1rem;
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.home-hero h1::after {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 3px;
+  margin-top: 1rem;
+  background: var(--gaps-orange);
+  border-radius: 2px;
+}
+
+.home-hero__lead {
+  max-width: none;
+  margin: 1.4rem 0 0;
+  color: var(--gaps-text);
+  font-size: 1.22rem;
+  line-height: 1.65;
+}
+
+.home-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem 1.75rem;
+  margin-top: 2rem;
+}
+
+.home-hero__actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--gaps-ink);
+  font-weight: 700;
+  border-bottom: 2px solid var(--gaps-blue);
+}
+
+.home-hero__actions a:hover,
+.home-hero__actions a:focus {
+  color: var(--gaps-blue);
+}
+
+.home-section {
+  width: 100%;
+  max-width: none;
+  margin: 4.75rem 0 5.25rem;
+}
+
+.home-section h2 {
+  margin: 0 0 1.45rem;
+  padding-bottom: 0;
+  border-bottom: 0;
+  color: var(--gaps-ink);
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: var(--gaps-section-title-size);
+  line-height: 1.22;
+  letter-spacing: 0;
+}
+
+.home-section h2::after {
+  content: "";
+  display: block;
+  width: 38px;
+  height: 3px;
+  margin-top: 0.8rem;
+  background: var(--gaps-blue);
+  border-radius: 2px;
+}
+
+.home-section p {
+  color: var(--gaps-text);
+  font-size: 1.04rem;
+  line-height: 1.75;
+}
+
+@media (max-width: 600px) {
+  #main {
+    margin-top: 1.25rem;
+  }
+
+  .home-hero {
+    padding: 2.25rem 0 3rem;
+  }
+
+  .home-hero h1 {
+    font-size: 2.35rem;
+  }
+
+  .home-hero__lead {
+    font-size: 1.08rem;
+  }
+
+  .home-section {
+    margin: 3.25rem 0 3.75rem;
+  }
+}

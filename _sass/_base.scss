@@ -7,13 +7,23 @@ html {
   min-height: 100%;
 }
 
+:root {
+  --gaps-blue: #0783c5;
+  --gaps-orange: #f28c28;
+  --gaps-ink: #17212b;
+  --gaps-text: #3f4650;
+  --gaps-muted: #6f7a86;
+  --gaps-border: #e7edf3;
+  --gaps-section-title-size: 2rem;
+}
+
 body {
   margin: 0;
   padding: 0;
   padding-bottom: 9em;
   color: $text-color;
   font-family: $global-font-family;
-  line-height: 1.5;
+  line-height: 1.65;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -25,7 +35,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 2em 0 0.5em;
   line-height: 1.2;
   font-family: $header-font-family;
-  font-weight: bold;
+  font-weight: 700;
+  color: #17212b;
+  letter-spacing: 0;
 }
 
 h1 {

@@ -3,11 +3,12 @@ permalink: /filling-the-gaps/
 title: "Filling the Gaps"
 excerpt: "Reading Group"
 author_profile: true
+hide_title: true
 ---
 
 {% assign ftg = site.data.filling_the_gaps %}
 
-<link rel="stylesheet" href="{{ '/assets/css/filling-the-gaps.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/filling-the-gaps.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
 <div class="ftg-page">
   <p class="ftg-intro">{{ ftg.summary }}</p>

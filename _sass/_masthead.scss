@@ -14,7 +14,7 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: 1em 1em 1em;
+    padding: 1.1em 1em;
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {
@@ -34,7 +34,7 @@
 .masthead__menu {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1.45rem;
 
   ul {
     margin: 0;
@@ -55,7 +55,7 @@
 .masthead__logo {
   display: block;
   width: auto;
-  height: 64px;
+  height: 68px;
 }
 
 .masthead__social {

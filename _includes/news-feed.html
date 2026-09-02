@@ -13,6 +13,9 @@
             <span>{{ item.date | date: "%Y" }}</span>
           </time>
           <div class="news-feed__content">
+            {% if item.label %}
+              <p class="news-feed__label">{{ item.label }}</p>
+            {% endif %}
             {{ item.content | markdownify }}
           </div>
         </article>

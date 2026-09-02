@@ -3,6 +3,7 @@ layout: archive
 title: "Teaching"
 permalink: /teaching/
 author_profile: true
+hide_title: true
 ---
 
 ## Bachelor Degree in Telecommunication Technologies and Systems (Grado en Ingeniería de Tecnologías y Sistemas de Telecomunicación)
@@ -47,5 +48,4 @@ author_profile: true
 * (APMC)
 * From Array Processing to MIMO Communications (MIMO)
 * [Website](https://ssr.upm.es/mutsc/)
-
 

@@ -1,11 +1,12 @@
 ---
 layout: archive
-# title: "People"
+title: "People"
 permalink: /people/
 author_profile: true
+hide_title: true
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/people.css' | relative_url }}?v=16">
+<link rel="stylesheet" href="{{ '/assets/css/people.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
 <div id="people-directory"></div>
 
@@ -32,4 +33,4 @@ author_profile: true
 	};
 	window.peopleBaseUrl = {{ '/people/' | relative_url | jsonify }};
 </script>
-<script src="{{ '/assets/js/people.js' | relative_url }}?v=16" defer></script>
+<script src="{{ '/assets/js/people.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>

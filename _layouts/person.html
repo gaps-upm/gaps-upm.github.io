@@ -24,7 +24,7 @@ layout: default
 {% endif %}
 {% assign profile_content = content | strip %}
 
-<link rel="stylesheet" href="{{ '/assets/css/person-profile.css' | relative_url }}?v=3">
+<link rel="stylesheet" href="{{ '/assets/css/person-profile.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
 <div id="main" role="main">
   <article class="page person-profile-page" itemscope itemtype="https://schema.org/Person">

@@ -3,9 +3,10 @@ layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
+hide_title: true
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
 <div class="filter-section">
   <h3>Filter by Researcher:</h3>
@@ -43,4 +44,4 @@ author_profile: true
   <p>The interactive filters require JavaScript. Enable it to explore publications by author.</p>
 </noscript>
 
-<script src="{{ '/assets/js/publications-filter.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/publications-filter.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>

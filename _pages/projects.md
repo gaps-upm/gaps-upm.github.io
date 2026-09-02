@@ -3,9 +3,10 @@ layout: archive
 title: "Projects"
 permalink: /projects/
 author_profile: true
+hide_title: true
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/projects.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/projects.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
 {% assign project_groups = site.data.projects | group_by: "funding_type" %}
 
@@ -123,4 +124,4 @@ author_profile: true
   <p>The interactive filters require JavaScript. Enable it to explore projects by type.</p>
 </noscript>
 
-<script src="{{ '/assets/js/projects-filter.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/projects-filter.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>

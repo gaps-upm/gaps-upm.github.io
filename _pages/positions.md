@@ -3,6 +3,7 @@ layout: archive
 title: "Positions"
 permalink: /positions/
 author_profile: true
+hide_title: true
 ---
 
 ## Ofertas de Trabajo de Fin de Grado/Máster
@@ -17,21 +18,3 @@ author_profile: true
 {% endif %}
 
 {% endfor %}
-
-<!-- 
-* Position 1: name
-    - Description
-    - Contact: [fulano@upm.es](mailto:fulano@upm.es)
-    - [Link](www.google.es)
-
-## PhD positions
-
-* Thesis 1: name
-    - Description
-    - Contact: [fulano@upm.es](mailto:fulano@upm.es)
-
-## Bachelor and Master Thesis
-
-* Line 1: Artificial Intelligence for medical applications
-    - Description
-    - Contact: [fulano@upm.es](mailto:fulano@upm.es) -->

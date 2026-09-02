@@ -3,6 +3,7 @@ layout: archive
 title: "Join us"
 permalink: /lines_ml_health/
 author_profile: true
+hide_title: true
 ---
 
 ## Machine Learning methods for health
@@ -32,5 +33,4 @@ Although Machine Learning methods usually focus on *Big* Data settings, where ma
 In this line, we aim to design optimal therapies for patients, taking into account the patient evolution, using techniques from optimal control theory, such as Deep Reinforcement Learning.
 * Related publications: [1](https://doi.org/10.1016/j.mbs.2023.109044)
 * Contact persons: Santiago Zazo [santiago.zazo@upm.es](mailto:santiago.zazo@upm.es), Juan Parras [j.parras@upm.es](mailto:j.parras@upm.es)
-
 
