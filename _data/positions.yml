@@ -1,0 +1,13 @@
+- title: "Comunicaciones inteligentes mediante machine learning: aplicación de la IA a los retos de las telecomunicaciones"
+  description: >-
+    Este Trabajo de Fin de Grado/Máster ofrece al alumno la oportunidad de adquirir una base sólida en los fundamentos del machine learning, desde los modelos estadísticos clásicos hasta las técnicas de aprendizaje automático más avanzadas, para posteriormente aplicar dichos conocimientos a un problema de gran relevancia industrial: la estimación de canal en sistemas de comunicaciones. No se trata de un ejercicio puramente teórico, sino de un trabajo orientado a la aplicación práctica, en el que el alumno analizará y comparará el rendimiento de los métodos tradicionales frente a las nuevas soluciones basadas en inteligencia artificial, identificando sus ventajas, limitaciones y potencial de mejora en escenarios reales. Se valorará especialmente un perfil con sólidos conocimientos de programación y matemáticas, así como un genuino interés por comprender el funcionamiento interno de los algoritmos, más allá de su uso como herramientas de caja negra. Es un trabajo ideal para alumnos interesados en trabajar en la intersección entre las telecomunicaciones y la inteligencia artificial, y que deseen desarrollar un trabajo con proyección tanto académica como profesional.
+  contact_person:
+    name: "Juan Parras Moral"
+    email: "j.parras@upm.es"
+
+- title: "Agricultura inteligente: machine learning aplicado al apoyo a la toma de decisiones"
+  description: >-
+    Este Trabajo de Fin de Grado/Máster está dirigido a aquellos alumnos que deseen dar sus primeros pasos en el ámbito del machine learning a través de un trabajo con una marcada orientación práctica y con aplicación directa en un sector estratégico como es la agricultura. El trabajo parte de una introducción rigurosa a los fundamentos del aprendizaje automático, para posteriormente aplicarlos a un caso de uso concreto: el desarrollo de sistemas de apoyo a la decisión orientados a optimizar procesos agrícolas reales, combinando en igual medida el rigor teórico y la aplicación práctica. Se valorará especialmente a los candidatos con sólidas competencias en programación y matemáticas, capaces de traducir datos y modelos en soluciones útiles para problemas del mundo real. Se trata de una excelente oportunidad para aquellos alumnos que busquen desarrollar un trabajo con aplicabilidad tangible, combinando tecnología puntera con un ámbito de considerable relevancia social y económica.
+  contact_person:
+    name: "Juan Parras Moral"
+    email: "j.parras@upm.es"

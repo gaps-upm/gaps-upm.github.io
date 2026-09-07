@@ -7,40 +7,40 @@
   <div class="zoom-hint" id="zoomHint">Click image to zoom • ESC to close</div>
 </div>
 
-<div class="publications-slider">
-  <button class="slider-nav prev" onclick="moveSlide(-1)">❮</button>
-  <button class="slider-nav next" onclick="moveSlide(1)">❯</button>
-  
-  <div class="slider-container" id="sliderContainer">
-    <!-- Slide 1 -->
-    <div class="slide" data-pub-link="../publications/#decaflow">
-      <img src="../images/posters/decaflow.png" alt="Publication Poster 1" onclick="event.stopPropagation(); openZoom(this.src)">
-      <div class="slide-caption" onclick="event.stopPropagation(); goToPublication(this.parentElement.dataset.pubLink)">
-        <h3>DeCaFlow: A Deconfounding Causal Generative Model</h3>
-        <p>Almodóvar, A., et al. - NeurIPS 2025 • Click to view publication →</p>
-      </div>
-    </div>
-    <!-- Slide 2 -->
-    <div class="slide" data-pub-link="../publications/#biological-informed">
-      <img src="../images/posters/mateo.png" alt="Publication Poster 2" onclick="event.stopPropagation(); openZoom(this.src)">
-      <div class="slide-caption" onclick="event.stopPropagation(); goToPublication(this.parentElement.dataset.pubLink)">
-        <h3>Biologically Informed Neural Speech Synthesis</h3>
-        <p>In Proc. IberSPEECH 2024 (pp. 261-265) • Click to view publication →</p>
-      </div>
-    </div>
-    <div class="slide" >
-      <img src="../images/posters/santi.jpg" alt="Publication Poster 3" onclick="event.stopPropagation(); openZoom(this.src)">
-      <div class="slide-caption" onclick="event.stopPropagation(); goToPublication(this.parentElement.dataset.pubLink)">
-      </div>
-    </div>
-    <!-- Add more slides as needed -->
+<section class="home-publications" aria-labelledby="publications-slider-heading">
+  <div class="home-publications__header">
+    <h2 id="publications-slider-heading">Recent Publications</h2>
   </div>
-  
-  <div class="slider-dots" id="sliderDots"></div>
-  
-  <div class="slider-link">
-    <a href="../publications">View All Publications →</a>
-  </div>
-</div>
 
-<script src="../assets/js/publications-slider.js"></script>
+  <div class="publications-slider">
+    <button class="slider-nav prev" type="button" onclick="moveSlide(-1)" aria-label="Previous publications"><span aria-hidden="true">&lsaquo;</span></button>
+    <button class="slider-nav next" type="button" onclick="moveSlide(1)" aria-label="Next publications"><span aria-hidden="true">&rsaquo;</span></button>
+
+    <div class="slider-container" id="sliderContainer">
+      {% for publication in site.data.home_publications %}
+        <article class="slide publication-card">
+          <button class="publication-card__image-button" type="button" onclick="event.stopPropagation(); openZoom('{{ publication.image | relative_url }}')" aria-label="Zoom poster for {{ publication.title }}">
+            <img src="{{ publication.image | relative_url }}" alt="{{ publication.title }} poster">
+          </button>
+          <div class="publication-card__body">
+            <p class="publication-card__venue">{{ publication.venue }}</p>
+            <h3>{{ publication.title }}</h3>
+            {% if publication.subtitle %}
+              <p class="publication-card__subtitle">{{ publication.subtitle }}</p>
+            {% endif %}
+            <p class="publication-card__authors">{{ publication.authors }}</p>
+            <a href="{{ '/publications/' | relative_url }}{% if publication.publication_id %}#{{ publication.publication_id }}{% endif %}">View publication <span aria-hidden="true">-&gt;</span></a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+
+    <div class="slider-dots" id="sliderDots"></div>
+  </div>
+
+  <div class="home-publications__footer">
+    <a class="home-publications__all" href="{{ '/publications/' | relative_url }}">View all <span aria-hidden="true">-&gt;</span></a>
+  </div>
+</section>
+
+<script src="{{ '/assets/js/publications-slider.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>

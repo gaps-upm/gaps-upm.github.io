@@ -238,7 +238,8 @@
           url: https://arxiv.org/pdf/2507.02530
         - label: Scholar
           url: https://scholar.google.es/citations?view_op=view_citation&hl=es&user=muINbiEAAAAJ&sortby=pubdate&citation_for_view=muINbiEAAAAJ:KlAtU1dfN6UC
-    - authors_tags: [camara, blanco]
+    - id: parameter-optimisation-physical-model-vocal-system
+      authors_tags: [camara, blanco]
       citation: "Cámara, M., Blanco, J. L., & Reiss, J. D. (2025). **Parameter optimisation for a physical model of the vocal system.** *EURASIP Journal on Audio, Speech, and Music Processing, 2025(1), 27.*"
       links:
         - label: DOI
@@ -784,4 +785,3 @@
       links:
         - label: Scholar
           url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J-zt09cAAAAJ&pagesize=30&sortby=pubdate&citation_for_view=J-zt09cAAAAJ:-jrNzM816MMC
-
