@@ -2,7 +2,7 @@
 import { readYaml } from '../lib/content';
 interface Props { title: string; description?: string }
 const { title, description = 'Signal Processing Applications Group at Universidad Politécnica de Madrid' } = Astro.props;
-const navigation = await readYaml<{main: {title: string; url: string}[]}>('navigation.yml');
+const navigation = await readYaml<{main: {title: string; url: string; children?: {title: string; url: string; target?: string}[]}[]}>('navigation.yml');
 ---
 <!doctype html>
 <html lang="en" class="no-js">
@@ -45,7 +45,14 @@ const navigation = await readYaml<{main: {title: string; url: string}[]}>('navig
           </a>
           <nav id="site-nav" class="greedy-nav" aria-label="Main navigation">
             <ul class="visible-links">
-              {navigation.main.map((link) => <li class="masthead__menu-item"><a href={link.url}>{link.title}</a></li>)}
+              {navigation.main.map((link) => <li class:list={["masthead__menu-item", link.children?.length && "masthead__menu-item--has-submenu"]}>
+                <a href={link.url}>{link.title}</a>
+                {link.children?.length > 0 &&
+                  <ul class="masthead__submenu">
+                    {link.children.map((child) => <li><a href={child.url} target={child.target} rel={child.target === '_blank' ? 'noopener noreferrer' : undefined}>{child.title}</a></li>)}
+                  </ul>
+                }
+              </li>)}
             </ul>
             <ul class="hidden-links hidden"></ul>
           </nav>
@@ -136,6 +143,34 @@ const navigation = await readYaml<{main: {title: string; url: string}[]}>('navig
 
         reducedMotion.addEventListener('change', setMotionMode);
         setMotionMode();
+      })();
+    </script>
+    <script is:inline>
+      (() => {
+        const items = [...document.querySelectorAll('.masthead__menu-item--has-submenu')];
+        const closeItems = () => items.forEach((item) => {
+          item.classList.remove('is-open');
+        });
+        items.forEach((item) => {
+          const parentLink = item.querySelector(':scope > a');
+          if (window.matchMedia('(hover: none)').matches) {
+            parentLink?.addEventListener('click', (event) => {
+              if (item.classList.contains('is-open')) return;
+              event.preventDefault();
+              closeItems();
+              item.classList.add('is-open');
+            });
+          }
+          item.addEventListener('keydown', (event) => {
+            if (event.key !== 'Escape') return;
+            item.classList.remove('is-open');
+            parentLink?.focus();
+          });
+        });
+        document.addEventListener('click', (event) => {
+          if (items.some((item) => item.contains(event.target))) return;
+          closeItems();
+        });
       })();
     </script>
   </body>

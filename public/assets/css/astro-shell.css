@@ -1,7 +1,60 @@
 /* Responsive navigation for the Astro shell, retaining the original masthead styling. */
+:root {
+  --gaps-font-family: "IBM Plex Sans", -apple-system, "Segoe UI", Arial, sans-serif;
+  --gaps-body-font-size: 0.95rem;
+}
+
+body,
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--gaps-font-family);
+}
+
+body {
+  font-size: var(--gaps-body-font-size);
+}
+
 .greedy-nav { flex: 1 1 auto; }
 .greedy-nav .visible-links { display: flex; flex-wrap: wrap; align-items: center; }
 .greedy-nav .visible-links li { display: block; }
+
+.masthead__menu-item--has-submenu { position: relative; }
+.masthead__menu-item--has-submenu > a { display: inline-block; }
+.masthead__submenu {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% - 0.25rem);
+  left: 0.4rem;
+  display: none !important;
+  min-width: 13rem;
+  margin: 0;
+  padding: 0.35rem;
+  border: 1px solid #e4eaf0;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(23, 33, 43, 0.14);
+  list-style: none;
+}
+.masthead__menu-item--has-submenu:hover > .masthead__submenu,
+.masthead__menu-item--has-submenu:focus-within > .masthead__submenu,
+.masthead__menu-item--has-submenu.is-open > .masthead__submenu { display: block !important; }
+.greedy-nav .masthead__submenu li { display: block; border: 0; }
+.greedy-nav .masthead__submenu a {
+  display: block;
+  margin: 0;
+  padding: 0.65rem 0.75rem;
+  border-radius: 3px;
+  color: #3f4650;
+  white-space: normal;
+}
+.greedy-nav .masthead__submenu a::before { display: none; }
+.greedy-nav .masthead__submenu a:hover,
+.greedy-nav .masthead__submenu a:focus-visible { background: #eef7fc; color: #0783c5; }
+.masthead__menu-item--has-submenu:focus-within > .masthead__submenu { display: block !important; }
+.masthead__submenu:focus-within { display: block !important; }
+
+@media (max-width: 760px) {
+  .masthead__submenu { top: 100%; left: 50%; transform: translateX(-50%); }
+}
 
 .page__footer {
   position: relative;

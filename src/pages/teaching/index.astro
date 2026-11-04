@@ -2,14 +2,14 @@
 import Base from '../../layouts/Base.astro';
 import { readYaml, readCollection } from '../../lib/content';
 interface Course { code: string; name: string; url?: string; instructors: string[] }
-interface Programme { id: string; level: string; name: string; url: string; courses: Course[] }
+interface Programme { id: string; level: string; name: string; url: string; courses: Course[]; evolution?: { name: string; label: string; url: string; courses: Course[] } }
 const programmes = await readYaml<Programme[]>('teaching.yml');
 const people = await readCollection('people');
 const faculty = new Map(people.map(person => [person.slug, person]));
 const bachelorCount = programmes.filter(programme => programme.level === 'Bachelor’s degree').length;
 const masterCount = programmes.filter(programme => programme.level === 'Master’s degree').length;
 for (const programme of programmes) {
-  for (const course of programme.courses) {
+  for (const course of [...programme.courses, ...(programme.evolution?.courses || [])]) {
     for (const slug of course.instructors) {
       if (!faculty.has(slug)) throw new Error(`Unknown teaching instructor: ${slug}`);
     }
@@ -20,14 +20,13 @@ for (const programme of programmes) {
   <link slot="head" rel="stylesheet" href="/assets/css/teaching.css" />
   <article class="teaching-page">
     <header class="teaching-header">
-      <h1>Teaching</h1>
       <p>Courses taught by GAPS faculty across undergraduate and master's programmes at ETSIT, Universidad Politécnica de Madrid.</p>
       <ul class="teaching-summary" aria-label="Degree programmes">
         <li><strong>{bachelorCount}</strong> Bachelor’s degrees</li>
         <li><strong>{masterCount}</strong> Master’s degrees</li>
       </ul>
     </header>
-    <div class="teaching-grid">
+    <div id="courses" class="teaching-grid">
       {programmes.map(programme => (
         <section class="teaching-programme" aria-labelledby={programme.id}>
           <header class="teaching-programme-header">
@@ -52,6 +51,18 @@ for (const programme of programmes) {
               </li>
             ))}
           </ul>
+          {programme.evolution && <section class="teaching-evolution" aria-label={`New study plan for ${programme.evolution.name}`}>
+            <div class="teaching-evolution-header">
+              <span class="teaching-evolution-label">{programme.evolution.label}</span>
+              <a class="teaching-programme-link" href={programme.evolution.url} target="_blank" rel="noopener noreferrer">Explore the new degree <span aria-hidden="true">↗</span></a>
+            </div>
+            <ul class="teaching-courses teaching-courses--evolution">
+              {programme.evolution.courses.map(course => <li>
+                <span class="teaching-code">{course.code}</span>
+                <div class="teaching-course-detail"><span class="teaching-course-name">{course.name}</span></div>
+              </li>)}
+            </ul>
+          </section>}
         </section>
       ))}
     </div>

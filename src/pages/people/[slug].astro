@@ -90,22 +90,16 @@ function iconFor(label: string) {
           </nav>
           <h1 class="person-profile__name">{person.data.title}</h1>
           {role && <p class="person-profile__role">{role}</p>}
-
-          <div class="person-profile__address">
-            <p>Signal Processing Applications Group (GAPS)</p>
-            <p>Universidad Politécnica de Madrid</p>
-            <p>Madrid, Spain</p>
-          </div>
-
-          {(person.data.email || person.data.links?.length > 0) && <ul class="person-profile__contacts">
-            {person.data.email && <li><a href={`mailto:${person.data.email}`}><i class="fas fa-envelope" aria-hidden="true"></i>{person.data.email}</a></li>}
-            {person.data.links?.map((link: {label: string; url: string}) => <li>
-              <a href={link.url} target="_blank" rel="noreferrer noopener">
-                <i class={iconFor(link.label)} aria-hidden="true"></i>{link.label}
-              </a>
-            </li>)}
-          </ul>}
         </div>
+
+        {(person.data.email || person.data.links?.length > 0) && <ul class="person-profile__contacts">
+          {person.data.email && <li><a href={`mailto:${person.data.email}`}><i class="fas fa-envelope" aria-hidden="true"></i>{person.data.email}</a></li>}
+          {person.data.links?.map((link: {label: string; url: string}) => <li>
+            <a href={link.url} target="_blank" rel="noreferrer noopener">
+              <i class={iconFor(link.label)} aria-hidden="true"></i>{link.label}
+            </a>
+          </li>)}
+        </ul>}
       </header>
 
       {researchKeywords.length > 0 && <section class="person-profile__keywords" aria-labelledby="profile-keywords-title">

@@ -3,16 +3,12 @@
 .ftg-eyebrow { color: var(--ftg-accent); font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 .65rem; }
 .ftg-header h1 { font-size: clamp(2.1rem, 5vw, 3.1rem); line-height: 1.12; margin: 0 0 1.2rem; }
 .ftg-header h1::after { content: ''; display: block; width: 46px; height: 3px; background: #f28c28; margin-top: 1rem; }
-.ftg-intro { margin: 0; color: var(--ftg-muted); font-size: .95rem; line-height: 1.7; }
+.ftg-intro { margin: 0; color: var(--ftg-muted); font-size: var(--gaps-body-font-size, .95rem); line-height: 1.7; }
 .ftg-next { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 1rem; padding: 1.2rem 1.4rem; border-left: 3px solid #f28c28; background: #f0f7fb; margin-bottom: 2.5rem; }
 .ftg-next__label { margin: .2rem 0 0; font-size: .72rem; font-weight: 700; color: var(--ftg-accent); text-transform: uppercase; letter-spacing: .05em; }
 .ftg-next h2 { margin: 0 0 .4rem; border: 0; padding: 0; font-size: 1.1rem; line-height: 1.4; }
 .ftg-next p:not(.ftg-next__label) { font-size: .82rem; color: var(--ftg-muted); line-height: 1.6; margin: 0; }
 .ftg-next__date { display: block; font-size: .8rem; color: var(--ftg-accent); margin-bottom: .4rem; }
-.ftg-archive-header h2 { margin: 0 0 .4rem; padding: 0; border: 0; font-size: 1.6rem; line-height: 1.3; }
-.ftg-archive-header p { color: var(--ftg-muted); font-size: .75rem; margin: 0; }
-.ftg-seasons-nav { display: flex; gap: .6rem; flex-wrap: wrap; margin-top: 1rem; }
-.ftg-seasons-nav a { padding: .4rem .7rem; border: 1px solid var(--ftg-rule); border-radius: 4px; color: var(--ftg-accent); font-size: .8rem; text-decoration: none; }
 .ftg-season { margin-top: 1.8rem; scroll-margin-top: 2rem; }
 .ftg-season-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .75rem; padding: 1rem 0; border-bottom: 2px solid var(--ftg-rule); }
 .ftg-season-header h3 { margin: 0 0 .2rem; font-size: 1.35rem; color: var(--ftg-accent); }
@@ -21,12 +17,16 @@
 .ftg-sessions { margin: 0; padding: 0; list-style: none; }
 .ftg-session { display: grid; grid-template-columns: 145px 64px minmax(0, 1fr); align-items: start; gap: 1.2rem; margin: 0; padding: 1.4rem 0; border-bottom: 1px solid var(--ftg-rule); }
 .ftg-session__date { font-size: .78rem; font-weight: 500; color: var(--ftg-muted); padding-top: .2rem; }
-.ftg-session__image { display: block; width: 64px; height: 64px; aspect-ratio: 1; border-radius: 50%; object-fit: cover; background: #f0f5f8; }
+.ftg-session__image { display: block; width: 64px; height: 64px; aspect-ratio: 1; border-radius: 50%; object-fit: cover; object-position: center 35%; background: #fff; }
+.ftg-session__profile-link--image { display: block; width: fit-content; border-radius: 50%; }
+.ftg-session__profile-link--image:focus-visible { outline: 2px solid var(--ftg-accent); outline-offset: 3px; }
 .ftg-session__image--placeholder { display: grid; place-items: center; color: var(--ftg-accent); font-weight: 700; }
 .ftg-session__content { min-width: 0; }
 .ftg-session__title { font-size: 1rem; line-height: 1.4; margin: 0 0 .35rem; color: var(--ftg-ink); }
 .ftg-session__speaker { font-size: .82rem; color: var(--ftg-muted); margin: 0; }
 .ftg-session__speaker--primary { font-size: 1rem; font-weight: 600; color: var(--ftg-ink); }
+.ftg-session__speaker a { color: inherit; text-decoration: none; }
+.ftg-session__speaker a:hover, .ftg-session__speaker a:focus-visible { color: var(--ftg-accent); text-decoration: underline; }
 .ftg-session__affiliation, .ftg-session__topic { color: var(--ftg-muted); font-size: .75rem; margin: .35rem 0 0; line-height: 1.5; }
 .ftg-session__presentation-link { display: inline-flex; gap: .4rem; margin-top: .6rem; color: var(--ftg-accent); font-size: .75rem; font-weight: 600; text-decoration: none; }
 .ftg-session__presentation-link:hover { text-decoration: underline; }

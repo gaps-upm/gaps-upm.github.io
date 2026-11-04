@@ -2,6 +2,7 @@ export interface ReadingSession {
   date: string;
   speaker: string;
   image?: string;
+  profile_url?: string;
   title?: string;
   affiliation?: string;
   presentation_url?: string;

@@ -7,6 +7,14 @@
   level: Bachelor’s degree
   name: Telecommunication Technologies and Systems
   url: https://www.etsit.upm.es/estudios/grado-en-ingenieria-de-tecnologias-y-servicios-de-telecomunicacion.html
+  evolution:
+    name: Grado en Ingeniería de Tecnologías de Telecomunicación
+    label: New study plan · 2026–27
+    url: https://www.etsit.upm.es/estudios/nuevo-grado-en-ingenieria-de-tecnologias-de-telecomunicacion.html
+    courses:
+      - code: PING
+        name: Principios de Ingeniería de Telecomunicación
+        instructors: []
   courses:
     - code: SALT
       name: Señales Aleatorias
@@ -50,6 +58,14 @@
   level: Master’s degree
   name: Telecommunication Engineering
   url: https://www.etsit.upm.es/estudios/master-universitario-en-ingenieria-de-telecomunicacion.html
+  evolution:
+    name: Máster Universitario en Ingeniería de Telecomunicación
+    label: New study plan · 2026–27
+    url: https://www.etsit.upm.es/estudios/nuevo-master-universitario-en-ingenieria-de-telecomunicacion.html
+    courses:
+      - code: ASIA
+        name: Statistical Analysis for Artificial Intelligence
+        instructors: []
   courses:
     - code: ASEC
       name: Análisis de Señal en Comunicaciones

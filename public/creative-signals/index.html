@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Creative Signals — Generative Sound Engineering with AI. An ATHENS course at Universidad Politécnica de Madrid.">
+  <title>Creative Signals — Generative Sound Engineering with AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root{--cyan:#00d4ff;--pink:#ff6b9d;--yellow:#ffd93d;--green:#93c47d;--bg0:#0c0c0c;--bg1:#1a1a2e;--bg2:#16213e;--text:#fff;--muted:rgba(255,255,255,.72);--line:rgba(255,255,255,.11)}
+    *{margin:0;padding:0;box-sizing:border-box} html{scroll-behavior:smooth}
+    body{font-family:'Inter',sans-serif;background:linear-gradient(135deg,var(--bg0) 0%,var(--bg1) 50%,var(--bg2) 100%);color:var(--text);line-height:1.6;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 20% 80%,rgba(0,212,255,.10),transparent 36%),radial-gradient(circle at 82% 18%,rgba(255,107,157,.09),transparent 34%),radial-gradient(circle at 46% 42%,rgba(255,217,61,.04),transparent 36%)}
+    header{position:fixed;top:0;width:100%;padding:.9rem 5%;background:rgba(0,0,0,.88);backdrop-filter:blur(18px);z-index:1000;border-bottom:1px solid rgba(255,255,255,.05)}
+    nav{display:flex;justify-content:space-between;align-items:center;max-width:1400px;margin:auto}.brand-wrap{display:flex;align-items:center;gap:.9rem}.logo{font-family:'Orbitron',monospace;font-size:1.55rem;font-weight:900;background:linear-gradient(45deg,var(--cyan),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}.athens-mini{display:flex;align-items:center;gap:.42rem;text-decoration:none;color:rgba(255,255,255,.72);padding-left:.8rem;border-left:1px solid rgba(255,255,255,.12);transition:.2s}.athens-mini:hover{color:#fff}.athens-a{font-family:'Orbitron',monospace;font-size:1.4rem;font-weight:900;line-height:1;color:#8cc63f}.athens-text{display:flex;flex-direction:column;line-height:1.02}.athens-text strong{font-family:'Orbitron',monospace;font-size:.58rem;letter-spacing:.08em;font-weight:700}.athens-text span{font-size:.42rem;letter-spacing:.07em;color:rgba(255,255,255,.42);text-transform:uppercase;margin-top:.18rem}.gaps-mini{display:flex;align-items:center;padding-left:.78rem;border-left:1px solid rgba(255,255,255,.12);opacity:.72;transition:.2s}.gaps-mini:hover{opacity:1}.gaps-mini img{display:block;height:28px;width:auto;max-width:84px;object-fit:contain}.nav-links{display:flex;list-style:none;gap:1.7rem}.nav-links a{color:#fff;text-decoration:none;font-weight:500;font-size:.95rem;transition:.25s}.nav-links a:hover{color:var(--cyan)}
+    .hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:110px 5% 70px}.eyebrow{font-family:'Orbitron',monospace;text-transform:uppercase;letter-spacing:.16em;color:var(--cyan);font-size:.75rem;margin-bottom:1rem}.hero h1{font-family:'Orbitron',monospace;font-size:clamp(3.3rem,8vw,6.2rem);line-height:1.03;font-weight:900;background:linear-gradient(45deg,var(--cyan),var(--pink),var(--yellow));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:1.15rem}.hero p{font-size:clamp(1.05rem,2.2vw,1.45rem);max-width:760px;color:rgba(255,255,255,.88);margin-bottom:2.2rem}.cta{display:inline-flex;align-items:center;gap:.55rem;padding:.9rem 1.8rem;background:linear-gradient(45deg,var(--cyan),var(--pink));color:#fff;text-decoration:none;border-radius:999px;font-weight:600;transition:.25s}.cta:hover{transform:translateY(-3px);box-shadow:0 16px 38px rgba(0,212,255,.23)}
+    .audio-wave{display:flex;gap:4px;justify-content:center;margin-top:2rem;height:42px;align-items:center}.wave-bar{width:4px;height:18px;background:linear-gradient(to top,var(--cyan),var(--pink));border-radius:3px;animation:wave 1.5s ease-in-out infinite}.wave-bar:nth-child(2){animation-delay:.1s}.wave-bar:nth-child(3){animation-delay:.2s}.wave-bar:nth-child(4){animation-delay:.3s}.wave-bar:nth-child(5){animation-delay:.4s}@keyframes wave{0%,100%{transform:scaleY(1)}50%{transform:scaleY(2.15)}}
+    section{padding:92px 5%;max-width:1400px;margin:auto}.section-intro{text-align:center;max-width:760px;margin:-2.5rem auto 3.2rem;color:var(--muted)}h2{font-family:'Orbitron',monospace;font-size:clamp(2rem,4vw,3rem);text-align:center;margin-bottom:4rem;background:linear-gradient(45deg,var(--cyan),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.6rem}.card{background:rgba(255,255,255,.05);backdrop-filter:blur(10px);padding:1.9rem;border-radius:20px;border:1px solid var(--line);transition:.25s}.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,.25)}.card h3{font-family:'Orbitron',monospace;font-size:1.12rem;margin-bottom:.7rem}.card p{color:var(--muted)}
+    .testimonial-wrap{max-width:860px;margin:auto;display:grid;gap:1.2rem}.testimonial{background:rgba(255,255,255,.045);padding:1.7rem 1.9rem;border-radius:18px;border-left:3px solid rgba(0,212,255,.65);font-style:italic;color:rgba(255,255,255,.88)}
+    .team-grid{grid-template-columns:repeat(3,minmax(220px,1fr));max-width:1000px;margin:auto}.team-card{text-align:center}.team-avatar{width:104px;height:104px;border-radius:50%;margin:0 auto 1.2rem;border:3px solid rgba(0,212,255,.30);display:flex;align-items:center;justify-content:center;font-family:'Orbitron',monospace;font-weight:800;background:rgba(255,255,255,.06);object-fit:cover;object-position:center 28%}.team-name{font-family:'Orbitron',monospace;font-size:1.08rem;font-weight:700;margin-bottom:.35rem}.team-role{color:var(--cyan);font-weight:500;font-size:.95rem;margin-bottom:.7rem}.mini-link{display:inline-block;color:rgba(255,255,255,.82);text-decoration:none;font-size:.86rem;margin-top:.9rem}.mini-link+.mini-link{margin-left:.75rem}.mini-link:hover{color:var(--cyan)}
+    .project-title{font-family:'Orbitron',monospace;font-size:1.25rem;font-weight:700;margin-bottom:.45rem}.project-creators{color:var(--cyan);font-weight:500;margin-bottom:1.1rem}.project-links{display:flex;gap:.7rem}.project-link{flex:1;padding:.65rem;background:rgba(255,255,255,.085);color:#fff;text-decoration:none;border-radius:999px;text-align:center;font-size:.83rem}.project-link:hover{background:linear-gradient(45deg,var(--cyan),var(--pink))}.class-card{grid-column:1/-1;text-align:center;padding:2.4rem}.class-btn{display:inline-block;margin-top:1rem;padding:.95rem 2rem;background:linear-gradient(135deg,var(--yellow),var(--pink));color:#fff;text-decoration:none;border-radius:999px;font-weight:700;font-family:'Orbitron',monospace}.class-btn:hover{transform:translateY(-2px)}
+    .contact-shell{max-width:850px;margin:auto;background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:24px;padding:2.2rem}.contact-copy{text-align:center;color:var(--muted);max-width:650px;margin:0 auto 1.8rem}.contact-toggle{display:block;margin:auto;border:0;cursor:pointer}.contact-form{display:none;margin-top:1.8rem}.contact-form.open{display:block}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.field{display:flex;flex-direction:column;gap:.42rem}.field.full{grid-column:1/-1}.field label{font-size:.82rem;color:rgba(255,255,255,.75)}input,select,textarea{width:100%;background:rgba(0,0,0,.27);border:1px solid rgba(255,255,255,.14);border-radius:12px;color:#fff;padding:.85rem .95rem;font:inherit}select option{color:#111}textarea{min-height:140px;resize:vertical}input:focus,select:focus,textarea:focus{outline:none;border-color:rgba(0,212,255,.65);box-shadow:0 0 0 3px rgba(0,212,255,.08)}.form-actions{display:flex;justify-content:flex-end;align-items:center;gap:1rem;margin-top:1rem}.status{font-size:.86rem;color:var(--muted)}.honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}.note{text-align:center;font-size:.78rem;color:rgba(255,255,255,.48);margin-top:1rem}
+    footer{margin-top:5rem;background:rgba(0,0,0,.76);border-top:1px solid rgba(255,255,255,.08);padding:2rem 5%;text-align:center;color:rgba(255,255,255,.62)}.footer-inner{max-width:1100px;margin:auto;display:flex;flex-direction:column;align-items:center;gap:.7rem}.gaps-mark{height:34px;width:auto;max-width:160px;object-fit:contain;opacity:.64;transition:.25s}.gaps-mark:hover{opacity:.95}.footer-links{display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap}.footer-links a{color:rgba(255,255,255,.62);text-decoration:none;font-size:.82rem}.footer-links a:hover{color:var(--cyan)}
+    @media(max-width:800px){.nav-links{display:none}.athens-text span{display:none}.athens-mini{padding-left:.6rem}.athens-text strong{font-size:.52rem}.team-grid{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}section{padding:76px 6%}.hero{padding-left:6%;padding-right:6%}.project-links{flex-direction:column}.footer-inner{gap:1rem}}
+  
+.gaps-mini span{font-family:Inter,sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.04em;white-space:nowrap;color:rgba(255,255,255,.72)}
+.gaps-mini:hover span{color:rgba(255,255,255,.95)}
+
+/* Institutional links: intentionally compact, but always visible */
+.brand-wrap{gap:.75rem;min-width:0}
+.athens-mini,.gaps-mini{min-height:34px;box-sizing:border-box}
+.athens-mini{padding:.35rem .55rem .35rem .75rem;border-left:1px solid rgba(255,255,255,.18);border-radius:6px}
+.athens-mini:hover{background:rgba(255,255,255,.05)}
+.athens-text strong{font-size:.64rem;color:rgba(255,255,255,.88)}
+.gaps-mini{gap:.42rem;padding:.35rem .55rem .35rem .75rem;border-left:1px solid rgba(255,255,255,.18);border-radius:6px;text-decoration:none;opacity:.9}
+.gaps-mini:hover{background:rgba(255,255,255,.05);opacity:1}
+.gaps-mini span{font-size:.76rem;color:rgba(255,255,255,.88)}
+@media(max-width:1050px){.athens-text span{display:none}.nav-links,.nav{gap:.8rem}.gaps-mini img{height:24px;max-width:68px}}
+@media(max-width:720px){header nav{align-items:flex-start}.brand-wrap{flex-wrap:wrap;row-gap:.35rem}.athens-mini,.gaps-mini{padding-left:.55rem}.gaps-mini img{height:22px}.gaps-mini span{font-size:.68rem}}
+
+    </style>
+</head>
+<body>
+<header><nav><div class="brand-wrap"><a class="logo" href="#top">Creative Signals</a><a class="athens-mini" href="https://athensnetwork.eu/" target="_blank" rel="noopener" aria-label="ATHENS Network"><span class="athens-a">A</span><span class="athens-text"><strong>ATHENS</strong><span>ATHENS Network</span></span></a><a class="gaps-mini" href="https://www.gaps.ssr.upm.es" target="_blank" rel="noopener" aria-label="GAPS · UPM"><img src="assets/gaps-mark-v4122.png" alt="GAPS"><span>GAPS · UPM</span></a></div><ul class="nav-links"><li><a href="#content">Content</a></li><li><a href="#team">Team</a></li><li><a href="#contact">Contact</a></li></ul></nav></header>
+<main id="top">
+  <section class="hero">
+    <div class="eyebrow">ATHENS Programme · Universidad Politécnica de Madrid</div>
+    <h1>Creative Signals</h1>
+    <p>Generative Sound Engineering with AI<br>Learn, experiment and build creative audio systems in an intensive hands-on course.</p>
+    <a href="#content" class="cta"><i class="fa-solid fa-wave-square"></i> Explore course</a>
+    <div class="audio-wave" aria-hidden="true"><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div></div>
+  </section>
+
+  <section id="content">
+    <h2>Course Content</h2>
+    <div class="grid">
+      <article class="card"><h3><i class="fas fa-brain" style="color:var(--cyan)"></i> AI Foundations</h3><p>Core audio representations and modern generative models for sound design.</p></article>
+      <article class="card"><h3><i class="fas fa-code" style="color:var(--pink)"></i> Hands-on Labs</h3><p>Python-based workflows for text-to-audio and real-time sound transformation.</p></article>
+      <article class="card"><h3><i class="fas fa-music" style="color:var(--yellow)"></i> Creative Prototypes</h3><p>Build AI-driven instruments and interactive audio workstations.</p></article>
+      <article class="card"><h3><i class="fas fa-play-circle" style="color:var(--green)"></i> Go live!</h3><p>Live production, control and monitoring. Adapt the final result to room conditions.</p></article>
+    </div>
+  </section>
+
+  <section id="team">
+    <h2>Instructors & Contributors</h2>
+    <div class="grid team-grid">
+      <article class="card team-card"><img class="team-avatar" src="/images/people/jl.jpg" alt="José Luis Blanco Murillo" width="104" height="104" loading="lazy" decoding="async"><div class="team-name">Dr. J.L. Blanco</div><div class="team-role">Signal processing & audio technologies</div><p>Course coordination and signal-processing foundations.</p><a class="mini-link" href="/people/jose-luis-blanco-murillo/">GAPS profile ↗</a></article>
+      <article class="card team-card"><img class="team-avatar" src="/images/people/mateo.jpeg" alt="Mateo José Cámara Largo" width="104" height="104" loading="lazy" decoding="async"><div class="team-name">Dr. M. Cámara</div><div class="team-role">AI Audio Expert</div><p>Deep and generative audio models.</p><a class="mini-link" href="/people/mateo-jose-camara-largo/">GAPS profile ↗</a></article>
+      <article class="card team-card"><img class="team-avatar" src="/images/people/fer.jpeg" alt="Fernando Marcos Macías" width="104" height="104" loading="lazy" decoding="async"><div class="team-name">Fernando Marcos</div><div class="team-role">Sound & AI Engineer</div><p>Interactive sound systems and practical sessions.</p><a class="mini-link" href="/people/fernando-marcos-macias/">GAPS profile ↗</a></article>
+    </div>
+  </section>
+
+  <!-- Projects & Editions temporarily hidden; remove these markers to restore the section.
+  <section id="projects">
+    <h2>Projects & Editions</h2>
+    <p class="section-intro">Selected outcomes from previous editions and a place for each class to keep its work together.</p>
+    <div class="grid">
+      <article class="card"><div class="project-title">AI Wind Chimes</div><div class="project-creators">Student project</div><p>Creative audio prototype developed during the course.</p></article>
+      <article class="card"><div class="project-title">Neural Athens</div><div class="project-creators">Student project</div><p>Generative sound experimentation from a previous edition.</p></article>
+      <article class="card"><div class="project-title">Voice Sculptor</div><div class="project-creators">Student project</div><p>Interactive voice and audio transformation prototype.</p></article>
+      <article class="card class-card"><div class="project-title" style="font-size:1.7rem">Class 2025</div><p>Students, projects and moments from the 2025 edition.</p><a href="class2025.html" class="class-btn">View Class 2025</a></article>
+    </div>
+  </section>
+  -->
+
+  <section id="contact">
+    <h2>Questions about the course?</h2>
+    <div class="contact-shell">
+      <p class="contact-copy">Ask us about the course, upcoming ATHENS editions or participation.</p>
+      <form id="contactForm" class="contact-form open" method="post" target="contactFrame" action="https://script.google.com/macros/s/AKfycby_SRstopLeQAHy_AeXpPEfzWq2i4mdMxyRE9OSL7D51euliEvdbx62Oihje4CZm8Yk/exec">
+        <div class="form-grid">
+          <div class="field"><label for="name">Name</label><input id="name" name="name" maxlength="120" required></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" maxlength="200" required></div>
+          <div class="field"><label for="reason">Reason</label><select id="reason" name="reason" required><option value="">Select…</option><option>Upcoming editions</option><option>Course content</option><option>Participation</option><option>Other</option></select></div>
+          <div class="field"><label for="topic">Subject</label><input id="topic" name="topic" maxlength="200" required></div>
+          <div class="field full"><label for="message">Message</label><textarea id="message" name="message" maxlength="5000" required></textarea></div>
+          <div class="honeypot" aria-hidden="true"><label>Website<input name="website" tabindex="-1" autocomplete="off"></label></div>
+        </div>
+        <div class="form-actions"><span id="formStatus" class="status"></span><button class="cta" type="submit">Send</button></div>
+        
+      </form>
+      <iframe name="contactFrame" id="contactFrame" title="Contact form response" hidden></iframe>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links"><a href="https://www.upm.es" target="_blank" rel="noopener">UPM</a><a href="https://www.etsit.upm.es" target="_blank" rel="noopener">ETSIT-UPM</a><a href="https://www.gaps.ssr.upm.es" target="_blank" rel="noopener">GAPS-UPM</a></div>
+    <div>Creative Signals · Generative Sound Engineering with AI · ATHENS Course</div>
+  </div>
+</footer>
+<script>
+  const form = document.getElementById('contactForm');
+  const statusEl = document.getElementById('formStatus');
+  const submitButton = form.querySelector('button[type="submit"]');
+  const responseFrame = document.getElementById('contactFrame');
+  let formSubmitted = false;
+  let sendTimer = null;
+
+  form.addEventListener('submit', () => {
+    if (!form.checkValidity()) return;
+
+    formSubmitted = true;
+    statusEl.textContent = 'Sending…';
+    submitButton.disabled = true;
+
+    clearTimeout(sendTimer);
+    sendTimer = setTimeout(() => {
+      if (!formSubmitted) return;
+      formSubmitted = false;
+      statusEl.textContent = 'The request is taking longer than expected. Please try again.';
+      submitButton.disabled = false;
+    }, 20000);
+  });
+
+  // Google Apps Script serves HtmlService responses through its own sandboxed
+  // frame. A postMessage generated inside that response is not reliably sent
+  // to the original GitHub Pages window. The reliable signal available to a
+  // static cross-origin page is the completion of the hidden iframe navigation.
+  responseFrame.addEventListener('load', () => {
+    if (!formSubmitted) return;
+
+    formSubmitted = false;
+    clearTimeout(sendTimer);
+    submitButton.disabled = false;
+    statusEl.textContent = 'Message sent. Thank you.';
+    form.reset();
+  });
+</script>
+</body>
+</html>

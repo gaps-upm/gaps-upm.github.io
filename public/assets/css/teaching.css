@@ -1,5 +1,5 @@
 .teaching-page { color: #3f4650; width: 100%; min-width: 0; margin-bottom: 2rem; }
-.teaching-header { max-width: 760px; margin-bottom: 2rem; }
+.teaching-header { max-width: none; margin-bottom: 2rem; }
 .teaching-header h1 { margin: 0 0 1.2rem; color: #17212b; font-size: clamp(2.2rem, 5vw, 3.1rem); line-height: 1.08; }
 .teaching-header h1::after { content: ""; display: block; width: 46px; height: 3px; margin-top: 1rem; background: #f28c28; }
 .teaching-header p { margin: 0; line-height: 1.6; }
@@ -21,8 +21,15 @@
 .teaching-course-name { font-size: 0.85rem; line-height: 1.45; color: #253342; }
 .teaching-course-detail { min-width: 0; overflow-wrap: anywhere; }
 .teaching-instructors { margin: 0.25rem 0 0; font-size: 0.72rem; line-height: 1.5; }
+.teaching-evolution { margin-top: 0.35rem; border-top: 1px solid #f3d8bd; background: #fffaf5; }
+.teaching-evolution-header { padding: 1rem 1.25rem 0.65rem; border-left: 3px solid #f28c28; }
+.teaching-evolution-label { display: inline-block; padding: 0.2rem 0.5rem; border-radius: 3px; background: #fff0e1; color: #a95308; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.02em; }
+.teaching-evolution-header .teaching-programme-link { display: inline-block; margin: 0 0 0 0.65rem; vertical-align: middle; }
+.teaching-courses--evolution { padding-top: 0.15rem; padding-bottom: 0.35rem; }
+.teaching-courses--evolution > li { padding-top: 0.45rem; padding-bottom: 0.45rem; border-top: 0; }
 @media (max-width: 760px) {
   .teaching-grid { columns: 1; }
   .teaching-programme-header { padding: 1rem; }
   .teaching-courses { padding-inline: 1rem; }
+  .teaching-evolution-header { padding-inline: 1rem; }
 }

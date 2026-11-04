@@ -19,22 +19,28 @@
   let loaded = false;
 
   function renderZoom(anchor = { x: viewport.clientWidth / 2, y: viewport.clientHeight / 2 }) {
-    const oldWidth = stage.offsetWidth;
-    const oldHeight = stage.offsetHeight;
-    const x = (viewport.scrollLeft + anchor.x) / oldWidth;
-    const y = (viewport.scrollTop + anchor.y) / oldHeight;
-    image.style.width = `${fitWidth * zoom}px`;
-    image.style.height = `${fitHeight * zoom}px`;
-    stage.style.width = `${fitWidth * zoom + 32}px`;
-    stage.style.height = `${fitHeight * zoom + 32}px`;
-    viewport.scrollLeft = x * stage.offsetWidth - anchor.x;
-    viewport.scrollTop = y * stage.offsetHeight - anchor.y;
+    const oldWidth = stage.getBoundingClientRect().width;
+    const oldHeight = stage.getBoundingClientRect().height;
+    const x = oldWidth ? (viewport.scrollLeft + anchor.x) / oldWidth : 0.5;
+    const y = oldHeight ? (viewport.scrollTop + anchor.y) / oldHeight : 0.5;
+    const imageWidth = fitWidth * zoom;
+    const imageHeight = fitHeight * zoom;
+    stage.style.width = `${Math.max(viewport.clientWidth, imageWidth + 32)}px`;
+    stage.style.height = `${Math.max(viewport.clientHeight, imageHeight + 32)}px`;
+    image.style.width = `${imageWidth}px`;
+    image.style.height = `${imageHeight}px`;
+    viewport.scrollLeft = x * stage.getBoundingClientRect().width - anchor.x;
+    viewport.scrollTop = y * stage.getBoundingClientRect().height - anchor.y;
     label.textContent = `${Math.round(zoom * 100)}%`;
     dialog.querySelector('[data-action="out"]').disabled = !loaded || zoom <= 1;
     dialog.querySelector('[data-action="in"]').disabled = !loaded || zoom >= 6;
   }
   function fit() {
     if (!loaded || !dialog.open) return;
+    if (!viewport.clientWidth || !viewport.clientHeight) {
+      requestAnimationFrame(fit);
+      return;
+    }
     const ratio = Math.min((viewport.clientWidth - 34) / image.naturalWidth, (viewport.clientHeight - 34) / image.naturalHeight);
     fitWidth = Math.max(1, image.naturalWidth * ratio);
     fitHeight = Math.max(1, image.naturalHeight * ratio);
@@ -123,7 +129,10 @@
   viewport.addEventListener('pointerup', endDrag);
   viewport.addEventListener('pointercancel', endDrag);
   viewport.addEventListener('lostpointercapture', endDrag);
-  new ResizeObserver(() => { if (dialog.open) fit(); }).observe(viewport);
+  // Observe the fixed viewer column, not the scrollable viewport. Zooming adds
+  // scrollbars that can resize the viewport itself; observing it would call
+  // fit() and immediately reset the user's zoom back to 100%.
+  new ResizeObserver(() => { if (dialog.open) fit(); }).observe(dialog.querySelector('.poster-inspection'));
   const initial = links.findIndex(link => `#${encodeURIComponent(link.dataset.poster)}` === location.hash);
   if (initial >= 0) { previousHash = ''; open(initial, links[initial]); previousHash = ''; }
 })();

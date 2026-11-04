@@ -55,7 +55,7 @@
 .news-feed__content p {
   margin: 0;
   color: #3f4650;
-  font-size: 1.04rem;
+  font-size: var(--gaps-body-font-size, 0.95rem);
   line-height: 1.6;
 }
 

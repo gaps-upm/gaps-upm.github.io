@@ -87,7 +87,7 @@ body:has(.home-wave-backdrop) #main {
   max-width: none;
   margin: 1.4rem 0 0;
   color: var(--gaps-text);
-  font-size: 1.22rem;
+  font-size: var(--gaps-body-font-size, 0.95rem);
   line-height: 1.65;
 }
 
@@ -105,6 +105,7 @@ body:has(.home-wave-backdrop) #main {
   color: var(--gaps-ink);
   font-weight: 700;
   border-bottom: 2px solid var(--gaps-blue);
+  text-decoration: none;
 }
 
 .home-hero__actions a:hover,
@@ -147,7 +148,7 @@ body:has(.home-wave-backdrop) #main {
 
 .home-section p {
   color: var(--gaps-text);
-  font-size: 1.04rem;
+  font-size: var(--gaps-body-font-size, 0.95rem);
   line-height: 1.75;
 }
 
@@ -171,7 +172,7 @@ body:has(.home-wave-backdrop) #main {
   }
 
   .home-hero__lead {
-    font-size: 1.08rem;
+    font-size: var(--gaps-body-font-size, 0.95rem);
   }
 
   .home-section {

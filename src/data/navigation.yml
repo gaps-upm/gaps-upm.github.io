@@ -11,6 +11,12 @@ main:
 
   - title: "Teaching"
     url: /teaching/    
+    children:
+      - title: "Courses"
+        url: /teaching/#courses
+      - title: "ATHENS · Creative Signals"
+        url: /creative-signals/index.html
+        target: _blank
 
   - title: "Join us"
     url: /positions/

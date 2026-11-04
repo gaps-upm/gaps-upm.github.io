@@ -5,6 +5,18 @@ next_session: null
 
 # Sessions are grouped automatically into September–August academic years.
 sessions:
+  - date: "2026-09-18"
+    speaker: "Alejandro Almodóvar Espeso"
+    image: "/images/people/new_images/AAE.png"
+    title: "La inferencia causal longitudinal"
+  - date: "2026-09-11"
+    speaker: "Fernando Marcos Macías"
+    image: "/images/people/new_images/FMM.png"
+    title: "El método del estado adjunto: cómo hacer Backprop en entornos físicos"
+  - date: "2026-06-05"
+    speaker: "Ignacio Rivera"
+    image: "/images/people/ignacio-white.png"
+    profile_url: "/people/ignacio-rivera/"
   - date: "2026-05-29"
     speaker: "Patricia Alonso de Apellániz"
     #affiliation: "GAPS, Universidad Politécnica de Madrid"
