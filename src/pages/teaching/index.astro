@@ -6,6 +6,8 @@ interface Programme { id: string; level: string; name: string; url: string; cour
 const programmes = await readYaml<Programme[]>('teaching.yml');
 const people = await readCollection('people');
 const faculty = new Map(people.map(person => [person.slug, person]));
+const bachelorCount = programmes.filter(programme => programme.level === 'Bachelor’s degree').length;
+const masterCount = programmes.filter(programme => programme.level === 'Master’s degree').length;
 for (const programme of programmes) {
   for (const course of programme.courses) {
     for (const slug of course.instructors) {
@@ -21,8 +23,8 @@ for (const programme of programmes) {
       <h1>Teaching</h1>
       <p>Courses taught by GAPS faculty across undergraduate and master's programmes at ETSIT, Universidad Politécnica de Madrid.</p>
       <ul class="teaching-summary" aria-label="Degree programmes">
-        <li><strong>2</strong> Bachelor’s degrees</li>
-        <li><strong>2</strong> Master’s degrees</li>
+        <li><strong>{bachelorCount}</strong> Bachelor’s degrees</li>
+        <li><strong>{masterCount}</strong> Master’s degrees</li>
       </ul>
     </header>
     <div class="teaching-grid">

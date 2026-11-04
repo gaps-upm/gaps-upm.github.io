@@ -5,8 +5,9 @@
 .teaching-header p { margin: 0; line-height: 1.6; }
 .teaching-summary { display: flex; flex-wrap: wrap; gap: 0.6rem 1.6rem; padding: 0; margin: 1rem 0 0; list-style: none; font-size: 0.85rem; }
 .teaching-summary strong { color: #076c9f; margin-right: 0.25rem; }
-.teaching-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+.teaching-grid { columns: 2; column-gap: 1.5rem; }
 .teaching-programme { min-width: 0; background: #fff; border: 1px solid #e2e9ef; border-top: 3px solid #0783c5; border-radius: 6px; overflow: hidden; }
+.teaching-programme { break-inside: avoid; margin: 0 0 1.5rem; }
 .teaching-programme-header { padding: 1.25rem 1.25rem 1rem; }
 .teaching-programme-meta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem; font-size: 0.72rem; color: #596574; }
 .teaching-level { background: #edf6fb; color: #07618e; padding: 0.2rem 0.55rem; border-radius: 4px; font-weight: 600; }
@@ -21,7 +22,7 @@
 .teaching-course-detail { min-width: 0; overflow-wrap: anywhere; }
 .teaching-instructors { margin: 0.25rem 0 0; font-size: 0.72rem; line-height: 1.5; }
 @media (max-width: 760px) {
-  .teaching-grid { grid-template-columns: minmax(0, 1fr); }
+  .teaching-grid { columns: 1; }
   .teaching-programme-header { padding: 1rem; }
   .teaching-courses { padding-inline: 1rem; }
 }

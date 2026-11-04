@@ -107,3 +107,11 @@
     - code: MIMO
       name: From Array Processing to MIMO Communications
       instructors: []
+- id: radiofrequency-engineering
+  level: Master’s degree
+  name: Radiofrequency Engineering
+  url: https://muirf.ssr.upm.es/
+  courses:
+    - code: SDR
+      name: Radio Definida por Software
+      instructors: []
