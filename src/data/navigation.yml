@@ -1,0 +1,26 @@
+# main links links
+main:
+  - title: "People"
+    url: /people/
+    
+  - title: "Publications"
+    url: /publications/
+
+  - title: "Projects"
+    url: /projects/ 
+
+  - title: "Teaching"
+    url: /teaching/    
+    children:
+      - title: "Courses"
+        url: /teaching/#courses
+      - title: "ATHENS · Creative Signals"
+        url: /creative-signals/index.html
+        target: _blank
+
+  - title: "Join us"
+    url: /positions/
+    
+  - title: "Filling the Gaps"
+    url: /filling-the-gaps/
+    

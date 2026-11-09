@@ -1,0 +1,55 @@
+---
+import Base from '../../layouts/Base.astro';
+import { readYaml } from '../../lib/content';
+import { getImage } from 'astro:assets';
+import { portraitSource } from '../../lib/portraits';
+import { readingSeasons, type ReadingSession } from '../../lib/reading-group';
+const group = await readYaml<{summary: string; sessions: ReadingSession[]}>('filling_the_gaps.yml');
+const seasons = readingSeasons(group.sessions);
+const prettyDate = (date: string) => new Date(`${date}T12:00:00Z`).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Madrid' });
+for (const season of seasons) {
+  for (const session of season.sessions) {
+    if (session.image?.startsWith('/images/people/')) {
+      const source = await portraitSource(session.image.replace('/images/people/', '/src/assets/people/'));
+      session.image = (await getImage({ src: source, width: 160, format: 'webp', quality: 85 })).src;
+    }
+  }
+}
+---
+<Base title="Filling the Gaps">
+  <link slot="head" rel="stylesheet" href="/assets/css/filling-the-gaps.css" />
+  <div class="ftg-page">
+    <header class="ftg-header">
+      <p class="ftg-intro">{group.summary}</p>
+    </header>
+    {seasons.map(season => <section class="ftg-season" id={`season-${season.year}`} aria-labelledby={`season-title-${season.year}`}>
+      <header class="ftg-season-header">
+        <div><h3 id={`season-title-${season.year}`}>{season.label}</h3><p>September {season.year} – August {season.year + 1}</p></div>
+        <span>{season.sessions.length} {season.sessions.length === 1 ? 'session' : 'sessions'}</span>
+      </header>
+      <ol class="ftg-sessions">
+        {season.sessions.map(session => <li class="ftg-session">
+          <time class="ftg-session__date" datetime={session.date}>{prettyDate(session.date)}</time>
+          {session.profile_url
+            ? <a class="ftg-session__profile-link ftg-session__profile-link--image" href={session.profile_url} aria-label={`View ${session.speaker}'s profile`}>
+                {session.image ? <img class="ftg-session__image" src={session.image} alt="" loading="lazy" width="64" height="64" /> : <span class="ftg-session__image ftg-session__image--placeholder" aria-hidden="true">{session.speaker.slice(0, 1)}</span>}
+              </a>
+            : session.image ? <img class="ftg-session__image" src={session.image} alt="" loading="lazy" width="64" height="64" /> : <div class="ftg-session__image ftg-session__image--placeholder" aria-hidden="true">{session.speaker.slice(0, 1)}</div>}
+          <div class="ftg-session__content">
+            {session.title && <h4 class="ftg-session__title">{session.title}</h4>}
+            <p class:list={['ftg-session__speaker', { 'ftg-session__speaker--primary': !session.title }]}>
+              {session.profile_url ? <a href={session.profile_url}>{session.speaker}</a> : session.speaker}
+            </p>
+            {session.affiliation && <p class="ftg-session__affiliation">{session.affiliation}</p>}
+            {session.topic && <p class="ftg-session__topic">{session.topic}</p>}
+            {session.presentation_url && <a class="ftg-session__presentation-link" href={session.presentation_url} target="_blank" rel="noopener noreferrer">View presentation <span aria-hidden="true">↗</span></a>}
+            {(session.abstract || session.about) && <details class="ftg-session__details"><summary>About this session</summary>
+              {session.abstract && <p>{session.abstract}</p>}
+              {session.about && <><h5>About the speaker</h5><p>{session.about}</p></>}
+            </details>}
+          </div>
+        </li>)}
+      </ol>
+    </section>)}
+  </div>
+</Base>

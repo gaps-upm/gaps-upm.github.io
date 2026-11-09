@@ -1,64 +1,58 @@
-# Contribuye a Nuestro Repositorio del Grupo de Aplicaciones del Procesado de Señal
+# Contributing to the GAPS website
 
-¡Hola! Te invitamos a contribuir a nuestro repositorio de GitHub, que alberga la página estática de nuestro grupo de investigación. Hay varias formas en las que puedes contribuir, y aquí te explicamos cómo hacerlo.
+The site is built with Astro. For a local preview, run `npm install` once, then `npm run dev`. Use `npm run build` to produce the static site in `dist/`.
 
-## ¿Cómo Contribuir?
+## Common edits
 
-Puedes editar los archivos directamente en GitHub y abrir una pull request sin necesidad de clonar el repositorio. Esto sería lo preferido si quieres hacer una contribución pequeña, como agregar una publicación o una persona. Si quieres hacer una contribución más tensa, como agregar una nueva página, te recomendamos que clones el repositorio y trabajes en tu máquina local.
+- **Home page:** `src/pages/index.astro`; the news and featured publication data live in `src/data/news.yml` and `src/data/home_publications.yml`.
+- **People:** add or edit a Markdown profile in `src/content/people/` and update the roster in `src/data/people.yml`.
+- **Publications:** edit `src/data/publications.yml`, `src/data/publication_authors.yml`, and `src/data/home_publications.yml`.
+- **Posters:** add entries to `src/data/posters.yml`, including the matching `publication_id` from `publications.yml`. Place original images and PDFs in `public/assets/posters/` and run `node scripts/generate_poster_thumbnails.mjs` to generate small gallery previews. The viewer reads citations and resource links directly from the publication record. Set `pdf` to a path such as `/assets/posters/example.pdf` to provide the original printable PDF.
+- **Projects:** edit `src/data/projects.yml` and the rendering page at `src/pages/projects/index.astro`.
+- **Teaching:** edit programmes and courses in `src/data/teaching.yml`. Use person profile slugs in each course’s `instructors` list to link confirmed GAPS faculty; an optional `url` links to the official course guide.
+- **Research lines:** edit the Markdown files in `src/content/pages/`.
+- **Open positions:** update `src/data/positions.yml`.
+- **Reading group:** add sessions to `src/data/filling_the_gaps.yml` with ISO dates (`YYYY-MM-DD`). The page groups them automatically into academic years from September to August, newest first. Set `next_session` to a confirmed session, or leave it `null` while the programme is pending. Rebuild the static site when announcing or changing a session; dates are checked at build time.
+- **Images, PDFs, fonts, and browser assets:** put them under `public/` so their paths are preserved in the generated site.
 
-Para contribuir en algo sencillo, sigue estos pasos:
+Please make changes on a feature branch and open a pull request for review.
 
-1. **Identifica el archivo que quieres modificar**: Esto lo puedes hacer con las indicaciones que se dan a continuación, en función de lo que quieras cambiar.
-2. **Abrelo en github**: Si es un .md, github tiene un editor en línea. Solo tienes que darle al lapicero y podrás modificarlo. Es posible que te pida hacer un fork del repo. Hazlo sin problemas y trabaja ahí.
-3. **Commitea el cambio**: Cuando hayas terminado, dale a "commit changes...". Allí no hagas commit directamente al main, sino que abre una nueva rama que formará parte de una nueva pull request. El nombre de la pull request debe ser "updated XXX", donde XXX es el archivo que hayas modificado. En la descripción di lo que has cambiado. En el nombre de la rama, pon update-XXX.
+## Reviewing new Scholar publications
 
-Para contribuir en algo más grande, sigue estos pasos:
+The Scholar importer collects proposals separately from the reviewed website catalogue:
 
-1. **Fork del Repositorio**: Primero, haz un 'fork' del repositorio a tu cuenta de GitHub.
-2. **Clona el Repositorio**: Luego, clona el repositorio forkeado a tu máquina local usando `git clone`.
-3. **Realiza tus Cambios**: Haz los cambios necesarios en tu copia local.
-4. **Commit y Push**: Haz un 'commit' de tus cambios y haz un 'push' a tu repositorio forkeado.
-5. **Abre una Pull Request**: En la página de GitHub de nuestro repositorio, abre una 'pull request' para que revisemos tus cambios.
-
-## Tipos de Contribuciones
-
-### Modificar la Página Principal
-
-- **Archivo**: `_site/index.html`
-- **Descripción**: Si deseas agregar una noticia o modificar el contenido de la página principal.
-
-### Agregar una Persona
-
-- **Archivo**: `_pages/people.md`
-- **Instrucciones**: Agrega la información de la persona siguiendo el orden alfabético por apellido.
-
-### Agregar una Publicación
-
-- **Archivo**: `_pages/publications.md`
-- **Instrucciones**: Incluye la nueva publicación siguiendo el orden cronológico de publicación.
-
-### Agregar un Proyecto
-
-- **Archivo**: `_pages/projects.md`
-- **Descripción**: Para agregar detalles sobre un nuevo proyecto de investigación.
-
-### Agregar una Asignatura
-
-- **Archivo**: `_pages/teaching.md`
-- **Descripción**: Si deseas incluir información sobre una asignatura relacionada con el grupo.
-
-### Agregar lo que creas que falte
-
-Siguiendo la misma filosofía que las contribuciones anteriores, puedes agregar cualquier cosa que creas que falte en la página. Si no estás seguro de dónde agregarlo, puedes abrir una issue y discutirlo con nosotros. Nuestra web está desarrollada en jekyll (<https://jekyllrb.com/>), por lo que puedes consultar su documentación para ver cómo se estructura la página.
-
-## Agradecimientos
-
-¡Muchas gracias por contribuir a nuestra web! Tu ayuda es fundamental para mantener actualizada y enriquecer nuestra página de investigación. Cualquier duda: mateoDOTcamaraATupmDOTes
-
-## Run Locally
-
-<https://github.com/academicpages/academicpages.github.io>
-
-``` bash
-bundle exec jekyll serve -l -H localhost
+```sh
+python3 scripts/update_publications_from_scholar.py --year 2026
 ```
+
+Read `reviews/scholar-2026.md`, organised by researcher, and edit the matching entries in `reviews/scholar-2026.json`:
+
+- Leave `status: "pending"` if uncertain.
+- Set `status: "rejected"` for a namesake, an unwanted record, or an existing work under a different title. Rejections persist on later collections.
+- Set `status: "approved"` after checking the article. This also accepts its `candidate_author_tags`; no separate confirmation is needed. Optionally fill `confirmed_author_tags` to override or complete them, using keys from `src/data/publication_authors.yml`, for example `["camara", "blanco"]`.
+- Correct title, authors, venue or URL in the candidate if needed. Scholar can truncate author lists; follow the source link before approving.
+
+Then preview and import only your approvals:
+
+```sh
+python3 scripts/update_publications_from_scholar.py --year 2026 --apply --dry-run
+python3 scripts/update_publications_from_scholar.py --year 2026 --apply
+```
+
+Collection never edits `src/data/publications.yml`. Import only adds approved entries from the exact requested year, preserves existing records, validates YAML, makes a `.bak`, and marks approvals `imported`. Repeating import does not add them again. Review files are outside the website's content directories.
+
+Use `--author "Mateo"` to collect only one researcher; earlier decisions for other researchers remain saved. The report lists collection failures separately: a failed request does not mean there are no new publications. Very similar titles are flagged for review, not automatically discarded. This workflow does not yet resolve DOI identifiers or validate authorship automatically.
+
+## Publication research map
+
+`src/data/research_topics.yml` defines topic labels, colours and title-matching patterns. These are initial suggestions, not a reviewed classification or a citation network. Papers connect to topic nodes; dot size does not represent citations or impact.
+
+To override suggestions for a paper in `src/data/publications.yml`, add an explicit list. The first topic determines its map cluster, and the other topics add connections and search filters:
+
+```yaml
+topics: [vision, ml]
+```
+
+Use only topic IDs defined in `research_topics.yml`. Unknown or empty explicit lists fail the build. The topic/year filters and text search are shared by the map and the list by year. Existing publication links automatically open the list and expand the relevant year.
+
+The 2026 papers now have individually assigned `topics` plus `research` metadata. See `reviews/publication-topics-2026.md` for the classification criteria, sources and outstanding questions. `research.area` is a broad topic ID; `tasks` and `methods` are readable English labels (reuse existing spellings). `basis` records whether the classification used an `abstract`, only the `title`, or `needs-source`. `source` and `note` preserve the editorial reasoning. Unverified methods stay empty. Area, tasks and methods appear in the selected paper panel and are searchable. Older papers still use the initial title rules.

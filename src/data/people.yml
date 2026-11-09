@@ -1,0 +1,29 @@
+# Roster order for the People page.
+# Person metadata lives in the matching src/content/people/<slug>.md file.
+faculty:
+- alejandro-almodovar-espeso
+- eduardo-lopez-gonzalo
+- francisco-javier-casajus-de-quiros
+- jose-luis-blanco-murillo
+- jose-parera-bermudez
+- juan-gutierrez-navarro
+- juan-parras-moral
+- luis-alfonso-hernandez-gomez
+- mateo-jose-camara-largo
+- miguel-angel-garcia-izquierdo
+- santiago-zazo-bello
+non_faculty:
+- patricia-alonso-de-apellaniz
+phd_students:
+- alba-garrido-lopez
+- alba-molero
+- barbara-rodriguez-martin
+- ignacio-rivera
+- fernando-marcos-macias
+- luis-fernando-fernandez-salvador
+- mar-elizo-alonso
+- maria-pilar-daza-llin
+- santiago-loza-morcillo
+- victor-gutierrez-garcia
+distinguished_professors:
+- mariano-garcia-otero

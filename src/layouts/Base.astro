@@ -1,0 +1,177 @@
+---
+import { readYaml } from '../lib/content';
+interface Props { title: string; description?: string }
+const { title, description = 'Signal Processing Applications Group at Universidad Politécnica de Madrid' } = Astro.props;
+const navigation = await readYaml<{main: {title: string; url: string; children?: {title: string; url: string; target?: string}[]}[]}>('navigation.yml');
+---
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#ffffff" />
+    <title>{title} | GAPS</title>
+    <script is:inline>document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/astro-shell.css" />
+    <link rel="stylesheet" href="/assets/css/academicons.css" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/android-chrome-192x192.png" />
+    <link rel="manifest" href="/images/manifest.json" />
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#000000" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-TileImage" content="/images/mstile-144x144.png" />
+    <meta name="msapplication-config" content="/images/browserconfig.xml" />
+    <slot name="head" />
+  </head>
+  <body>
+    <slot name="background" />
+    <div class="masthead">
+      <div class="masthead__inner-wrap">
+        <div class="masthead__menu">
+          <a class="masthead__logo-link" href="/" aria-label="GAPS home">
+            <img class="masthead__logo" src="/images/04_logotipo_GAPS.png" alt="GAPS" />
+          </a>
+          <nav id="site-nav" class="greedy-nav" aria-label="Main navigation">
+            <ul class="visible-links">
+              {navigation.main.map((link) => <li class:list={["masthead__menu-item", link.children?.length && "masthead__menu-item--has-submenu"]}>
+                <a href={link.url}>{link.title}</a>
+                {link.children?.length > 0 &&
+                  <ul class="masthead__submenu">
+                    {link.children.map((child) => <li><a href={child.url} target={child.target} rel={child.target === '_blank' ? 'noopener noreferrer' : undefined}>{child.title}</a></li>)}
+                  </ul>
+                }
+              </li>)}
+            </ul>
+            <ul class="hidden-links hidden"></ul>
+          </nav>
+          <div class="masthead__social social-icons" aria-label="Social links">
+            <a href="https://www.linkedin.com/company/grupo-de-procesado-de-aplicaciones-de-se%C3%B1al-gaps/" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://github.com/gaps-upm" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main" role="main">
+      <div class="home-wave-backdrop" aria-hidden="true">
+        <svg class="home-sinc-svg home-sinc-svg--left" viewBox="0 0 620 1440" preserveAspectRatio="none" focusable="false">
+          <path class="home-sinc home-sinc--orange" id="home-sinc-left" d="" />
+        </svg>
+        <svg class="home-sinc-svg home-sinc-svg--right" viewBox="0 0 620 1440" preserveAspectRatio="none" focusable="false">
+          <path class="home-sinc" id="home-sinc-right" d="" />
+        </svg>
+      </div>
+      <slot />
+    </div>
+    <div class="page__footer">
+      <footer>
+        <div class="page__footer-follow">
+          <ul class="social-icons">
+            <li><a href="https://github.com/gaps-upm"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/company/grupo-de-procesado-de-aplicaciones-de-se%C3%B1al-gaps/"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+            <li><a href="/feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+            <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Avenida Complutense, 30, Madrid, Community of Madrid 28040, ES</li>
+          </ul>
+        </div>
+        <div class="page__footer-copyright">© 2026 GAPS. Signal Processing Applications Group at Universidad Politécnica de Madrid.</div>
+      </footer>
+    </div>
+    <script is:inline>
+      (() => {
+        const paths = [
+          document.getElementById('home-sinc-left'),
+          document.getElementById('home-sinc-right'),
+        ];
+        if (paths.some((path) => !path)) return;
+
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+        const centerX = 310;
+        const centerY = 720;
+        const amplitude = 175;
+        const samples = 560;
+        const minFrequency = Math.PI * 2.5;
+        const maxFrequency = Math.PI * 22;
+        const cycleDuration = 36000;
+        let startedAt = null;
+        let animationFrame = null;
+
+        function draw(frequency, opacity) {
+          paths.forEach((path, index) => {
+            const points = [];
+            for (let i = 0; i <= samples; i += 1) {
+              const y = (i / samples) * 1440;
+              const phase = frequency * ((y - centerY) / centerY);
+              const sinc = Math.abs(phase) < 0.0001 ? 1 : Math.sin(phase) / phase;
+              const x = centerX + (index === 0 ? -1 : 1) * amplitude * sinc;
+              points.push(`${i === 0 ? 'M' : 'L'}${x.toFixed(2)},${y.toFixed(2)}`);
+            }
+            path.setAttribute('d', points.join(' '));
+            path.style.opacity = String(opacity);
+          });
+        }
+
+        function animate(now) {
+          if (startedAt === null) startedAt = now;
+          const progress = ((now - startedAt) % cycleDuration) / cycleDuration;
+          const frequencyProgress = (1 - Math.cos(progress * Math.PI * 2)) / 2;
+          const frequency = minFrequency + (maxFrequency - minFrequency) * frequencyProgress;
+          draw(frequency, 0.72);
+          animationFrame = window.requestAnimationFrame(animate);
+        }
+
+        function setMotionMode() {
+          if (animationFrame !== null) window.cancelAnimationFrame(animationFrame);
+          animationFrame = null;
+          startedAt = null;
+          if (reducedMotion.matches) {
+            draw(minFrequency, 0.72);
+          } else {
+            animationFrame = window.requestAnimationFrame(animate);
+          }
+        }
+
+        reducedMotion.addEventListener('change', setMotionMode);
+        setMotionMode();
+      })();
+    </script>
+    <script is:inline>
+      (() => {
+        const items = [...document.querySelectorAll('.masthead__menu-item--has-submenu')];
+        const closeItems = () => items.forEach((item) => {
+          item.classList.remove('is-open');
+        });
+        items.forEach((item) => {
+          const parentLink = item.querySelector(':scope > a');
+          if (window.matchMedia('(hover: none)').matches) {
+            parentLink?.addEventListener('click', (event) => {
+              if (item.classList.contains('is-open')) return;
+              event.preventDefault();
+              closeItems();
+              item.classList.add('is-open');
+            });
+          }
+          item.addEventListener('keydown', (event) => {
+            if (event.key !== 'Escape') return;
+            item.classList.remove('is-open');
+            parentLink?.focus();
+          });
+        });
+        document.addEventListener('click', (event) => {
+          if (items.some((item) => item.contains(event.target))) return;
+          closeItems();
+        });
+      })();
+    </script>
+  </body>
+</html>
